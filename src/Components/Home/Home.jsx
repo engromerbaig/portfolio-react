@@ -4,7 +4,7 @@ import Service from "../Service/Service";
 const Home = () => {
     return (<div>
 <Hero />
-<div className="mb-80"> 
+<div className="my-80"> 
     hello my g
 </div>
 
