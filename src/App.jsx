@@ -1,4 +1,7 @@
-import Navbar from './Components/Navbar/Navbar'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+
 
 const App = () => {
     const links = [
@@ -10,10 +13,14 @@ const App = () => {
     ];
 
     return (
-        <div>
-            <Navbar links={links} />
-            {/* Other components */}
-        </div>
+        <Router>
+            <div>
+                <Navbar links={links} />
+                <Routes>
+                
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

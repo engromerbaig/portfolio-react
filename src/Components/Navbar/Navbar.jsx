@@ -5,7 +5,7 @@ import OffCanvas from '../OffCanvas/OffCanvas';
 import logo from '../../assets/logo.png';
 import { theme } from '../../theme'; // Importing theme variables
 
-const Navbar = () => {
+const Navbar = ({ links }) => { // Receive props here
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -25,7 +25,10 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex items-center">
-                <span className={`${theme.navbar.textColor} mr-2`}>Button</span>
+                    {/* Mapping over links to create navigation items */}
+                    {links.map((link, index) => (
+                        <Link key={index} to={link.to} className={`${theme.navbar.textColor} mr-4`}>{link.label}</Link>
+                    ))}
                     <FaBars className={`${theme.navbar.textColor} text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} />
                 </div>
             </nav>
