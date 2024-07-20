@@ -7,23 +7,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <div className="my-80">
-        <Service 
-          icon="settings" 
-          title="Settings" 
-          description="Manage your settings here."
-        />
-        <Service 
-          icon="users" 
-          title="Users" 
-          description="Manage your users here."
-        />
-        <Service 
-          icon="briefcase" 
-          title="Briefcase" 
-          description="Manage your projects here."
-        />
-      </div>
+      <Service />
     <Tools />
 
     </div>
