@@ -15,21 +15,18 @@ const Button = ({
   const ButtonComponent = href ? 'a' : to ? Link : 'button';
 
   const baseClasses = [
-    theme.button.bgColor,
-    theme.button.textColor,
+    // Tailwind classes from theme
     theme.button.borderColor,
     theme.button.borderWidth,
     theme.button.rounded,
     padding,
-    'rounded-corner-border'  // Add the new class for the border effect
+
+    'btn-31'  // Add the new class for the border effect
   ];
 
   const hoverClasses = hover
     ? [
-        theme.button.hoverBgColor,
-        theme.button.hoverTextColor,
-        // SKEW ANIMATION
-        'hover:transition duration-300 ease-in-out transform hover:skew-x-6', 
+        'hover:text-white' // Add hover text color change to white
       ]
     : [];
 
@@ -40,7 +37,11 @@ const Button = ({
       className={[...baseClasses, ...hoverClasses, className].join(' ')}
       {...props}
     >
-      {text}
+      <span className="text-container">
+        <span className="text">
+          {text}
+        </span>
+      </span>
     </ButtonComponent>
   );
 };
