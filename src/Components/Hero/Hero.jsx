@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-center p-8">
-          <img src={omerImage} alt="Hero" className="rounded w-full md:w-3/4 lg:w-1/2 aspect-auto shadow-hero-image" />
+          <img src={omerImage} alt="Hero" className=" w-full md:w-3/4 lg:w-1/2 aspect-auto shadow-hero-image" />
         </div>
       </div>
     </section>
