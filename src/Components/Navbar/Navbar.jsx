@@ -5,7 +5,7 @@ import OffCanvas from '../OffCanvas/OffCanvas';
 import logo from '../../assets/logo.png';
 import { theme } from '../../theme'; // Importing theme variables
 
-const Navbar = ({ links }) => { // Receive props here
+const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Navbar = ({ links }) => { // Receive props here
 
     return (
         <>
-            <nav className={`${theme.navbar.bgColor} px-6 py-4 flex justify-between items-center border-b border-gray-200 shadow-sm`}>
+            <nav className={`${theme.navbar.bgColor} dark:bg-slate-600 px-6 py-4 flex justify-between items-center border-b border-gray-200 shadow-sm`}>
                 <div className="flex items-center">
                     <Link to="/">
                         <img src={logo} alt="Logo" className="h-10 mx-10 cursor-pointer" /> {/* Making the logo clickable */}
@@ -32,7 +32,7 @@ const Navbar = ({ links }) => { // Receive props here
                     <FaBars className={`${theme.navbar.textColor} text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} />
                 </div>
             </nav>
-            <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
+            <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} toggleDarkMode={toggleDarkMode} />
         </>
     );
 }

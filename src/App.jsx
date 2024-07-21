@@ -2,9 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import { useState } from 'react';
 
 
 const App = () => {
+    const [darkMode,setDarkMode] = useState(false);
+
+    const toggleDarkMode =() =>{
+        setDarkMode(!darkMode);
+    }
+
+
     const links = [
         { label: 'Heading1', to: '/about-us' },
         { label: 'Heading2', to: '/features' },
@@ -15,10 +23,10 @@ const App = () => {
 
     return (
         <Router>
-            <div>
-                <Navbar links={links} />
+        <div className={darkMode ? 'dark' : ''}>
+        <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
                 <Routes>
-                <Route path="/" element={<Home/>} />
+                <Route path="/" element={<Home/>} darkMode={darkMode} />
 
                 </Routes>
             </div>
