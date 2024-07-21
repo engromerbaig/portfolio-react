@@ -20,13 +20,15 @@ const Button = ({
     theme.button.borderWidth,
     
     padding,
+    'text-theme-blue',
+    'bg-transparent',
 
     'btn-31'  // Add the new class for the border effect
   ];
 
   const hoverClasses = hover
     ? [
-        // Add hover text color change to white
+        
       ]
     : [];
 

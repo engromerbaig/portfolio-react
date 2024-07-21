@@ -9,9 +9,7 @@
 .btn-31 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: transparent;
   background-image: none;
-  color: rgb(59 130 246);
   cursor: pointer;
   padding: 0;
   position: relative;
