@@ -16,9 +16,9 @@ const Button = ({
 
   const baseClasses = [
     // Tailwind classes from theme
-    theme.button.borderColor,
+
     theme.button.borderWidth,
-    theme.button.rounded,
+    
     padding,
 
     'btn-31'  // Add the new class for the border effect
