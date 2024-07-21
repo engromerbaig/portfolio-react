@@ -26,7 +26,7 @@ const Button = ({
 
   const hoverClasses = hover
     ? [
-        'hover:text-white' // Add hover text color change to white
+        // Add hover text color change to white
       ]
     : [];
 
