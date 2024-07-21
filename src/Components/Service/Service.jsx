@@ -34,7 +34,7 @@ const Service = () => {
       <div className="grid md:grid-cols-3 justify-center">
         {serviceData.map((service, index) => (
           <div key={index} className="mx-4 my-2">
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full">
+            <div className="bg-white dark:bg-yellow-300 p-6 rounded-lg shadow-lg flex flex-col justify-between h-full">
               <div className="text-center mb-4">
                 <span className="text-4xl flex justify-center items-center mb-2">
                   {getIcon(service.icon)}
