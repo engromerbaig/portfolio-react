@@ -1,30 +1,12 @@
+// Service.js
 import React from "react";
-import { FiSettings, FiUsers, FiBriefcase } from "react-icons/fi";
 import "./Service.css"; // Import the CSS file for styling
 import Heading from "../Heading/Heading";
-
-const serviceData = [
-  { icon: "settings", title: "Service 1", description: "Description for service 1" },
-  { icon: "users", title: "Service 2", description: "Description for service 2 Description for service 2 Description for service 2 Description for service 2 Description for service 2" },
-  { icon: "briefcase", title: "Service 3", description: "Description for service 3" },
-];
+import serviceData from "./serviceData"; // Ensure the import path is correct
 
 const Service = () => {
-  const getIcon = (icon) => {
-    switch (icon) {
-      case "settings":
-        return <FiSettings />;
-      case "users":
-        return <FiUsers />;
-      case "briefcase":
-        return <FiBriefcase />;
-      default:
-        return null;
-    }
-  };
-
   return (
-    <>
+    <div className="py-32 px-12">
       <div className="text-center">
         <Heading 
           title="You‘re Safe And in Good Hands" 
@@ -37,7 +19,7 @@ const Service = () => {
             <div className="bg-white dark:bg-yellow-300 p-6 rounded-lg shadow-lg flex flex-col justify-between h-full">
               <div className="text-center mb-4">
                 <span className="text-4xl flex justify-center items-center mb-2">
-                  {getIcon(service.icon)}
+                  <img src={service.icon} alt={service.title} className="icon-class w-14 p-2 bg-theme-blue rounded-full aspect-square" />
                 </span>
                 <h3 className="text-2xl font-bold">{service.title}</h3>
               </div>
@@ -46,7 +28,7 @@ const Service = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
