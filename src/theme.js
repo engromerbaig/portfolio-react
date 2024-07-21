@@ -31,7 +31,7 @@ export const theme = {
   },
   hero: {
     bgColor: sharedColors.bgColor,
-    titleColor: sharedColors.textColor,
+    titleColor: 'text-black dark:text-white',
     textColor: 'text-gray-500',
   },
   content: {
