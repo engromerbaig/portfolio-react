@@ -14,7 +14,7 @@ export default {
       colors:{
         'theme-blue': '#3B82F6',
         'theme-dark': '#232323',
-        'theme-light': '#FFFFF0',
+        'theme-light': '#FFFFFF',
 
 
       },
