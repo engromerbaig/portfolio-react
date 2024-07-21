@@ -5,7 +5,7 @@ import Tools from "../../Components/Tools/Tools";
 
 const Home = ({darkMode}) => {
   return (
-    <div className=" bg-white dark:bg-red-400 ">
+    <div className=" bg-white py-20 dark:bg-red-400 ">
       <Hero />
       <Service />
     <Tools />

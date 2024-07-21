@@ -19,8 +19,8 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
 
     return (
         <>
-            <nav className={`${theme.navbar.bgColor} dark:bg-slate-600 px-6 py-4 flex justify-between items-center border-b border-gray-200 shadow-sm`}>
-                <div className="flex items-center">
+    <nav className={` absolute px-8  pb-6 pt-10 flex justify-between items-center w-full top-0 z-10 bg-transparent`}>
+    <div className="flex items-center">
                     <Link to="/">
                         <img 
                             src={darkMode ? logoWhite : logoBlack} 
