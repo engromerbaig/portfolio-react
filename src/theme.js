@@ -5,7 +5,7 @@ const sharedColors = {
 
 export const theme = {
   sectionBg:{
-    bgColor:'bg-white dark:bg-[#232323]',
+    bgColor:'bg-theme-light dark:bg-theme-dark',
     textColor:'text-black dark:text-white',
   },
 
@@ -19,7 +19,7 @@ export const theme = {
     overlayColor: 'bg-black bg-opacity-50',
   },
 
-  
+
   hero: {
     bgColor: sharedColors.bgColor,
     titleColor: 'text-black dark:text-white',

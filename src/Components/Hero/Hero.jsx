@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-center p-8 relative">
           <img src={omerImage} alt="Hero" className="w-full md:w-3/4 lg:w-1/2 aspect-auto shadow-hero-image" />
-          <div className="absolute w-3/4 md:w-1/2 bottom-4 md:left-8 bg-red-600 bg-opacity-100 p-4 rounded shadow-lg">
+          <div className="absolute w-3/4 md:w-1/2 bottom-4 md:left-8 bg-theme-blue bg-opacity-100 p-4 rounded shadow-lg">
             <p className="text-white italic">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
           </div>
         </div>
