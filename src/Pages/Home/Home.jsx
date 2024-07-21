@@ -5,7 +5,7 @@ import Tools from "../../Components/Tools/Tools";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white dark:bg-slate-600">
       <Hero />
       <Service />
     <Tools />
