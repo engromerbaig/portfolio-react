@@ -9,7 +9,6 @@ const Button = ({
   to,
   href,
   hover = false,
-  padding = theme.button.padding, // Add padding with default value from theme
   ...props
 }) => {
   const ButtonComponent = href ? 'a' : to ? Link : 'button';
@@ -17,11 +16,13 @@ const Button = ({
   const baseClasses = [
     // Tailwind classes from theme
 
-    theme.button.borderWidth,
     
-    padding,
+    'py-2.5 px-7',
     'text-theme-blue',
     'bg-transparent',
+    'border-4',
+    'border-theme-blue',
+    'transition: transition duration-200',
 
     'btn-31'  // Add the new class for the border effect
   ];

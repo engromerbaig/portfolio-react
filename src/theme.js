@@ -18,17 +18,8 @@ export const theme = {
     textColor: 'text-black',
     overlayColor: 'bg-black bg-opacity-50',
   },
-  button: {
-    // bgColor: 'bg-transparent',
-    // hoverBgColor: 'hover:bg-red-500',
-    // textColor: 'text-red-500',
-    // hoverTextColor: 'hover:text-white',
-    // borderColor: 'border-red-500',
-    borderWidth: 'border-4',
-    // rounded: 'none',
-    padding: 'py-2.5 px-7',
-    transition: 'transition duration-200',
-  },
+
+  
   hero: {
     bgColor: sharedColors.bgColor,
     titleColor: 'text-black dark:text-white',
