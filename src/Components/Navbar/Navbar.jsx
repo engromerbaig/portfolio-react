@@ -32,8 +32,7 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                     <FaBars className={`${theme.navbar.textColor} text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} />
                 </div>
             </nav>
-            <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} toggleDarkMode={toggleDarkMode} />
-        </>
+            <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />        </>
     );
 }
 
