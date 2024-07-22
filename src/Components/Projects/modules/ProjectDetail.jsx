@@ -28,7 +28,13 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
         <div className="flex flex-row justify-start items-center gap-4">
             
             <a href={siteLink} target="_blank" rel="noopener noreferrer">
-            <button className="bg-theme-blue px-3 py-2 text-sm text-white rounded-sm uppercase">LIVE SITE</button>
+          
+            <button className="bg-theme-blue border-none px-3 py-2 text-sm text-white rounded-sm uppercase transition-all duration-300 ease-in-out hover:outline hover:outline-3 hover:outline-gray-300">
+            LIVE SITE
+            </button>
+
+
+          
             </a>
 
 
