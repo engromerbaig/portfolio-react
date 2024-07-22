@@ -5,6 +5,7 @@ import Tools from "../../Components/Tools/Tools";
 import Statistics from "../../Components/Statistics/Statistics";
 import Projects from "../../Components/Projects/Projects";
 import AboutMe from "../../Components/AboutMe/AboutMe";
+import Message from "../../Components/Message/Message";
 import { theme } from "../../theme";
 
 const Home = ({darkMode}) => {
@@ -16,6 +17,7 @@ const Home = ({darkMode}) => {
       {/* <Statistics /> */}
       <Projects />
       <AboutMe />
+      <Message />
     </div>
   );
 }
