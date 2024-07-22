@@ -9,6 +9,14 @@ const Button = ({
   to,
   href,
   hover = false,
+  textColor = 'text-theme-blue', // Default text color
+
+  // new
+  hoverTextColor = 'white', // Default hover text color
+  hoverBgColor = '#3B82F6', // Default hover background color
+  borderColor = 'border-theme-blue', // Default border color
+  // hoverBorderColor = '#001529', // Default hover border color
+  // end new
   ...props
 }) => {
   const ButtonComponent = href ? 'a' : to ? Link : 'button';
@@ -18,7 +26,8 @@ const Button = ({
 
     
     'py-2.5 px-7',
-    'text-theme-blue', //make optional with this as default value
+    textColor,
+    borderColor,
     'bg-transparent',
     'border-4',
     'border-theme-blue', //make optional with this as default value
@@ -40,6 +49,12 @@ const Button = ({
       href={href}
       className={[...baseClasses, ...hoverClasses, className].join(' ')}
       {...props}
+      style={{
+        '--hover-text-color': hoverTextColor,
+        '--hover-bg-color': hoverBgColor,
+        // '--border-color': borderColor,
+        // '--hover-border-color': hoverBorderColor,
+      }}
     >
       <span className="text-container">
         <span className="text">
