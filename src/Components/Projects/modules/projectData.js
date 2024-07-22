@@ -2,6 +2,8 @@ import placeholderImage from '../../../assets/images/placeholder.png';
 import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
 import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
 import landesImage from '../../../assets/images/Projects/landes.png'
+import matuszakImage from '../../../assets/images/Projects/matuszak.png'
+
 
 
 
@@ -23,7 +25,7 @@ const projectData = [
         description: 'Description for project 3' 
     },
 
-    { image: placeholderImage, 
+    { image: matuszakImage, 
         title: 'Project 4', 
         description: 'Description for project 4' 
     },
