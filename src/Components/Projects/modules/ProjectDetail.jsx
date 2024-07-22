@@ -6,7 +6,7 @@ const ProjectDetail = () => {
     <div className="flex flex-col md:flex-row p-10 items-center justify-center relative">
       <img src={placeholderImage} alt="" className="w-1/3 aspect-square" />
       {/* content container */}
-      <div className="flex w-1/2 gap-10 flex-col items-start justify-center shadow-2xl rounded-lg p-8 bg-white relative md:-ml-20 z-10 hover:transition duration-700 ease-in-out transform hover:skew-x-6">
+      <div className="flex w-1/2 gap-10 flex-col items-start justify-center shadow-2xl rounded-lg p-8 bg-white relative md:-ml-20 z-10 transform transition duration-700 ease-in-out origin-left hover:skew-y-0 hover:translate-x-12">
         <h1 className="">heading</h1>
         <p>The owners of Zekra realized that social media isn't enough, since they aren't getting enough sales. Our web solution certainly helped them grow online.</p>
         <div className="flex flex-row gap-10">

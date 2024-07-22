@@ -14,6 +14,7 @@ const Projects = () => {
       {/* Here we create project details */}
 
      <ProjectDetail/>
+     <ProjectDetail/>
 
     </div> );
 }
