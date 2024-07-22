@@ -17,6 +17,11 @@ const projectData = [
         title: 'Project 3', 
         description: 'Description for project 3' 
     },
+
+    { image: placeholderImage, 
+        title: 'Project 4', 
+        description: 'Description for project 4' 
+    },
     // Add more projects as needed
   ];
 
