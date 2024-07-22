@@ -25,10 +25,16 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
       >
         <h1 className="">{title}</h1>
         <p>{description}</p>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row justify-start items-center gap-4">
             
-          <button className="bg-theme-blue p-2"><a href={siteLink} target="_blank">LIVE SITE</a></button>
-          <button className="p-2"><a href={gitLink} target="_blank">GITHUB</a></button>
+            <a href={siteLink} target="_blank" rel="noopener noreferrer">
+            <button className="bg-theme-blue px-3 py-2 text-sm text-white rounded-sm uppercase">LIVE SITE</button>
+            </a>
+
+
+            <a href={gitLink} target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="GitHub" className="w-6 aspect-square"/>
+            </a>
         </div>
       </div>
     </div>
