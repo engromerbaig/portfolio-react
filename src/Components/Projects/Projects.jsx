@@ -1,4 +1,5 @@
 import Heading from "../Heading/Heading";
+import ProjectDetail from "./modules/ProjectDetail";
 
 
 const Projects = () => {
@@ -10,6 +11,10 @@ const Projects = () => {
           text="My Recent Projects." 
         />
       </div>
+      {/* Here we create project details */}
+
+     <ProjectDetail/>
+
     </div> );
 }
  
