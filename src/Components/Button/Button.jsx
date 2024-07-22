@@ -18,10 +18,11 @@ const Button = ({
 
     
     'py-2.5 px-7',
-    'text-theme-blue',
+    'text-theme-blue', //make optional with this as default value
     'bg-transparent',
     'border-4',
-    'border-theme-blue',
+    'border-theme-blue', //make optional with this as default value
+    'bg-transparent',
     'transition: transition duration-200',
 
     'btn-31'  // Add the new class for the border effect

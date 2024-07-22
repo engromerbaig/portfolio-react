@@ -31,10 +31,9 @@ const Projects = () => {
     </div>
 
     <div className="text-center">
-    <Button
+            <Button
               text="More Projects"
               to="/projects"
-              hover
             />
       </div>
 
