@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
 
 
@@ -29,6 +30,7 @@ const App = () => {
                 <Route path="/" element={<Home/>} darkMode={darkMode} />
 
                 </Routes>
+        <Footer />
             </div>
         </Router>
     );
