@@ -10,8 +10,8 @@ const Tools = () => {
     <div>
       <div className="text-center mb-8">
         <Heading 
-          title="Tools"
-          text="Tools of present and future"
+          title="Tools Of The Present And Future"
+          text="Full-stack technologies I prefer using"
         />
       </div>
 
@@ -23,7 +23,7 @@ const Tools = () => {
 
       <div className="text-center mb-8">
         <Heading 
-          text="Other Technologies"
+          text="Other Technologies/Skills"
         />
       </div>
 
