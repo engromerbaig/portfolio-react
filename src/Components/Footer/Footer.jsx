@@ -1,6 +1,6 @@
 import { links } from "../Navbar/modules/links";
 
-const Footer = () => {
+const Footer = ({darkMode}) => {
     return ( 
         // parent for full footer
     <div>

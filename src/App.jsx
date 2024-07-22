@@ -25,7 +25,7 @@ const App = () => {
                 <Route path="/" element={<Home/>} darkMode={darkMode} />
 
                 </Routes>
-        <Footer />
+        <Footer darkMode={darkMode} />
             </div>
         </Router>
     );
