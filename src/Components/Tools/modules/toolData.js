@@ -1,5 +1,4 @@
 // toolData.js
-import image1 from "../../../assets/icons/Tools/reactjs.svg";
 import reactIcon from "../../../assets/icons/Tools/reactjs.svg";
 import jsIcon from "../../../assets/icons/Tools/js.svg";
 import tsIcon from "../../../assets/icons/Tools/ts.svg";
