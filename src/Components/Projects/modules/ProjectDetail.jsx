@@ -10,12 +10,12 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
     <div
       className={`flex flex-col ${
         isOdd ? 'md:flex-row-reverse' : 'md:flex-row ' // Apply justify-end for even cases
-      } px-4 py-10 items-center justify-center relative`}
+      } px-4 py-14 items-center justify-center relative`}
     >
       <img
         src={image}
         alt=""
-        className={`w-1/3 aspect-square ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
+        className={`w-1/3 aspect-auto ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
       />
       {/* content container */}
       <div
