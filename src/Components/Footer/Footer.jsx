@@ -1,3 +1,5 @@
+import { links } from "../Navbar/modules/links";
+
 const Footer = () => {
     return ( <div className="grid grid-col md:grid-cols-3 items-center justify-center">
         <div>
@@ -6,7 +8,16 @@ const Footer = () => {
         </div>
 
         <div>
-        Links       
+        <h1>Links</h1>
+
+        {links.map((link, index) => (
+        <p
+          key={index}
+          to={link.to}
+        >
+          {link.label}
+        </p>
+      ))}       
         </div>
 
         <div>

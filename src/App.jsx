@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
+import { links } from './Components/Navbar/modules/links';
 
 
 const App = () => {
@@ -14,13 +15,7 @@ const App = () => {
     }
 
 
-    const links = [
-        { label: 'Heading1', to: '/about-us' },
-        { label: 'Heading2', to: '/features' },
-        { label: 'Heading3', to: '/resources' },
-        { label: 'Heading4', to: '/pricing' },
-        { label: 'Heading5', to: '/contact-us' }
-    ];
+
 
     return (
         <Router>
