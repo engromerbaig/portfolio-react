@@ -19,7 +19,7 @@ const Service = () => {
             <div className="bg-white dark:bg-yellow-300 p-6 rounded-lg shadow-lg flex flex-col justify-between h-full">
               <div className="text-center mb-4">
                 <span className="text-4xl flex justify-center items-center mb-2">
-                  <img src={service.icon} alt={service.title} className="icon-class w-14 p-2 bg-theme-blue rounded-full aspect-square" />
+                  <img src={service.icon} alt={service.title} className="icon-class w-14 p-4 text-white bg-theme-blue rounded-full aspect-square" />
                 </span>
                 <h3 className="text-2xl font-bold">{service.title}</h3>
               </div>
