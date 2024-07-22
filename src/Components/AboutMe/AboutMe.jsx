@@ -12,8 +12,8 @@ const AboutMe = () => {
 
   return (
     <div className="grid md:grid-cols-2 py-16 px-16">
-      <div className="flex justify-center p-8">
-        <img src={omerImage} alt="Hero" className="w-full lg:w-1/2 aspect-auto shadow-aboutme-image" />
+      <div className="flex justify-center p-2">
+        <img src={omerImage} alt="Hero" className="w-full lg:w-2/5 aspect-auto shadow-aboutme-image" />
       </div>
 
       <div className="flex flex-col px-12">
