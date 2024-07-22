@@ -1,4 +1,5 @@
 import { links } from "../Navbar/modules/links";
+import { Link } from "react-router-dom";
 
 const Footer = ({darkMode}) => {
     return ( 
@@ -17,12 +18,12 @@ const Footer = ({darkMode}) => {
         <h1>Links</h1>
 
         {links.map((link, index) => (
-        <div
+        <Link
           key={index}
           to={link.to}
         >
           {link.label}
-        </div>
+        </Link>
       ))}       
         </div>
 
