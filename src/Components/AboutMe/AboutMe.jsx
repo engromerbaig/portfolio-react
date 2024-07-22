@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import omerImage from '../../assets/images/omer.jpg';
+import omerImage from '../../assets/images/omer2.jpg';
 import Heading from '../Heading/Heading';
 
 const AboutMe = () => {

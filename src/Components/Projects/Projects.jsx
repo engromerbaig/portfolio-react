@@ -1,6 +1,7 @@
 import Heading from "../Heading/Heading";
 import ProjectDetail from "./modules/ProjectDetail";
 import projectData from "./modules/projectData";
+import Button from "../Button/Button";
 
 
 const Projects = () => {
@@ -28,6 +29,14 @@ const Projects = () => {
         />
       ))}
     </div>
+
+    <div className="text-center">
+    <Button
+              text="More Projects"
+              to="/projects"
+              hover
+            />
+      </div>
 
     </div> );
 }
