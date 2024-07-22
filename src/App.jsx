@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
 import { links } from './Components/Navbar/modules/links';
+import Contact from './Pages/Contact/Contact';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
                 <Routes>
                 <Route path="/" element={<Home/>} darkMode={darkMode} />
+                <Route path="/contact" element={<Contact/>} darkMode={darkMode} />
 
                 </Routes>
         <Footer darkMode={darkMode} />
