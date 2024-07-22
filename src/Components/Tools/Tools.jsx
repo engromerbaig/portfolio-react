@@ -2,7 +2,8 @@
 import React from "react";
 import Heading from "../Heading/Heading";
 import ToolIcon from "./modules/ToolIcon";
-import { toolData, otherTechnologies } from "./modules/toolData"; // Ensure the import path is correct
+import toolData from "./modules/toolData";
+import otherTechnologies from "./modules/otherTechnologies";
 
 const Tools = () => {
   return (
