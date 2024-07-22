@@ -9,7 +9,7 @@ const serviceData = [
     description: "I will advance your web-based software to keep it efficient, competitive on the market. Using a well-established DevOps processes, It helps me roll out urgent updates within few hours and release new, planned functional modules every other week." 
   },
   { icon: frontEndIcon, 
-    title: "Frontend design/dev", 
+    title: "Front-end development", 
     description: "As a web expert I tend to closely analyze the user audience to understand their needs and reflect these findings in UI design. Having agreed on the look and feel of a web app with project stakeholders, I push to bring it to life with smart front-end technologies." 
   },
   { icon: supportIcon, 
