@@ -8,13 +8,13 @@ const Footer = () => {
     {/* parent for main footer */}
     <div className="grid grid-col md:grid-cols-12 justify-center items-start border-t-2 border-b-2 border-gray-200 px-28 py-14 gap-10 md:gap-4">
     <div className="col-span-6 flex flex-col gap-4 pr-20">
-    <h1 className="text-2xl">About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quaerat vero corrupti, mollitia soluta eaque voluptatum ex praesentium cupiditate accusamus quasi? Exercitationem maiores soluta enim natus commodi doloribus quidem quis?</p>
+    <h1>About</h1>
+            <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quaerat vero corrupti, mollitia soluta eaque voluptatum ex praesentium cupiditate accusamus quasi? Exercitationem maiores soluta enim natus commodi doloribus quidem quis?</p>
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
       
-        <h1 className="text-2xl">Links</h1>
+        <h1>Links</h1>
 
         {links.map((link, index) => (
         <div
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
     <div className="col-span-3 flex flex-col gap-4">
-            <h1 className="text-2xl">Contact</h1>
+            <h1>Contact</h1>
             <p>omerbaigde@gmail.com</p>
             <p>Hamburg/Germany</p>
             <p>+4915217143817</p>
