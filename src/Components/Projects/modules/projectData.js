@@ -17,17 +17,23 @@ const projectData = [
 
       { image: rapidUpriseImage, 
         title: 'Project 2', 
-        description: 'Description for project 2' 
+        description: 'Description for project 2',
+        siteLink:'https://github.com/engromerbaig/Litigationtec',
+        gitLink:'https://github.com/engromerbaig/Litigationtec', 
     },
 
     { image: landesImage, 
         title: 'Project 3', 
-        description: 'Description for project 3' 
+        description: 'Description for project 3',
+        siteLink:'https://github.com/engromerbaig/Litigationtec',
+        gitLink:'https://github.com/engromerbaig/Litigationtec', 
     },
 
     { image: matuszakImage, 
         title: 'Project 4', 
-        description: 'Description for project 4' 
+        description: 'Description for project 4',
+        siteLink:'https://github.com/engromerbaig/Litigationtec',
+        gitLink:'https://github.com/engromerbaig/Litigationtec', 
     },
     // Add more projects as needed
   ];
