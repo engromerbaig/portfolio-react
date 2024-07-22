@@ -11,8 +11,8 @@ const projectData = [
     { image: litigationtecImage, 
         title: 'Litigationtec: Legal Technology Solutions', 
         description: 'Developed the Litigationtec website using the MERN stack with React.js and Tailwind CSS for a responsive front end. Node.js and Express backend ensures efficient data processing and scalability.',
-        siteLink:'https://elvito.netlify.app/',
-        gitLink:'https://www.blackbox.ai/chat/NxblqpC', 
+        siteLink:'https://github.com/engromerbaig/Litigationtec',
+        gitLink:'https://github.com/engromerbaig/Litigationtec', 
     },
 
       { image: rapidUpriseImage, 
