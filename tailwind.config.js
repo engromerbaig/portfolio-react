@@ -21,6 +21,9 @@ export default {
 
       boxShadow: {
         'hero-image': '33px 40px 0px 9px #000000',
+        'aboutme-image': '-23px 40px 0px 4px #3B82F6',
+
+
       },
     },
   },
