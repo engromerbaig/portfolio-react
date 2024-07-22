@@ -1,8 +1,8 @@
 // toolData.js
-import image1 from "../../assets/icons/reactjs.svg";
+import image1 from "../../../assets/icons/Tools/reactjs.svg";
 
 const toolData = [
-  { imgSrc: image1, text: "React JS" },
+  { imgSrc: image1, text: "React js" },
   { imgSrc: image1, text: "HTML" },
   { imgSrc: image1, text: "CSS" },
   { imgSrc: image1, text: "JavaScript" },
