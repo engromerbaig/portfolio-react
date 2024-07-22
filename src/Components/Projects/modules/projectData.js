@@ -9,8 +9,8 @@ import matuszakImage from '../../../assets/images/Projects/matuszak.png'
 
 const projectData = [
     { image: litigationtecImage, 
-        title: 'Project 1', 
-        description: 'Description for project 1',
+        title: 'Litigationtec: Legal Technology Solutions', 
+        description: 'Developed the Litigationtec website using the MERN stack with React.js and Tailwind CSS for a responsive front end. Node.js and Express backend ensures efficient data processing and scalability.',
         siteLink:'https://elvito.netlify.app/',
         gitLink:'https://www.blackbox.ai/chat/NxblqpC', 
     },
