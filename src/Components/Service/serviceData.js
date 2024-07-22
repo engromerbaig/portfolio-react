@@ -1,6 +1,7 @@
 // serviceData.js
 import supportIcon from '../../assets/icons/Services/support-icon.svg'
 import frontEndIcon from '../../assets/icons/Services/frontend-icon.svg'
+import backEndIcon from '../../assets/icons/Services/backend-icon.svg'
 
 
 const serviceData = [
@@ -12,7 +13,7 @@ const serviceData = [
     title: "Front-end development", 
     description: "As a web expert I tend to closely analyze the user audience to understand their needs and reflect these findings in UI design. Having agreed on the look and feel of a web app with project stakeholders, I push to bring it to life with smart front-end technologies." 
   },
-  { icon: supportIcon, 
+  { icon: backEndIcon, 
     title: "Back-end development", 
     description: "I accurately implement the business logic of your web app on the back end. I always rely on proven frameworks to ensure fast and quality coding. And I build well structured APIs to integrate your web app with corporate or third-party systems and services" 
   },
