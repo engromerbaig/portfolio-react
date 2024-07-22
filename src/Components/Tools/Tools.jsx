@@ -27,7 +27,7 @@ const Tools = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 px-24 py-10">
+      <div className="flex flex-wrap justify-center gap-24 px-24 py-10">
         {otherTechnologies.map((tech, index) => (
           <ToolIcon key={index} imgSrc={tech.imgSrc} text={tech.text} />
         ))}
