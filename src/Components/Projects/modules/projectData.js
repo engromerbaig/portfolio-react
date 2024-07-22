@@ -1,4 +1,5 @@
 import placeholderImage from '../../../assets/images/placeholder.png';
+import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
 
 
 
@@ -10,7 +11,7 @@ const projectData = [
         gitLink:'https://www.blackbox.ai/chat/NxblqpC', 
     },
 
-      { image: placeholderImage, 
+      { image: rapidUpriseImage, 
         title: 'Project 2', 
         description: 'Description for project 2' 
     },
