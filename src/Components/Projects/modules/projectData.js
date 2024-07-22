@@ -5,7 +5,9 @@ import placeholderImage from '../../../assets/images/placeholder.png';
 const projectData = [
     { image: placeholderImage, 
         title: 'Project 1', 
-        description: 'Description for project 1' 
+        description: 'Description for project 1',
+        siteLink:'https://elvito.netlify.app/',
+        gitLink:'https://www.blackbox.ai/chat/NxblqpC', 
     },
 
       { image: placeholderImage, 

@@ -21,6 +21,9 @@ const Projects = () => {
           image={project.image}
           title={project.title}
           description={project.description}
+          siteLink={project.siteLink}
+          gitLink={project.gitLink}
+
           index={index}
         />
       ))}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectDetail = ({ image, title, description, index }) => {
+const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) => {
   // Determine layout based on index (odd/even)
   const isOdd = index % 2 !== 0;
 
@@ -25,8 +25,9 @@ const ProjectDetail = ({ image, title, description, index }) => {
         <h1 className="">{title}</h1>
         <p>{description}</p>
         <div className="flex flex-row gap-10">
-          <button className="bg-theme-blue p-2">live site</button>
-          <button>github</button>
+            
+          <button className="bg-theme-blue p-2"><a href={siteLink} target="_blank">LIVE SITE</a></button>
+          <button className="p-2"><a href={gitLink} target="_blank">GITHUB</a></button>
         </div>
       </div>
     </div>
