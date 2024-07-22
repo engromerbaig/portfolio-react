@@ -23,7 +23,7 @@
 
 .btn-31::before {
   --progress: 100%;
-  background: theme('colors.theme-blue'); /* bg color on hover */
+  background: theme('colors.theme-blue'); /* bg color on hover - make it optional with this as default */
   -webkit-clip-path: polygon(
     100% 0,
     var(--progress) var(--progress),
@@ -61,7 +61,7 @@
 .btn-31:hover .text {
   -webkit-animation: move-up-alternate 0.4s ease forwards; /* Smooth transition */
   animation: move-up-alternate 0.4s ease forwards; /* Smooth transition */
-  color: white; /* Change text color to white on hover */
+  color: white; /* Change text color to white on hover - optional */
 }
 
 @-webkit-keyframes move-up-alternate {
