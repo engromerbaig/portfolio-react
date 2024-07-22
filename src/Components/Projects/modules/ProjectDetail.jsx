@@ -29,9 +29,10 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
             
             <a href={siteLink} target="_blank" rel="noopener noreferrer">
           
-            <button className="bg-theme-blue border-none px-3 py-2 text-sm text-white rounded-sm uppercase transition-all duration-300 ease-in-out hover:outline hover:outline-3 hover:outline-gray-300">
+            <button className="bg-theme-blue border-2 border-gray-300 px-3 py-2 text-sm text-white rounded-md uppercase transition-all duration-300 ease-in-out group hover:outline hover:outline-3 hover:outline-gray-300 hover:bg-blue-800">
             LIVE SITE
             </button>
+
 
 
           
