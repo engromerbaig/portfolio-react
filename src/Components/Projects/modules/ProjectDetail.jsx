@@ -1,4 +1,5 @@
 import React from 'react';
+import githubIcon from '../../../assets/icons/github.svg'
 
 const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) => {
   // Determine layout based on index (odd/even)
