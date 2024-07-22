@@ -1,5 +1,6 @@
 import Heading from "../Heading/Heading";
 import ProjectDetail from "./modules/ProjectDetail";
+import projectData from "./modules/projectData";
 
 
 const Projects = () => {
@@ -13,8 +14,17 @@ const Projects = () => {
       </div>
       {/* Here we create project details */}
 
-     <ProjectDetail/>
-     <ProjectDetail/>
+      <div>
+      {projectData.map((project, index) => (
+        <ProjectDetail
+          key={index}
+          image={project.image}
+          title={project.title}
+          description={project.description}
+          index={index}
+        />
+      ))}
+    </div>
 
     </div> );
 }
