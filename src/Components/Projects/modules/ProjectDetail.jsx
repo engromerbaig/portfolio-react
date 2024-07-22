@@ -18,8 +18,8 @@ const ProjectDetail = ({ image, title, description, index }) => {
       />
       {/* content container */}
       <div
-        className={`flex w-1/2 gap-10 flex-col items-start justify-center shadow-2xl rounded-lg p-8 bg-white relative  z-10 transform transition duration-700 ease-in-out origin-left hover:skew-y-0 hover:translate-x-12 ${
-          isOdd ? 'order-2 md:-mr-20' : 'md:-ml-20'
+        className={`flex w-1/2 gap-10 flex-col items-start justify-center shadow-2xl rounded-lg p-8 bg-white relative  z-10 transform transition duration-700 ease-in-out  ${
+          isOdd ? 'order-2 md:-mr-20 origin-right  hover:-translate-x-12' : 'md:-ml-20 origin-left  hover:translate-x-12'
         } // Remove order for even cases`}
       >
         <h1 className="">{title}</h1>
