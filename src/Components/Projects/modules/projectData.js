@@ -28,10 +28,10 @@ const projectData = [
     },
 
     { image: matuszakImage, 
-        title: 'Project 4', 
-        description: 'Description for project 4',
-        siteLink:'https://github.com/engromerbaig/Litigationtec',
-        gitLink:'https://github.com/engromerbaig/Litigationtec', 
+        title: 'Matuszak Hygiene: Pest Management Company', 
+        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting. Features tailored design and functionality for effective service presentation.',
+        siteLink:'https://matuszak-hygiene.de/',
+       
     },
     // Add more projects as needed
   ];
