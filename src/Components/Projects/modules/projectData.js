@@ -18,7 +18,6 @@ const projectData = [
         title: 'Rapid Uprise: Study Abroad Consultant', 
         description: 'Developed the Rapid Uprise website on WordPress with Elementor, featuring advanced CSS customizations like blob effects and smooth scroll. Includes a calendar for easy client scheduling and a seamless user experience.',
         siteLink:'https://rapiduprise.com/',
-        gitLink:'https://rapiduprise.com/', 
     },
 
     { image: landesImage, 

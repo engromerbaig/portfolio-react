@@ -38,10 +38,10 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
           
             </a>
 
-
-            <a href={gitLink} target="_blank" rel="noopener noreferrer">
+            {gitLink && <a href={gitLink} target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="GitHub" className="w-6 aspect-square"/>
-            </a>
+            </a> }
+            
         </div>
       </div>
     </div>
