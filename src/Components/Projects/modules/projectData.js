@@ -1,10 +1,12 @@
 import placeholderImage from '../../../assets/images/placeholder.png';
 import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
+import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
+import landesImage from '../../../assets/images/Projects/landes.png'
 
 
 
 const projectData = [
-    { image: placeholderImage, 
+    { image: litigationtecImage, 
         title: 'Project 1', 
         description: 'Description for project 1',
         siteLink:'https://elvito.netlify.app/',
@@ -16,7 +18,7 @@ const projectData = [
         description: 'Description for project 2' 
     },
 
-    { image: placeholderImage, 
+    { image: landesImage, 
         title: 'Project 3', 
         description: 'Description for project 3' 
     },
