@@ -1,4 +1,3 @@
-import placeholderImage from '../../../assets/images/placeholder.png';
 import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
 import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
 import landesImage from '../../../assets/images/Projects/landes.png'
@@ -16,17 +15,16 @@ const projectData = [
     },
 
       { image: rapidUpriseImage, 
-        title: 'Project 2', 
-        description: 'Description for project 2',
-        siteLink:'https://github.com/engromerbaig/Litigationtec',
-        gitLink:'https://github.com/engromerbaig/Litigationtec', 
+        title: 'Rapid Uprise: Study Abroad Consultant', 
+        description: 'Developed the Rapid Uprise website on WordPress with Elementor, featuring advanced CSS customizations like blob effects and smooth scroll. Includes a calendar for easy client scheduling and a seamless user experience.',
+        siteLink:'https://rapiduprise.com/',
+        gitLink:'https://rapiduprise.com/', 
     },
 
     { image: landesImage, 
-        title: 'Project 3', 
-        description: 'Description for project 3',
-        siteLink:'https://github.com/engromerbaig/Litigationtec',
-        gitLink:'https://github.com/engromerbaig/Litigationtec', 
+        title: 'Landes & Kollegen: German Cosmetic Clinic', 
+        description: 'Developed the Landes & Kollegen website using WordPress and Elementor Pro, with custom CSS and HTML for a bilingual German clinic. The site features tailored design and functionality.',
+        siteLink:'https://landes-und-kollegen.com/',
     },
 
     { image: matuszakImage, 
