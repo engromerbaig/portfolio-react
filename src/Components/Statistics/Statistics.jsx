@@ -71,19 +71,19 @@ const Statistics = () => {
 
       <div className="grid grid-col md:grid-cols-3 place-items-center px-16">
         <div>
-          <h1>Lines of Code</h1>
+          <h1 className='font-semibold'>Lines of Code</h1>
           <animated.p className='text-center text-xl'>
             {animatedLinesOfCode.to(n => Math.floor(n))}
           </animated.p>
         </div>
         <div>
-          <h1>Visitors Today</h1>
+          <h1 className='font-semibold'>Visitors Today</h1>
           <animated.p className='text-center text-xl'>
             {animatedVisitors.to(n => Math.floor(n))}
           </animated.p>
         </div>
         <div>
-          <h1>Countries Served</h1>
+          <h1 className='font-semibold'>Countries Served</h1>
           <animated.p className='text-center text-xl'>
             {animatedCountries.to(n => Math.floor(n))}
           </animated.p>
