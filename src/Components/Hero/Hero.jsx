@@ -13,7 +13,7 @@ const Hero = () => {
             title="From Pixels to Logic: Your One-Stop Dev Hub." 
             text="I design, develop, and deploy stunning web applications, turning ideas into reality seamlessly. Let's discuss your project!" 
           />
-          <div className="flex space-x-4">
+          <div className="flex flex-col items-center justify-start w-full lg:flex-row  gap-4">
             <Button
               text="Contact Me"
               to="#contact"
