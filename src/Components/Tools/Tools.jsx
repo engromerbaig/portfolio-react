@@ -15,7 +15,7 @@ const Tools = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 place-content-center sm:grid-cols-4 px-24 py-10">
+      <div className="grid grid-cols-2 gap-x-6 gap-y-10 place-content-center sm:grid-cols-4 px-24 py-10">
         {toolData.map((tool, index) => (
           <ToolIcon key={index} imgSrc={tool.imgSrc} text={tool.text} />
         ))}
@@ -27,7 +27,7 @@ const Tools = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 place-content-center sm:grid-cols-4 px-24 py-10">
+      <div className="grid grid-cols-2 gap-x-6 gap-y-10 place-content-center sm:grid-cols-4 px-24 py-10">
         {otherTechnologies.map((tech, index) => (
           <ToolIcon key={index} imgSrc={tech.imgSrc} text={tech.text} />
         ))}
