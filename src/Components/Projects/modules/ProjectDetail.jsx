@@ -1,4 +1,5 @@
 import React from 'react';
+import githubIcon from '../../../assets/icons/github.svg'
 import {FaGithub} from "react-icons/fa6";
 
 
@@ -20,11 +21,11 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
       />
       {/* content container */}
       <div
-        className={`flex w-5/12 gap-6 flex-col items-start justify-center shadow-2xl rounded-lg p-8 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
+        className={`flex w-1/2 gap-4 flex-col items-start justify-center shadow-2xl rounded-lg p-6 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
           isOdd ? 'order-2 md:-mr-20 origin-right  hover:-translate-x-12' : 'md:-ml-20 origin-left  hover:translate-x-12'
         } // Remove order for even cases`}
       >
-        <h1 className="text-2xl font-semibold">{title}</h1>
+        <h1 className="font-semibold">{title}</h1>
         <p>{description}</p>
         <div className="flex flex-row justify-start items-center gap-4">
             
