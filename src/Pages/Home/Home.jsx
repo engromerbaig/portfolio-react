@@ -10,7 +10,7 @@ import { theme } from "../../theme";
 
 const Home = ({darkMode}) => {
   return (
-    <div className={`py-24 px-10 lg:px-20 ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
+    <div className={`py-24 ${theme.sectionPaddings.horizontalPx} ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
       <Hero />
       <Service />
       <Tools />

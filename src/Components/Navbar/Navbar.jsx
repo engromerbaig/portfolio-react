@@ -5,6 +5,7 @@ import logoBlack from '../../assets/images/logo-black.png';
 import logoWhite from '../../assets/images/logo-white.png';
 import { MdDarkMode } from 'react-icons/md';
 import './modules/hamburger.css';
+import { theme } from '../../theme';
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
     return (
         <>
-            <nav className={`fixed backdrop-blur-sm px-10 lg:px-20 py-6 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b  border-light-hover dark:border-dark-hover shadow-sm`}>
+            <nav className={`fixed backdrop-blur-sm py-6 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b  border-light-hover dark:border-dark-hover shadow-sm ${theme.sectionPaddings.horizontalPx}`}>
                 <div className="flex items-center">
                     <ScrollToTopLink to="/">
                         <img 

@@ -9,6 +9,10 @@ export const theme = {
     textColor:'text-body-text-light dark:text-body-text-dark',
   },
 
+  sectionPaddings:{
+  horizontalPx:"px-10 lg:px-20 ",
+  },
+
   navbar: {
     bgColor: 'sharedColors.bgColor',
     textColor: sharedColors.textColor,
