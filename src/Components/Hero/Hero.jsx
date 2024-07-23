@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex flex-col items-center justify-start w-full md:flex-row  gap-4">
             <Button
               text="Contact Me"
-              to="#contact"
+              to="/contact"
               hover
             />
             <Button
@@ -27,10 +27,10 @@ const Hero = () => {
           </div>
         </div>
         {/* parent for hero image */}
-        <div className="w-full md:w-1/2 flex justify-center  items-center my-10 lg:my-0 p-4 relative transform translate-x-[-10px] lg:translate-x-0">
+        <div className="w-full md:w-1/2 flex justify-center  items-center my-10 lg:my-0 p-2 relative transform translate-x-[-10px] lg:translate-x-0">
           <img src={omerImage} alt="Hero" className="w-3/4 rounded-md lg:w-1/2 aspect-auto shadow-hero-image " />
-          <div className="absolute w-3/4 lg:w-1/2 bottom-4 lg:left-12 bg-theme-blue bg-opacity-100 p-4  shadow-lg">
-            <p className="text-white ">"Alone we can do so little; together we can do so much." – Helen Keller</p>
+          <div className="absolute w-3/4 lg:w-1/2 bottom-0 lg:left-12 bg-theme-blue bg-opacity-100 p-3  shadow-lg">
+            <p className="text-white text-sm ">"Alone we can do so little; together we can do so much." – Helen Keller</p>
           </div>
         </div>
       </div>

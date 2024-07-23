@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { theme } from '../../theme';
 import './Button.css'; // Import the CSS file for animation
 
 const Button = ({

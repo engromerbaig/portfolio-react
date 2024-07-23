@@ -33,7 +33,7 @@ const Projects = () => {
     <div className="text-center">
             <Button
               text="More Projects"
-              to="/projects"
+             to=""
             />
       </div>
 
