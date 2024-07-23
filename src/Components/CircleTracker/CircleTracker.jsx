@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const CircleTracker = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
