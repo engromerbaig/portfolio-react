@@ -5,6 +5,7 @@ import OffCanvas from '../OffCanvas/OffCanvas';
 import logoBlack from '../../assets/images/logo-black.png';
 import logoWhite from '../../assets/images/logo-white.png';
 import { theme } from '../../theme'; // Importing theme variables
+import './modules/hamburger.css'
 
 const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +35,19 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                     {links.map((link, index) => (
                         <Link key={index} to={link.to} className={`${theme.navbar.textColor} mr-4`}>{link.label}</Link>
                     ))}
-                    <FaBars className={`${theme.navbar.textColor} text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} />
+                    {/* custom hamburger */}
+                    <div className=" flex items-center">
+                    <button onClick={toggleMenu} className={`relative ${isMenuOpen ? 'open' : ''}`}>
+                    <div>
+                        <div className="hamburger">
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                    {/* <FaBars className={`text-theme-blue text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} /> */}
                 </div>
             </nav>
             <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />        </>
