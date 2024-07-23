@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 
 
 const Projects = () => {
-    return ( <div className="py-20 border-b-2  border-light-hover dark:border-dark-hover">
+    return ( <div id="projects" className="py-20 border-b-2  border-light-hover dark:border-dark-hover">
 
 <div className="text-center">
         <Heading 

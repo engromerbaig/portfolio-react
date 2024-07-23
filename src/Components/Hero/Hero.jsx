@@ -10,18 +10,18 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col w-full md:w-1/2 justify-center items-start p-8">
           <Heading 
-            title="Welcome to G Our Website" 
-            text="Discover the best solutions for your business with our expertise and commitment to excellence." 
+            title="From Pixels to Logic: Your One-Stop Dev Hub." 
+            text="I design, develop, and deploy stunning web applications, turning ideas into reality seamlessly. Let's discuss your project!" 
           />
           <div className="flex space-x-4">
             <Button
-              text="Get Started"
+              text="Contact Me"
               to="#contact"
               hover
             />
             <Button
-              text="Learn Here"
-              href="#content"
+              text="MY PROJECTS"
+              href="#projects"
               hover
             />
           </div>
