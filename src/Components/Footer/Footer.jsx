@@ -49,6 +49,7 @@ const Footer = ({ darkMode }) => {
           </a>
 
           <div className="flex gap-4">
+            {/* social row now */}
             <div className="flex gap-6">
               {socialMediaLinks.map((link, index) => {
                 const Icon = link.icon; // Extract icon component from link
