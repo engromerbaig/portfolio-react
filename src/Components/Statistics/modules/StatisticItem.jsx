@@ -1,13 +1,13 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
-import { FaCode, FaUsers, FaGlobe } from "react-icons/fa6";
+import { FaCode, FaUsers, FaEarthAmericas  } from "react-icons/fa6";
 
 const iconStyles = "text-2xl aspect-square text-theme-blue";
 
 const iconMap = {
   code: FaCode,
   users: FaUsers,
-  globe: FaGlobe,
+  globe: FaEarthAmericas ,
 };
 
 const StatisticItem = ({ title, iconType, value }) => {
