@@ -20,7 +20,7 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
 
     return (
         <>
-    <nav className={` absolute px-8  py-6 flex justify-between items-center w-full top-0 z-10 bg-transparent border-b border-gray-400 shadow-sm`}>
+    <nav className={` absolute px-20  py-6 flex justify-between items-center w-full top-0 z-10 bg-transparent border-b border-gray-400 shadow-sm`}>
     <div className="flex items-center">
                     <Link to="/">
                         <img 
@@ -32,9 +32,11 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                 </div>
                 <div className="flex items-center">
                     {/* Mapping over links to create navigation items */}
-                    {links.map((link, index) => (
+                    {/* {links.map((link, index) => (
                         <Link key={index} to={link.to} className={`${theme.navbar.textColor} mr-4`}>{link.label}</Link>
-                    ))}
+                    ))} */}
+
+
                     {/* custom hamburger */}
                     <div className=" flex items-center">
                     <button onClick={toggleMenu} className={`relative ${isMenuOpen ? 'open' : ''}`}>
@@ -47,7 +49,8 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                     </div>
                     </button>
                 </div>
-                    {/* <FaBars className={`text-theme-blue text-2xl mx-10 cursor-pointer`} onClick={toggleMenu} /> */}
+                   
+
                 </div>
             </nav>
             <OffCanvas isMenuOpen={isMenuOpen} closeMenu={closeMenu} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />        </>
