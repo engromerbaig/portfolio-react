@@ -15,9 +15,10 @@ const App = () => {
         setDarkMode(!darkMode);
     }
 
+
     return (
         <Router>
-            <div className={darkMode ? 'dark' : ''}>
+            <div className= {darkMode ? 'dark' : ''}>
                 <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <Routes>
                     <Route path="/" element={<Home />} darkMode={darkMode} />
