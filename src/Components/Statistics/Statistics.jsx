@@ -76,35 +76,42 @@ const Statistics = () => {
 
       <div className="grid grid-col md:grid-cols-3 place-items-center px-16">
         <div>
-          <div className="flex items-center gap-2">
+        <h1 className='font-semibold'>Lines of Code</h1>
 
-          <h1 className='font-semibold'>Lines of Code</h1>
+          <div className="flex items-center justify-center gap-2">
+
           <FaCode className={iconStyles}   />
-          </div>
-          
-          <animated.p className='text-center text-xl'>
+          <animated.p className=' text-xl'>
             {animatedLinesOfCode.to(n => Math.floor(n))}
           </animated.p>
+          </div>
+          
+      
         </div>
         <div>
-        <div className="flex items-center gap-2">
 
-<h1 className='font-semibold'>Visitor's Today</h1>
+        <h1 className='font-semibold'>Visitor's Today</h1>
+
+        <div className="flex items-center justify-center gap-2">
+
 <FaUsers  className={iconStyles}   />
-</div>
-          <animated.p className='text-center text-xl'>
+<animated.p className='text-xl'>
             {animatedVisitors.to(n => Math.floor(n))}
           </animated.p>
+</div>
+        
         </div>
         <div>
-        <div className="flex items-center gap-2">
+        <h1 className='font-semibold'>Countries Served</h1>
 
-<h1 className='font-semibold'>Countries Served</h1>
+        <div className="flex items-center justify-center gap-2">
+
 <FaGlobe className={iconStyles}   />
-</div>          
-      <animated.p className='text-center  text-xl'>
+<animated.p className='text-xl'>
             {animatedCountries.to(n => Math.floor(n))}
           </animated.p>
+</div>          
+    
         </div>
       </div>
     </div>
