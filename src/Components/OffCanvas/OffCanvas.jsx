@@ -33,7 +33,8 @@ const OffCanvas = ({ isMenuOpen, closeMenu,darkMode,toggleDarkMode }) => {
                 {links.map((link, index) => (
                         <Link key={index} to={link.to} className={`${theme.navbar.textColor} mr-4`}>{link.label}</Link>
                     ))}
-                <button className="py-2" onClick={() => scrollTo('content')}>Content</button>
+
+                {/* theme toggler */}
                 <button 
                     onClick={toggleDarkMode} 
                    
