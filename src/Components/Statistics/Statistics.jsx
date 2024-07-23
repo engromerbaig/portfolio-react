@@ -61,7 +61,7 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   return (
-    <div className='py-16'>
+    <div className='py-16 border-b-2 border-t-2 border-gray-200'>
       <div className="text-center mb-8">
         <Heading
           title="My Stats"
@@ -69,7 +69,7 @@ const Statistics = () => {
         />
       </div>
 
-      <div className="grid grid-col md:grid-cols-3 place-items-center">
+      <div className="grid grid-col md:grid-cols-3 place-items-center px-16">
         <div>
           <h1>Lines of Code</h1>
           <animated.p className='text-center text-xl'>
