@@ -1,6 +1,6 @@
 export const socialMediaLinks = [
   {
-    link: 'https://www.github.com',
+    link: 'https://github.com/engromerbaig',
     icon: 'github',
     alt: 'Github',
   },
@@ -10,7 +10,7 @@ export const socialMediaLinks = [
     alt: 'Upwork',
   },
   {
-    link: 'https://www.linkedin.com',
+    link: 'https://www.linkedin.com/in/iomerbaig/',
     icon: 'linkedin',
     alt: 'LinkedIn',
   },
