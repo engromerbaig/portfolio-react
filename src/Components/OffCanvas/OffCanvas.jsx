@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { links } from '../Navbar/modules/links'; // Adjust path if necessary
+import { MdDarkMode } from 'react-icons/md';
 
 const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
     return (
@@ -12,7 +13,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                     onClick={closeMenu}
                 />
             )}
-            <div className={`fixed top-0 right-0 h-full w-96 bg-white text-black dark:bg-slate-500 dark:text-white flex flex-col items-center pt-4 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}>
+            <div className={`fixed top-0 right-0 h-full w-96 bg-white text-black dark:bg-slate-500 dark:text-white flex flex-col items-start pt-4 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}>
                 <FaTimes className="text-2xl cursor-pointer mb-6 self-end mr-4 mt-4" onClick={closeMenu} />
                 {links.map((link, index) => {
                     const Icon = link.icon; // Extract icon component from link
@@ -20,22 +21,25 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                         <Link 
                             key={index} 
                             to={link.to} 
-                            className="flex place-items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                            className="flex items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
                             onClick={closeMenu}
                         >
-                            <div className="flex place-items-center ">
-                                <Icon className="text-2xl mr-4" /> {/* Adjust icon size if necessary */}
-                                <span>{link.label}</span>
-                            </div>
+                            <Icon className="text-2xl mx-4" /> {/* Adjust icon size if necessary */}
+                            <span>{link.label}</span>
                         </Link>
                     );
                 })}
-                <button 
-                    onClick={toggleDarkMode} 
-                    className="mt-6 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                <div
+                    className="flex items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    onClick={toggleDarkMode}
                 >
-                    {darkMode ? 'Light' : 'Dark'}
-                </button>
+                    <MdDarkMode
+                        className={`text-2xl mx-4 ${darkMode ? 'text-white' : 'text-black'}`}
+                    />
+                    <span className={`${darkMode ? 'text-white' : 'text-black'}`}>
+                        {darkMode ? 'Light Mode' : 'Dark Mode'}
+                    </span>
+                </div>
             </div>
         </>
     );
