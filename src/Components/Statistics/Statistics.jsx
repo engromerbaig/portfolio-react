@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSpring, animated } from '@react-spring/web';
 import Heading from '../Heading/Heading';
 
 // Function to initialize lines of code
@@ -37,10 +38,15 @@ const Statistics = () => {
   const [linesOfCode, setLinesOfCode] = useState(getInitialLinesOfCode());
   const [visitors, setVisitors] = useState(getVisitorsCount());
 
+  // Animated props for react-spring
+  const { number: animatedLinesOfCode } = useSpring({ number: linesOfCode, from: { number: 0 }, config: { duration: 2000 } });
+  const { number: animatedVisitors } = useSpring({ number: visitors, from: { number: 0 }, config: { duration: 2000 } });
+
   useEffect(() => {
     // Increment visitors count only on initial render
     incrementVisitorsCount();
-  }, [visitors]); // Dependency array checks for changes in visitors state
+    setVisitors(getVisitorsCount()); // Update state to trigger re-render and animation
+  }, []); // Empty dependency array ensures this runs once on component mount
 
   useEffect(() => {
     // Update lines of code every 3 hours
@@ -50,7 +56,7 @@ const Statistics = () => {
 
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
-  }, []); // Run only on initial render
+  }, []); // Empty dependency array ensures this runs once on component mount
 
   return (
     <div className='py-16'>
@@ -64,11 +70,15 @@ const Statistics = () => {
       <div className="grid grid-col md:grid-cols-3 place-items-center">
         <div>
           <h1>Lines of Code</h1>
-          <p className='text-center text-xl'>{linesOfCode}</p>
+          <animated.p className='text-center text-xl'>
+            {animatedLinesOfCode.to(n => Math.floor(n))}
+          </animated.p>
         </div>
         <div>
           <h1>Visitors Today</h1>
-          <p className='text-center text-xl'>{visitors}</p>
+          <animated.p className='text-center text-xl'>
+            {animatedVisitors.to(n => Math.floor(n))}
+          </animated.p>
         </div>
         <div>
           <h1>Countries Served</h1>
