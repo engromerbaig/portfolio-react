@@ -11,6 +11,25 @@ export default {
         sans: ['Montserrat','Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
       },
 
+      screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px', 
+        // for tablets 
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1025px',
+        // => @media (min-width: 1024px) { ... }
+        //using for laptops and desktop
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+
       colors:{
         'theme-blue': '#3B82F6',
         'theme-dark': '#232323',
