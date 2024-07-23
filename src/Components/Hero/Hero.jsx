@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col w-full md:w-1/2 justify-center items-start p-8">
           <Heading 
-            title="Welcome to Our Website" 
+            title="Welcome to G Our Website" 
             text="Discover the best solutions for your business with our expertise and commitment to excellence." 
           />
           <div className="flex space-x-4">
