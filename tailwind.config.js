@@ -19,7 +19,7 @@ export default {
         'dark-hover':"#454545",
         'light-hover':"#F5F5F5",
         'body-text-light':"#737373",
-        'body-text-dark':"#b9b9b9",
+        'body-text-dark':"#fff",
 
 
 
