@@ -13,7 +13,7 @@ const Service = () => {
           text="Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service." 
         />
       </div>
-      <div className="grid md:grid-cols-3 justify-center">
+      <div className="grid md:grid-cols-3 justify-center text-body-text-light dark:text-body-text-dark">
         {serviceData.map((service, index) => (
           <div key={index} className="mx-4 my-2">
             <div className=" p-6  flex flex-col justify-between h-full">
@@ -25,9 +25,9 @@ const Service = () => {
                   </div>
                 
                 </span>
-                <h3 className="text-2xl font-bold">{service.title}</h3>
+                <h1 className="font-bold">{service.title}</h1>
               </div>
-              <p className="text-gray-600 text-center flex-grow">{service.description}</p>
+              <p className=" text-center flex-grow">{service.description}</p>
             </div>
           </div>
         ))}
