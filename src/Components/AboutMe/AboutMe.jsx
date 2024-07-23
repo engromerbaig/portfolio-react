@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import omerImage from '../../assets/images/omer2.jpg';
 import Heading from '../Heading/Heading';
 
 const AboutMe = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const fullText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tempore, cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium. cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium";
-
-  const toggleText = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   return (
     <div className="grid md:grid-cols-2 py-16 px-16">
@@ -18,19 +13,9 @@ const AboutMe = () => {
 
       <div className="flex flex-col px-12">
         <Heading title="About Me, I'm Muhammad Omer Baig" />
-        <span>
-          <p
-            className={`text-ellipsis ${isExpanded ? 'h-full' : 'h-24 overflow-hidden'}`}
-          >
+          <p className="text-ellipsis h-full">
             {fullText}
           </p>
-          <button
-            onClick={toggleText}
-            className="text-theme-blue hover:underline"
-          >
-            {isExpanded ? 'Show Less' : 'Read More'}
-          </button>
-        </span>
       </div>
     </div>
   );
