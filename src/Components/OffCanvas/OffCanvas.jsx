@@ -4,11 +4,6 @@ import { FaTimes } from 'react-icons/fa';
 import { links } from '../Navbar/modules/links'; // Adjust path if necessary
 
 const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
-    const scrollTo = (id) => {
-        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        closeMenu();
-    };
-
     return (
         <>
             {isMenuOpen && (
@@ -25,11 +20,13 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                         <Link 
                             key={index} 
                             to={link.to} 
-                            className="flex items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                            className="flex place-items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
                             onClick={closeMenu}
                         >
-                            <Icon className="mr-4" /> {/* Icon with margin */}
-                            {link.label}
+                            <div className="flex place-items-center ">
+                                <Icon className="text-2xl mr-4" /> {/* Adjust icon size if necessary */}
+                                <span>{link.label}</span>
+                            </div>
                         </Link>
                     );
                 })}
