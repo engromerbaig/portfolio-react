@@ -43,7 +43,7 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                     {/* theme icon */}
                     {/* custom hamburger */}
                     <div className=" flex gap-10 justify-center items-center">
-                    <MdDarkMode className='text-3xl' />
+                    <MdDarkMode className='text-3xl cursor-pointer'  onClick={toggleDarkMode} />
 
                     <button onClick={toggleMenu} className={`relative ${isMenuOpen ? 'open' : ''}`}>
                     <div>
