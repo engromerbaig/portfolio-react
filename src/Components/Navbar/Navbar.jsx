@@ -6,6 +6,8 @@ import logoBlack from '../../assets/images/logo-black.png';
 import logoWhite from '../../assets/images/logo-white.png';
 import { theme } from '../../theme'; // Importing theme variables
 import './modules/hamburger.css'
+import { MdDarkMode } from "react-icons/md";
+
 
 const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,8 +39,12 @@ const Navbar = ({ links,darkMode,toggleDarkMode}) => { // Receive props here
                     ))} */}
 
 
+
+                    {/* theme icon */}
                     {/* custom hamburger */}
-                    <div className=" flex items-center">
+                    <div className=" flex gap-10 justify-center items-center">
+                    <MdDarkMode className='text-3xl' />
+
                     <button onClick={toggleMenu} className={`relative ${isMenuOpen ? 'open' : ''}`}>
                     <div>
                         <div className="hamburger">
