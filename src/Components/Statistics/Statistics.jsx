@@ -37,10 +37,12 @@ const incrementVisitorsCount = () => {
 const Statistics = () => {
   const [linesOfCode, setLinesOfCode] = useState(getInitialLinesOfCode());
   const [visitors, setVisitors] = useState(getVisitorsCount());
+  const [countries,setCountries] = useState(15);
 
   // Animated props for react-spring
   const { number: animatedLinesOfCode } = useSpring({ number: linesOfCode, from: { number: 0 }, config: { duration: 2000 } });
   const { number: animatedVisitors } = useSpring({ number: visitors, from: { number: 0 }, config: { duration: 2000 } });
+  const { number: animatedCountries } = useSpring({ number: countries, from: { number: 0 }, config: { duration: 2000 } });
 
   useEffect(() => {
     // Increment visitors count only on initial render
@@ -82,7 +84,9 @@ const Statistics = () => {
         </div>
         <div>
           <h1>Countries Served</h1>
-          <p className='text-center text-xl'>15+</p>
+          <animated.p className='text-center text-xl'>
+            {animatedCountries.to(n => Math.floor(n))}
+          </animated.p>
         </div>
       </div>
     </div>
