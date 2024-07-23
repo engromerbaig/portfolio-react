@@ -8,8 +8,8 @@ const AboutMe = () => {
 
   return (
     <div className="grid md:grid-cols-2 gap-10 py-24 ">
-      <div className="flex justify-center p-0">
-        <img src={omerImage} alt="Hero" className="w-3/4  h-full shadow-aboutme-image" />
+      <div className="flex justify-center items-center p-0">
+        <img src={omerImage} alt="Hero" className="w-3/4 md:w-1/2 md:h-3/4  h-full shadow-aboutme-image" />
       </div>
 
       <div className="flex flex-col gap-6 py-14 px-4 ">
