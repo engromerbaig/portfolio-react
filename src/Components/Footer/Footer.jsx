@@ -7,11 +7,11 @@ const Footer = ({ darkMode }) => {
   const renderIcon = (icon) => {
     switch (icon) {
       case 'github':
-        return <FaGithub className="w-12 aspect-square text-theme-blue" />;
+        return <FaGithub className="text-3xl aspect-square text-theme-blue" />;
       case 'upwork':
-        return <FaSquareUpwork className="w-12 aspect-square" />;
+        return <FaSquareUpwork className="text-3xl aspect-square text-theme-blue" />;
       case 'linkedin':
-        return <FaLinkedin className="w-12 aspect-square" />;
+        return <FaLinkedin className="text-3xl aspect-square text-theme-blue" />;
       default:
         return null;
     }
@@ -46,7 +46,7 @@ const Footer = ({ darkMode }) => {
           <p>+4915217143817</p>
 
           <div className="flex gap-4">
-            <div className="flex  mt-4">
+            <div className="flex gap-6">
               {socialMediaLinks.map((link, index) => (
                 <a
                   key={index}
