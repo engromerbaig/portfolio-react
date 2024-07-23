@@ -21,9 +21,9 @@ export const theme = {
 
 
   hero: {
-    bgColor: sharedColors.bgColor,
+    // bgColor: sharedColors.bgColor,
     titleColor: 'text-black dark:text-white',
-    textColor: 'text-gray-500',
+    textColor:'text-body-text-light dark:text-body-text-dark',
   },
   content: {
     bgColor: sharedColors.bgColor,
