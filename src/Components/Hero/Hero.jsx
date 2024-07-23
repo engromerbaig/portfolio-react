@@ -7,7 +7,7 @@ import omerImage from '../../assets/images/omer.jpg';
 const Hero = () => {
   return (
     <section className={`${theme.hero.bgColor}   py-12 font-sans`}>
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
         <div className="flex flex-col w-full md:w-1/2 justify-center items-start ">
           <Heading 
             title="From Pixels to Logic: Your One-Stop Dev Hub." 
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
         {/* parent for hero image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center p-4 relative transform translate-x-[-10px] lg:translate-x-0">
+        <div className="w-full md:w-1/2 flex justify-center  items-center my-10 lg:my-0 p-4 relative transform translate-x-[-10px] lg:translate-x-0">
           <img src={omerImage} alt="Hero" className="w-3/4 rounded-md lg:w-1/2 aspect-auto shadow-hero-image " />
           <div className="absolute w-3/4 lg:w-1/2 bottom-4 lg:left-12 bg-theme-blue bg-opacity-100 p-4  shadow-lg">
             <p className="text-white ">"Alone we can do so little; together we can do so much." – Helen Keller</p>
