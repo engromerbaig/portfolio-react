@@ -38,9 +38,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                     {/* Custom hamburger menu */}
                     <button onClick={toggleMenu} className={`relative ${isMenuOpen ? 'open' : ''}`}>
                         <div className="hamburger">
-                            <span className="line"></span>
-                            <span className="line"></span>
-                            <span className="line"></span>
+                            <span className="line bg-black dark:bg-white "></span>
+                            <span className="line bg-black dark:bg-white "></span>
+                            <span className="line bg-black dark:bg-white"></span>
                         </div>
                     </button>
                 </div>
