@@ -14,7 +14,7 @@ const StatisticItem = ({ title, iconType, value }) => {
   const Icon = iconMap[iconType] || FaCode;
 
   return (
-    <div>
+    <div className='flex flex-col gap-4'>
       <h1 className='font-semibold'>{title}</h1>
       <div className="flex items-center justify-center gap-2">
         <Icon className={iconStyles} />
