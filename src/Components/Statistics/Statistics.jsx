@@ -60,15 +60,15 @@ const Statistics = () => {
       </div>
 
     <div className="grid grid-col md:grid-cols-3 place-items-center">
-      <div className="statistic">
+      <div>
         <h1>Lines of Code</h1>
         <p className='text-center text-xl'>{linesOfCode}</p>
       </div>
-      <div className="statistic">
+      <div>
         <h1>Visitors Today</h1>
         <p className='text-center text-xl'>{visitors}</p>
       </div>
-      <div className="statistic">
+      <div>
         <h1>Countries Served</h1>
         <p className='text-center text-xl'>20+</p>
       </div>
