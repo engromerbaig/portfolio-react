@@ -21,7 +21,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                         <Link 
                             key={index} 
                             to={link.to} 
-                            className="flex items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                            className="flex items-center w-full text-xl text-start p-4 hover:bg-light-hover dark:hover:bg-dark-hover"
                             onClick={closeMenu}
                         >
                             <Icon className="text-2xl mx-4" /> {/* Adjust icon size if necessary */}
@@ -30,7 +30,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                     );
                 })}
                 <div
-                    className="flex items-center w-full text-xl text-start p-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    className="flex items-center w-full text-xl text-start p-4 hover:bg-light-hover dark:hover:bg-dark-hover cursor-pointer"
                     onClick={toggleDarkMode}
                 >
                     <MdDarkMode

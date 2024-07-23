@@ -16,6 +16,9 @@ export default {
         'theme-dark': '#232323',
         'theme-light': '#FFFFFF',
         'dark-offcanvas':"#353535",
+        'dark-hover':"#454545",
+        'light-hover':"#F5F5F5",
+
 
 
       },
