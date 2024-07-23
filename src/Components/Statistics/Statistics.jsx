@@ -61,7 +61,7 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   return (
-    <div className='py-16 border-b-2 border-t-2 border-gray-200'>
+    <div className='py-16 border-b-2 border-t-2  border-light-hover dark:border-dark-hover'>
       <div className="text-center mb-8">
         <Heading
           title="My Stats"
