@@ -32,8 +32,9 @@ const OffCanvas = ({ isMenuOpen, closeMenu,darkMode,toggleDarkMode }) => {
                 <FaTimes className="text-2xl cursor-pointer mb-6 self-end mr-4 mt-4" onClick={closeMenu} />
 
                 {/* Navlist items here */}
+
                 {links.map((link, index) => (
-                        <Link key={index} to={link.to} className={`${theme.navbar.textColor} mr-4`}>{link.label}</Link>
+                        <Link key={index} to={link.to} className="text-black dark:text-white w-full text-xl text-start p-4">{link.label}</Link>
                     ))}
 
                 {/* theme toggler */}
