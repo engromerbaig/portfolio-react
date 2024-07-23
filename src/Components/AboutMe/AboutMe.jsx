@@ -7,7 +7,7 @@ const AboutMe = () => {
   const fullText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tempore, cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium. cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium";
 
   return (
-    <div className="grid md:grid-cols-2 py-16 px-16">
+    <div className="grid md:grid-cols-2 py-24 px-20">
       <div className="flex justify-center p-2">
         <img src={omerImage} alt="Hero" className="w-full lg:w-2/5 aspect-auto shadow-aboutme-image" />
       </div>

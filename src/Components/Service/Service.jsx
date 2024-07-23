@@ -6,7 +6,7 @@ import serviceData from "./serviceData"; // Ensure the import path is correct
 
 const Service = () => {
   return (
-    <div className="py-32 px-12">
+    <div className="pt-48 pb-24 px-20 border-b-2  border-light-hover dark:border-dark-hover">
       <div className="text-center">
         <Heading 
           title="You‘re Safe And in Good Hands" 
