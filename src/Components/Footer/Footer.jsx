@@ -36,6 +36,7 @@ const Footer = ({ darkMode }) => {
             <Link
               key={index}
               to={link.to}
+              className="text-theme-blue font-semibold"
             >
               {link.label}
             </Link>
@@ -44,9 +45,10 @@ const Footer = ({ darkMode }) => {
 
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Contact</h1>
-          <p>omerbaigde@gmail.com</p>
-          <p>Hamburg/Germany</p>
-          <p>+4915217143817</p>
+          <a href="mailto:omerbaigde@gmail.com">omerbaigde@gmail.com</a>
+          <p>Hamburg, Germany</p>
+          <a href="https://wa.me/4915217143817" target="_blank" rel="noopener noreferrer">+4915217143817</a>
+
 
           <div className="flex gap-4">
             <div className="flex gap-6">
@@ -66,7 +68,7 @@ const Footer = ({ darkMode }) => {
       </div>
 
       {/* site credits */}
-      <div className="flex justify-center items-center py-3">
+      <div className="flex justify-center items-center py-3 border-b-2 border-gray-200">
         Copyright © Muhammad Omer Baig 2024.
       </div>
     </div>

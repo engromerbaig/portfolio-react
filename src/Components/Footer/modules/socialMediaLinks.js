@@ -5,7 +5,7 @@ export const socialMediaLinks = [
     alt: 'Github',
   },
   {
-    link: 'https://www.upwork.com',
+    link: 'https://www.upwork.com/freelancers/~01bd9253701daebaeb',
     icon: 'upwork',
     alt: 'Upwork',
   },
