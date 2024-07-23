@@ -2,7 +2,7 @@ import React from 'react';
 import { animated } from '@react-spring/web';
 import { FaCode, FaUsers, FaEarthAmericas  } from "react-icons/fa6";
 
-const iconStyles = "text-2xl aspect-square text-theme-blue";
+const iconStyles = "text-2xl aspect-square text-theme-blue motion-safe:animate-pulse";
 
 const iconMap = {
   code: FaCode,
