@@ -1,7 +1,7 @@
 import React from 'react';
 import omerImage from '../../assets/images/omer2.jpg';
 import Heading from '../Heading/Heading';
-import { socialMediaLinks } from '../Footer/modules/socialMediaLinks';
+import SocialRow from '../Footer/modules/SocialRow';
 
 const AboutMe = () => {
   const fullText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tempore, cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium. cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium";
@@ -18,24 +18,9 @@ const AboutMe = () => {
             {fullText}
           </p>
           {/* social row now */}
-          <div className="flex gap-6">
-              {socialMediaLinks.map((link, index) => {
-                const Icon = link.icon; // Extract icon component from link
+          <SocialRow />
 
-                return (
-                  <a
-                    key={index}
-                    href={link.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Icon 
-                    className={`text-3xl  text-body-text-light dark:text-body-text-dark`}
-                    />
-                  </a>
-                );
-              })}
-            </div>
+            
       </div>
     </div>
   );

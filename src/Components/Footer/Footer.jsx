@@ -1,7 +1,6 @@
 import { links } from "../Navbar/modules/links";
 import { Link } from "react-router-dom";
-import { socialMediaLinks } from "./modules/socialMediaLinks";
-
+import SocialRow from "./modules/SocialRow";
 
 const Footer = ({ darkMode }) => {
   return (
@@ -50,24 +49,9 @@ const Footer = ({ darkMode }) => {
 
           <div className="flex gap-4">
             {/* social row now */}
-            <div className="flex gap-6">
-              {socialMediaLinks.map((link, index) => {
-                const Icon = link.icon; // Extract icon component from link
+          
+          <SocialRow />
 
-                return (
-                  <a
-                    key={index}
-                    href={link.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Icon 
-                    className={`text-3xl  text-body-text-light dark:text-body-text-dark`}
-                    />
-                  </a>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
