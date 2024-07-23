@@ -6,7 +6,7 @@ const sharedColors = {
 export const theme = {
   sectionBg:{
     bgColor:'bg-theme-light dark:bg-theme-dark',
-    textColor:'text-black dark:text-white',
+    textColor:'text-body-text-light dark:text-body-text-dark',
   },
 
   navbar: {

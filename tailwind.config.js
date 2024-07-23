@@ -18,8 +18,8 @@ export default {
         'dark-offcanvas':"#353535",
         'dark-hover':"#454545",
         'light-hover':"#F5F5F5",
-        'body-text-light':"#292929",
-        'body-text-dark':"#B9B9B9",
+        'body-text-light':"#737373",
+        'body-text-dark':"#b9b9b9",
 
 
 
