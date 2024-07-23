@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Heading from '../Heading/Heading';
 
 const getInitialLinesOfCode = () => {
   const initialLines = 2000;
@@ -50,19 +51,29 @@ const Statistics = () => {
   }, []); // Run only on initial render
 
   return (
-    <div className="statistics">
+    <div className='py-16'>
+    <div className="text-center mb-8">
+        <Heading 
+          title="My Stats"
+          text="My Ever Growing Numbers"
+        />
+      </div>
+
+    <div className="grid grid-col md:grid-cols-3 place-items-center">
       <div className="statistic">
-        <h3>Lines of Code</h3>
-        <p>{linesOfCode}</p>
+        <h1>Lines of Code</h1>
+        <p className='text-center text-xl'>{linesOfCode}</p>
       </div>
       <div className="statistic">
-        <h3>Visitors Today</h3>
-        <p>{visitors}</p>
+        <h1>Visitors Today</h1>
+        <p className='text-center text-xl'>{visitors}</p>
       </div>
       <div className="statistic">
-        <h3>Countries Served</h3>
-        <p>20+</p>
+        <h1>Countries Served</h1>
+        <p className='text-center text-xl'>20+</p>
       </div>
+    </div>
+
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Home = ({darkMode}) => {
       <Hero />
       <Service />
       <Tools />
-      {/* <Statistics /> */}
+      <Statistics />
       <Projects />
       <AboutMe />
       <Message />
