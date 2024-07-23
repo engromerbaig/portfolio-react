@@ -19,13 +19,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
     return (
         <>
-            <nav className={`fixed backdrop-blur-sm px-20 py-6 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b  border-light-hover dark:border-dark-hover shadow-sm`}>
+            <nav className={`fixed backdrop-blur-sm px-10 lg:px-20 py-6 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b  border-light-hover dark:border-dark-hover shadow-sm`}>
                 <div className="flex items-center">
                     <Link to="/">
                         <img 
                             src={darkMode ? logoWhite : logoBlack} 
                             alt="Logo" 
-                            className="h-10 mx-10 cursor-pointer" 
+                            className="h-10  cursor-pointer" 
                         />
                     </Link>
                 </div>
