@@ -12,16 +12,16 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
     <div
       className={`flex flex-col ${
         isOdd ? 'md:flex-row-reverse' : 'md:flex-row ' // Apply justify-end for even cases
-      } px-4 py-14 items-center justify-center relative`}
+      } px-4 py-14 items-center justify-center relative `}
     >
       <img
         src={image}
         alt=""
-        className={`w-full md:w-1/3 aspect-auto rounded-lg ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
+        className={`w-full md:w-1/3 aspect-auto rounded-t-lg  md:rounded-lg ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
       />
       {/* content container */}
       <div
-        className={`flex w-full md:w-1/2 gap-4 flex-col items-start justify-center shadow-2xl rounded-lg p-6 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
+        className={`flex w-full md:w-1/2 gap-4 flex-col items-start justify-center shadow-2xl rounded-b-lg md:rounded-lg p-6 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
           isOdd ? 'order-2 md:-mr-20 origin-right  md:hover:-translate-x-12' : 'md:-ml-20 origin-left  md:hover:translate-x-12'
         } // Remove order for even cases`}
       >
