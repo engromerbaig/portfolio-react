@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <section className={`${theme.hero.bgColor}   py-12 font-sans`}>
       <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
-        <div className="flex flex-col w-full md:w-1/2 justify-center items-start ">
+        <div className="flex flex-col w-full lg:w-1/2 justify-center items-start ">
           <Heading 
             title="From Pixels to Logic: Your One-Stop Dev Hub." 
             text="I design, develop, and deploy stunning web applications, turning ideas into reality seamlessly. Let's discuss your project!" 
           />
-          <div className="flex flex-col items-center justify-start w-full lg:flex-row  gap-4">
+          <div className="flex flex-col items-center justify-start w-full md:flex-row  gap-4">
             <Button
               text="Contact Me"
               to="#contact"
