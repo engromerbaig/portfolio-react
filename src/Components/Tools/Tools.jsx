@@ -7,7 +7,7 @@ import otherTechnologies from "./modules/otherTechnologies";
 
 const Tools = () => {
   return (
-    <div className="py-24 px-20">
+    <div className="py-24 ">
       <div className="text-center mb-8">
         <Heading 
           title="Tools Of The Present And Future"
