@@ -1,10 +1,22 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { links } from '../Navbar/modules/links'; // Adjust path if necessary
 import { MdDarkMode } from 'react-icons/md';
 
 const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
+
+    const location = useLocation();
+
+    // Close the menu when the route changes
+    useEffect(() => {
+      if (isMenuOpen) {
+        closeMenu();
+      }
+    }, [location.pathname]); // Trigger useEffect on route change
+
+
     return (
         <>
             {isMenuOpen && (
