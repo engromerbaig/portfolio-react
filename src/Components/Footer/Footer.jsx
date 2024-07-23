@@ -61,7 +61,7 @@ const Footer = ({ darkMode }) => {
                     rel="noopener noreferrer"
                   >
                     <Icon 
-                    className={`text-3xl  ${darkMode ? 'text-white' : 'text-black'}`}
+                    className={`text-3xl  text-body-text-light dark:text-body-text-dark`}
                     />
                   </a>
                 );

@@ -1,5 +1,6 @@
 import React from 'react';
-import githubIcon from '../../../assets/icons/github.svg'
+import {FaGithub} from "react-icons/fa6";
+
 
 const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) => {
   // Determine layout based on index (odd/even)
@@ -38,9 +39,12 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
           
             </a>
 
-            {gitLink && <a href={gitLink} target="_blank" rel="noopener noreferrer">
-            <img src={githubIcon} alt="GitHub" className="w-6 aspect-square"/>
-            </a> }
+
+            {
+            gitLink && <a href={gitLink} target="_blank" rel="noopener noreferrer">
+            <FaGithub className={`text-2xl text-body-text-light dark:text-body-text-dark`} />
+            </a> 
+            }
             
         </div>
       </div>
