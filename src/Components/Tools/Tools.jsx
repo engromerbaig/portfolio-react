@@ -7,7 +7,7 @@ import otherTechnologies from "./modules/otherTechnologies";
 
 const Tools = () => {
   return (
-    <div>
+    <div className="py-16 px-12">
       <div className="text-center mb-8">
         <Heading 
           title="Tools Of The Present And Future"
@@ -27,7 +27,7 @@ const Tools = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-24 px-24 py-10">
+      <div className="grid grid-cols-2 gap-4 place-content-center sm:grid-cols-4 px-24 py-10">
         {otherTechnologies.map((tech, index) => (
           <ToolIcon key={index} imgSrc={tech.imgSrc} text={tech.text} />
         ))}
