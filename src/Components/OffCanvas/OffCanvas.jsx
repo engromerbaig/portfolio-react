@@ -14,7 +14,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
       if (isMenuOpen) {
         closeMenu();
       }
-    }, [location.pathname]); // Trigger useEffect on route change
+    }, [location.pathname,darkMode]); // Trigger useEffect on route change
 
 
     // this turns off body scroll when offcanvas is opened
