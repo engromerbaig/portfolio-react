@@ -1,17 +1,21 @@
+import { FaGithub, FaSquareUpwork, FaLinkedin } from "react-icons/fa6";
+
+
+
 export const socialMediaLinks = [
   {
     link: 'https://github.com/engromerbaig',
-    icon: 'github',
+    icon: FaGithub,
     alt: 'Github',
   },
   {
     link: 'https://www.upwork.com/freelancers/~01bd9253701daebaeb',
-    icon: 'upwork',
+    icon: FaSquareUpwork,
     alt: 'Upwork',
   },
   {
     link: 'https://www.linkedin.com/in/iomerbaig/',
-    icon: 'linkedin',
+    icon: FaLinkedin,
     alt: 'LinkedIn',
   },
 ];

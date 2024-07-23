@@ -1,25 +1,9 @@
 import { links } from "../Navbar/modules/links";
 import { Link } from "react-router-dom";
 import { socialMediaLinks } from "./modules/socialMediaLinks";
-import { FaGithub, FaSquareUpwork, FaLinkedin } from "react-icons/fa6";
-
-const iconStyles = "text-3xl aspect-square text-theme-blue";
 
 
 const Footer = ({ darkMode }) => {
-  const renderIcon = (icon) => {
-    switch (icon) {
-      case 'github':
-        return <FaGithub className={iconStyles} />;
-      case 'upwork':
-        return <FaSquareUpwork className={iconStyles} />;
-      case 'linkedin':
-        return <FaLinkedin className={iconStyles} />;
-      default:
-        return null;
-    }
-  };
-
   return (
     // parent for full footer
     <div className="bg-theme-light dark:bg-theme-dark text-body-text-light dark:text-body-text-dark">
@@ -27,41 +11,61 @@ const Footer = ({ darkMode }) => {
       <div className="grid grid-col md:grid-cols-12 justify-center items-start border-t-2 border-b-2 border-gray-200 px-28 py-14 gap-10 md:gap-4">
         <div className="col-span-6 flex flex-col gap-4 pr-20">
           <h1>About</h1>
-          <p className="leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quaerat vero corrupti, mollitia soluta eaque voluptatum ex praesentium cupiditate accusamus quasi? Exercitationem maiores soluta enim natus commodi doloribus quidem quis?</p>
+          <p className="leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quaerat
+            vero corrupti, mollitia soluta eaque voluptatum ex praesentium
+            cupiditate accusamus quasi? Exercitationem maiores soluta enim natus
+            commodi doloribus quidem quis?
+          </p>
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Links</h1>
-          {links.map((link, index) => (
-            <Link
-              key={index}
-              to={link.to}
-              className="text-theme-blue font-semibold"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link, index) => {
+            const Icon = link.icon; // Extract icon component from link
+
+            return (
+              <Link
+                key={index}
+                to={link.to}
+                className="text-theme-blue font-semibold"
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Contact</h1>
           <a href="mailto:omerbaigde@gmail.com">omerbaigde@gmail.com</a>
           <p>Hamburg, Germany</p>
-          <a href="https://wa.me/4915217143817" target="_blank" rel="noopener noreferrer">+4915217143817</a>
-
+          <a
+            href="https://wa.me/4915217143817"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            +4915217143817
+          </a>
 
           <div className="flex gap-4">
             <div className="flex gap-6">
-              {socialMediaLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {renderIcon(link.icon)}
-                </a>
-              ))}
+              {socialMediaLinks.map((link, index) => {
+                const Icon = link.icon; // Extract icon component from link
+
+                return (
+                  <a
+                    key={index}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon 
+                    className={`text-3xl  ${darkMode ? 'text-white' : 'text-black'}`}
+                    />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -73,6 +77,6 @@ const Footer = ({ darkMode }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;
