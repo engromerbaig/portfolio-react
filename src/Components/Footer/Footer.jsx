@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 import { socialMediaLinks } from "./modules/socialMediaLinks";
 import { FaGithub, FaSquareUpwork, FaLinkedin } from "react-icons/fa6";
 
+const iconStyles = "text-3xl aspect-square text-theme-blue";
+
+
 const Footer = ({ darkMode }) => {
   const renderIcon = (icon) => {
     switch (icon) {
       case 'github':
-        return <FaGithub className="text-3xl aspect-square text-theme-blue" />;
+        return <FaGithub className={iconStyles} />;
       case 'upwork':
-        return <FaSquareUpwork className="text-3xl aspect-square text-theme-blue" />;
+        return <FaSquareUpwork className={iconStyles} />;
       case 'linkedin':
-        return <FaLinkedin className="text-3xl aspect-square text-theme-blue" />;
+        return <FaLinkedin className={iconStyles} />;
       default:
         return null;
     }
