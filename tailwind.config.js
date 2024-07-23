@@ -15,6 +15,7 @@ export default {
         'theme-blue': '#3B82F6',
         'theme-dark': '#232323',
         'theme-light': '#FFFFFF',
+        'dark-offcanvas':"#353535",
 
 
       },
