@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Heading from '../Heading/Heading';
+import { FaCode, FaUsers , FaGlobe  } from "react-icons/fa6";
+
+const iconStyles = "text-2xl aspect-square text-theme-blue";
+
+
 
 // Function to initialize lines of code
 const getInitialLinesOfCode = () => {
@@ -71,20 +76,33 @@ const Statistics = () => {
 
       <div className="grid grid-col md:grid-cols-3 place-items-center px-16">
         <div>
+          <div className="flex items-center gap-2">
+
           <h1 className='font-semibold'>Lines of Code</h1>
+          <FaCode className={iconStyles}   />
+          </div>
+          
           <animated.p className='text-center text-xl'>
             {animatedLinesOfCode.to(n => Math.floor(n))}
           </animated.p>
         </div>
         <div>
-          <h1 className='font-semibold'>Visitors Today</h1>
+        <div className="flex items-center gap-2">
+
+<h1 className='font-semibold'>Visitor's Today</h1>
+<FaUsers  className={iconStyles}   />
+</div>
           <animated.p className='text-center text-xl'>
             {animatedVisitors.to(n => Math.floor(n))}
           </animated.p>
         </div>
         <div>
-          <h1 className='font-semibold'>Countries Served</h1>
-          <animated.p className='text-center text-xl'>
+        <div className="flex items-center gap-2">
+
+<h1 className='font-semibold'>Countries Served</h1>
+<FaGlobe className={iconStyles}   />
+</div>          
+      <animated.p className='text-center  text-xl'>
             {animatedCountries.to(n => Math.floor(n))}
           </animated.p>
         </div>
