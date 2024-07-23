@@ -34,7 +34,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                     onClick={closeMenu}
                 />
             )}
-            <div className={`fixed top-0 right-0 h-full w-96 bg-white text-black dark:bg-dark-offcanvas dark:text-white flex flex-col items-start pt-4 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}>
+            <div className={`fixed top-0 right-0 h-full w-80 bg-white text-black dark:bg-dark-offcanvas dark:text-white flex flex-col items-start pt-4 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}>
                 <FaTimes className="text-2xl cursor-pointer mb-6 self-end mr-4 mt-4" onClick={closeMenu} />
                 {links.map((link, index) => {
                     const Icon = link.icon; // Extract icon component from link

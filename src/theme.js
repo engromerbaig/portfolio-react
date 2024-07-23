@@ -13,11 +13,6 @@ export const theme = {
     bgColor: 'sharedColors.bgColor',
     textColor: sharedColors.textColor,
   },
-  offCanvas: {
-    bgColor: 'bg-white',
-    textColor: 'text-black',
-    overlayColor: 'bg-black bg-opacity-50',
-  },
 
 
   hero: {
