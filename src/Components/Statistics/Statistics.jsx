@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from '@react-spring/web';
+import { useSpring } from '@react-spring/web';
 import Heading from '../Heading/Heading';
-import { FaCode, FaUsers , FaGlobe  } from "react-icons/fa6";
-
-const iconStyles = "text-2xl aspect-square text-theme-blue";
-
-
-
+import StatisticItem from './modules/StatisticItem';
 // Function to initialize lines of code
 const getInitialLinesOfCode = () => {
   const initialLines = 10000;
@@ -42,7 +37,7 @@ const incrementVisitorsCount = () => {
 const Statistics = () => {
   const [linesOfCode, setLinesOfCode] = useState(getInitialLinesOfCode());
   const [visitors, setVisitors] = useState(getVisitorsCount());
-  const [countries,setCountries] = useState(15);
+  const [countries] = useState(15);
 
   // Animated props for react-spring
   const { number: animatedLinesOfCode } = useSpring({ number: linesOfCode, from: { number: 0 }, config: { duration: 2000 } });
@@ -74,45 +69,10 @@ const Statistics = () => {
         />
       </div>
 
-      <div className="grid grid-col md:grid-cols-3 place-items-center px-16">
-        <div>
-        <h1 className='font-semibold'>Lines of Code</h1>
-
-          <div className="flex items-center justify-center gap-2">
-
-          <FaCode className={iconStyles}   />
-          <animated.p className=' text-xl'>
-            {animatedLinesOfCode.to(n => Math.floor(n))}
-          </animated.p>
-          </div>
-          
-      
-        </div>
-        <div>
-
-        <h1 className='font-semibold'>Visitor's Today</h1>
-
-        <div className="flex items-center justify-center gap-2">
-
-<FaUsers  className={iconStyles}   />
-<animated.p className='text-xl'>
-            {animatedVisitors.to(n => Math.floor(n))}
-          </animated.p>
-</div>
-        
-        </div>
-        <div>
-        <h1 className='font-semibold'>Countries Served</h1>
-
-        <div className="flex items-center justify-center gap-2">
-
-<FaGlobe className={iconStyles}   />
-<animated.p className='text-xl'>
-            {animatedCountries.to(n => Math.floor(n))}
-          </animated.p>
-</div>          
-    
-        </div>
+      <div className="grid grid-col md:grid-cols-3 place-items-center px-16 gap-8">
+        <StatisticItem title="Lines of Code" iconType="code" value={animatedLinesOfCode} />
+        <StatisticItem title="Visitors Today" iconType="users" value={animatedVisitors} />
+        <StatisticItem title="Countries Served" iconType="globe" value={animatedCountries} />
       </div>
     </div>
   );
