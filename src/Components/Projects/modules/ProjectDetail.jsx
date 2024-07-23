@@ -17,12 +17,12 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
       <img
         src={image}
         alt=""
-        className={`w-1/3 aspect-auto rounded-lg ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
+        className={`w-full md:w-1/3 aspect-auto rounded-lg ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
       />
       {/* content container */}
       <div
-        className={`flex w-1/2 gap-4 flex-col items-start justify-center shadow-2xl rounded-lg p-6 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
-          isOdd ? 'order-2 lg:-mr-20 origin-right  lg:hover:-translate-x-12' : 'lg:-ml-20 origin-left  lg:hover:translate-x-12'
+        className={`flex w-full md:w-1/2 gap-4 flex-col items-start justify-center shadow-2xl rounded-lg p-6 bg-theme-light dark:bg-dark-offcanvas text-body-text-light dark:text-body-text-dark relative  z-10 transform transition duration-700 ease-in-out  ${
+          isOdd ? 'order-2 md:-mr-20 origin-right  md:hover:-translate-x-12' : 'md:-ml-20 origin-left  md:hover:translate-x-12'
         } // Remove order for even cases`}
       >
         <h1 className="font-semibold">{title}</h1>
