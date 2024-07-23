@@ -69,7 +69,7 @@ const Statistics = () => {
         />
       </div>
 
-      <div className="grid grid-col md:grid-cols-3 place-items-center px-16 gap-8">
+      <div className="grid grid-col md:grid-cols-3 place-items-center px-6 gap-8">
         <StatisticItem title="Lines of Code" iconType="code" value={animatedLinesOfCode} />
         <StatisticItem title="Visitors Today" iconType="users" value={animatedVisitors} />
         <StatisticItem title="Countries Served" iconType="globe" value={animatedCountries} />
