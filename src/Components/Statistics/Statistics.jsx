@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Heading from '../Heading/Heading';
 import StatisticItem from './modules/StatisticItem';
 import { theme } from '../../theme';
 
 // Function to initialize lines of code
 const getInitialLinesOfCode = () => {
-  const initialLines = 10000;
-  const initialTimestamp = new Date('2023-01-01T00:00:00Z').getTime();
-  const currentTime = new Date().getTime();
-  const elapsedTime = currentTime - initialTimestamp;
-  const increments = Math.floor(elapsedTime / (3 * 60 * 60 * 1000)); // 3 hours in milliseconds
-  return initialLines + increments * 10;
+  return 10000; // Reset to 10000
 };
 
 // Function to get visitor count
@@ -48,6 +43,9 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   useEffect(() => {
+    // Reset lines of code every time component mounts
+    setLinesOfCode(10000);
+
     // Update lines of code every 3 hours
     const intervalId = setInterval(() => {
       setLinesOfCode(prevLines => prevLines + 10);
