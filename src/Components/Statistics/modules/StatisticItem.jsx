@@ -1,13 +1,13 @@
 import React from 'react';
-import { animated } from '@react-spring/web';
-import { FaCode, FaUsers, FaEarthAmericas  } from "react-icons/fa6";
+import { motion } from 'framer-motion';
+import { FaCode, FaUsers, FaEarthAmericas } from 'react-icons/fa6';
 
 const iconStyles = "text-2xl aspect-square text-theme-blue motion-safe:animate-pulse";
 
 const iconMap = {
   code: FaCode,
   users: FaUsers,
-  globe: FaEarthAmericas ,
+  globe: FaEarthAmericas,
 };
 
 const StatisticItem = ({ title, iconType, value }) => {
@@ -18,9 +18,14 @@ const StatisticItem = ({ title, iconType, value }) => {
       <h1 className='font-semibold'>{title}</h1>
       <div className="flex items-center justify-center gap-2">
         <Icon className={iconStyles} />
-        <animated.p className='text-2xl'>
-          {value.to(n => Math.floor(n))}
-        </animated.p>
+        <motion.p
+          className='text-2xl font-bold'
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
+        >
+          {value.toLocaleString()}
+        </motion.p>
       </div>
     </div>
   );
