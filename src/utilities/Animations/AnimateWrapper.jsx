@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 // Default animation variants
 const defaultContainerVariants = {
@@ -30,12 +31,22 @@ const AnimateWrapper = ({
   itemVariants = defaultItemVariants,
   className
 }) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start(animate);
+    }
+  }, [controls, animate, inView]);
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       variants={containerVariants}
       initial={initial}
-      animate={animate}
+      animate={controls}
     >
       {React.Children.map(children, (child) =>
         React.cloneElement(child, { variants: itemVariants })
