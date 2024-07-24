@@ -3,11 +3,12 @@ import React from "react";
 import "./Service.css"; // Import the CSS file for styling
 import Heading from "../Heading/Heading";
 import serviceData from "./serviceData"; // Ensure the import path is correct
+import { theme } from "../../theme";
 
 const Service = () => {
   return (
-    <div className="pt-48 pb-24  border-b-2  border-light-hover dark:border-dark-hover">
-      <div className="text-center">
+    <div className={`pt-48 pb-24 border-b-2 border-light-hover dark:border-dark-hover ${theme.sectionPaddings.horizontalPx}`}>
+    <div className="text-center">
         <Heading 
           title="You‘re Safe And in Good Hands" 
           text="Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service." 

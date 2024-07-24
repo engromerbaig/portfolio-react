@@ -2,12 +2,13 @@ import React from 'react';
 import omerImage from '../../assets/images/omer2.jpg';
 import Heading from '../Heading/Heading';
 import SocialRow from '../Footer/modules/SocialRow';
+import { theme } from '../../theme';
 
 const AboutMe = () => {
   const fullText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tempore, cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium. cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium";
 
   return (
-    <div className="grid md:grid-cols-2 gap-10 py-24 ">
+    <div className={`grid md:grid-cols-2 gap-10 py-24 ${theme.sectionPaddings.horizontalPx}`} >
       <div className="flex justify-center items-center p-0">
         <img src={omerImage} alt="Hero" className="w-3/4 md:w-1/2 md:h-3/4  h-full shadow-aboutme-image" />
       </div>

@@ -2,12 +2,15 @@ import Heading from "../Heading/Heading";
 import ProjectDetail from "./modules/ProjectDetail";
 import projectData from "./modules/projectData";
 import Button from "../Button/Button";
-
+import { theme } from "../../theme";
 
 const Projects = () => {
-    return ( <div id="projects" className="py-20 border-b-2  border-light-hover dark:border-dark-hover">
+    return ( 
+    
+    
+      <div id="projects" className={`py-20 border-b-2 ${theme.sectionPaddings.horizontalPx} border-light-hover dark:border-dark-hover`}>
 
-<div className="text-center">
+      <div className="text-center">
         <Heading 
           title="Projects" 
           text="My Recent Projects." 

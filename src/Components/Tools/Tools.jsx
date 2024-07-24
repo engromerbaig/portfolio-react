@@ -4,10 +4,11 @@ import Heading from "../Heading/Heading";
 import ToolIcon from "./modules/ToolIcon";
 import toolData from "./modules/toolData";
 import otherTechnologies from "./modules/otherTechnologies";
+import { theme } from "../../theme";
 
 const Tools = () => {
   return (
-    <div className="py-24 ">
+    <div className={`py-24 ${theme.sectionPaddings.horizontalPx}  `}>
       <div className="text-center mb-8">
         <Heading 
           title="Tools Of The Present And Future"

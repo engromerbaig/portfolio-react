@@ -6,7 +6,7 @@ import omerImage from '../../assets/images/omer.jpg';
 
 const Hero = () => {
   return (
-    <section className={`${theme.hero.bgColor}   py-12 font-sans`}>
+    <section className={`${theme.hero.bgColor}  ${theme.sectionPaddings.horizontalPx}  py-12 font-sans`}>
       <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
         <div className="flex flex-col w-full lg:w-1/2 justify-center items-start ">
           <Heading 

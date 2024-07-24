@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSpring } from '@react-spring/web';
 import Heading from '../Heading/Heading';
 import StatisticItem from './modules/StatisticItem';
+import { theme } from '../../theme';
 // Function to initialize lines of code
 const getInitialLinesOfCode = () => {
   const initialLines = 10000;
@@ -61,8 +62,8 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   return (
-    <div className='py-16 border-b-2 border-t-2  border-light-hover dark:border-dark-hover'>
-      <div className="text-center mb-8">
+    <div className={`pt-48 pb-24 border-b-2 border-light-hover dark:border-dark-hover ${theme.sectionPaddings.horizontalPx}`}>
+    <div className="text-center mb-8">
         <Heading
           title="My Stats"
           text="My Ever Growing Numbers"
