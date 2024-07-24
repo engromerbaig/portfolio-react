@@ -39,14 +39,14 @@ const Hero = () => {
         </div>
         
         {/* parent for hero image */}
-        <FadeWrapper order={3}>
-          <div className="w-full md:w-1/2 flex justify-center items-center my-10 lg:my-0 p-2 relative transform translate-x-[-10px] lg:translate-x-0">
+          <FadeWrapper className="justify-center items-center w-full md:w-1/2 flex  my-10 lg:my-0 p-2 relative transform translate-x-[-10px] lg:translate-x-0" order={3}>
+
             <img src={omerImage} alt="Hero" className="w-3/4 lg:w-1/2 aspect-auto shadow-hero-image" />
             <div className="absolute w-3/4 lg:w-1/2 bottom-0 lg:left-12 bg-theme-blue bg-opacity-100 p-3 shadow-lg">
               <p className="text-white text-sm">"Alone we can do so little; together we can do so much." – Helen Keller</p>
             </div>
-          </div>
-        </FadeWrapper>
+            </FadeWrapper>
+
       </div>
     </section>
   );
