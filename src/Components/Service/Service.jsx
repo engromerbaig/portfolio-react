@@ -11,7 +11,7 @@ const Service = () => {
     <div className="text-center">
         <Heading 
           title="You‘re Safe And in Good Hands" 
-          text="Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service." 
+          text="Customer satisfaction is my priority, and in order to do that I decided to pickup skills and principles to provide quality service." 
         />
       </div>
       <div className="grid lg:grid-cols-3 justify-center text-body-text-light dark:text-body-text-dark">
