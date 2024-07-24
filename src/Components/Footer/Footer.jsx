@@ -1,6 +1,7 @@
 import { links } from "../Navbar/modules/links";
 import { Link } from "react-router-dom";
 import SocialRow from "./modules/SocialRow";
+import { myDescription } from "../AboutMe/myDescription";
 
 const Footer = ({ darkMode }) => {
   return (
@@ -11,11 +12,12 @@ const Footer = ({ darkMode }) => {
         <div className="col-span-6 flex flex-col gap-4 lg:pr-20">
           <h1>About</h1>
           <p className="leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quaerat
-            vero corrupti, mollitia soluta eaque voluptatum ex praesentium
-            cupiditate accusamus quasi? Exercitationem maiores soluta enim natus
-            commodi doloribus quidem quis?
+          {myDescription.text}
           </p>
+
+          <h1>Languages</h1>
+          <p>English (Native) & German (A2) </p>
+
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
