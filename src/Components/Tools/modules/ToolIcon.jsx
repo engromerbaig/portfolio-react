@@ -1,4 +1,3 @@
-// ToolIcon.js
 const ToolIcon = ({ imgSrc, text }) => {
     return (
       <div className="flex flex-col  items-center">
