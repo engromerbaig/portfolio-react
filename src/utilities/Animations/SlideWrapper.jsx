@@ -4,22 +4,21 @@ import { useInView } from 'react-intersection-observer';
 
 const defaultVariants = {
   hidden: (index) => ({
-    x: index % 2 === 0 ? '100%' : '-100%',  // Ensure the element is well outside the viewport
+    x: index % 2 === 0 ? '100%' : '-100%', // Ensure the element is well outside the viewport
     opacity: 0,
   }),
   visible: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 0.6,  // Increase duration for smoother effect
+      duration: 0.55, // Increase duration for smoother effect
       ease: 'linear',
       staggerChildren: 0.05, // Add a stagger effect
-
     },
   },
 };
 
-const SlideWrapper = ({
+const SlideWrapper = React.memo(({
   children,
   variants = defaultVariants,
   initial = 'hidden',
@@ -48,6 +47,6 @@ const SlideWrapper = ({
       {children}
     </motion.div>
   );
-};
+});
 
 export default SlideWrapper;
