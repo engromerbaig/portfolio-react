@@ -11,9 +11,9 @@ const defaultVariants = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 1,  // Increase duration for smoother effect
-      ease: 'easeInOut',
-      staggerChildren: 0.1, // Add a stagger effect
+      duration: 0.6,  // Increase duration for smoother effect
+      ease: 'linear',
+      staggerChildren: 0.05, // Add a stagger effect
 
     },
   },
