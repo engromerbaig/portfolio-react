@@ -4,15 +4,16 @@ import Heading from '../Heading/Heading';
 import SocialRow from '../Footer/modules/SocialRow';
 import { theme } from '../../theme';
 import { myDescription } from './myDescription';
+import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
 const AboutMe = () => {
   const combinedDescription = `${myDescription.text}\n${myDescription.additionalText}`;
 
   return (
     <div className={`grid md:grid-cols-2 gap-10 py-24 ${theme.sectionPaddings.horizontalPx}`} >
-      <div className="flex justify-center items-center p-0">
+      <FadeWrapper className="flex justify-center items-center p-0">
         <img src={omerImage} alt="Hero" className="w-3/4 md:w-1/2 md:h-3/4  h-full shadow-aboutme-image" />
-      </div>
+      </FadeWrapper>
 
       <div className="flex flex-col gap-6 py-14 px-4 ">
           <p className="h-full">
