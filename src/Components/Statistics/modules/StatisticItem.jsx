@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaCode, FaUsers, FaEarthAmericas } from 'react-icons/fa6';
 
@@ -11,7 +11,30 @@ const iconMap = {
 };
 
 const StatisticItem = ({ title, iconType, value }) => {
+  const [displayValue, setDisplayValue] = useState(0);
   const Icon = iconMap[iconType] || FaCode;
+
+  useEffect(() => {
+    const duration = 2; // Duration in seconds
+    const start = 0;
+    const end = value;
+    let startTime = null;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = (timestamp - startTime) / (duration * 1000);
+      const current = Math.min(start + (end - start) * progress, end);
+
+      setDisplayValue(Math.floor(current));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+
+  }, [value]);
 
   return (
     <div className='flex flex-col gap-4'>
@@ -24,7 +47,7 @@ const StatisticItem = ({ title, iconType, value }) => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2 }}
         >
-          {value.toLocaleString()}
+          {displayValue.toLocaleString()}
         </motion.p>
       </div>
     </div>
