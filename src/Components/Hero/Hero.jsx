@@ -20,7 +20,7 @@ const Hero = () => {
 
               <Button
                 text="Contact Me"
-                to=""
+                to="/contact"
                 hover
               />
               </FadeWrapper>

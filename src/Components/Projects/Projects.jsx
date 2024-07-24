@@ -31,7 +31,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center">
-        <Button text="More Projects" to="" />
+        <Button text="More Projects" to="/projects" />
       </div>
     </div>
   );
