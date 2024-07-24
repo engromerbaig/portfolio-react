@@ -5,6 +5,7 @@ import projectData from './modules/projectData';
 import { theme } from '../../theme';
 import Heading from '../Heading/Heading';
 import Button from '../Button/Button';
+import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
 const Projects = () => {
   return (
@@ -30,9 +31,9 @@ const Projects = () => {
           </SlideWrapper>
         ))}
       </div>
-      <div className="text-center">
+      <FadeWrapper className="text-center">
         <Button text="More Projects" to="/projects" />
-      </div>
+      </FadeWrapper>
     </div>
   );
 };
