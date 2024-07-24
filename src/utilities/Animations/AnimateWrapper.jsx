@@ -9,9 +9,9 @@ const defaultContainerVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-        duration:0.1,
-      delayChildren: 0.3,
-      staggerChildren: 0.2
+        duration:0.05,
+      delayChildren: 0.2,
+      staggerChildren: 0.1,
     }
   }
 };
