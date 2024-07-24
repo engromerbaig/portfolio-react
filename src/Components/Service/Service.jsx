@@ -4,6 +4,7 @@ import Heading from "../Heading/Heading";
 import serviceData from "./serviceData"; // Ensure the import path is correct
 import { theme } from "../../theme";
 import AnimateWrapper from "../../utilities/Animations/AnimateWrapper";
+import FadeWrapper from "../../utilities/Animations/FadeWrapper";
 import { motion } from 'framer-motion';
 
 const Service = () => {
@@ -15,7 +16,7 @@ const Service = () => {
           text="Customer satisfaction is my priority, and in order to do that I decided to pickup skills and principles to provide quality service." 
         />
       </div>
-      <AnimateWrapper
+      <FadeWrapper
         className="grid lg:grid-cols-3 justify-center text-body-text-light dark:text-body-text-dark"
       >
         {serviceData.map((service, index) => (
@@ -33,7 +34,7 @@ const Service = () => {
             </div>
           </motion.div>
         ))}
-      </AnimateWrapper>
+      </FadeWrapper>
     </div>
   );
 };
