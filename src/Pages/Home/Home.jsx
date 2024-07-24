@@ -7,7 +7,7 @@ import Projects from "../../Components/Projects/Projects";
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import Message from "../../Components/Message/Message";
 import { theme } from "../../theme";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../../utilities/Animations/FadeInSection";
 
 const Home = ({ darkMode }) => {
   return (

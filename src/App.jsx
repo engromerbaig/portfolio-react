@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { links } from './Components/Navbar/modules/links';
 import Contact from './Pages/Contact/Contact';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
+
 const App = () => {
     const [darkMode, setDarkMode] = useState(true);
 
