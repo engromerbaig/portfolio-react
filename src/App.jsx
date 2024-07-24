@@ -9,7 +9,7 @@ import { links } from './Components/Navbar/modules/links';
 import Contact from './Pages/Contact/Contact';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
