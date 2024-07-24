@@ -18,7 +18,7 @@
 
 /* Turning Off Horizontal Scroll */
 
-html, body {
+/* html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -26,4 +26,4 @@ html, body {
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
+} */
