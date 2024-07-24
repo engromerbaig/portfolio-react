@@ -62,7 +62,7 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   return (
-    <div className={`pt-48 pb-24 border-b-2 border-light-hover dark:border-dark-hover ${theme.sectionPaddings.horizontalPx}`}>
+    <div className={`pt-48 pb-24 border-b-2 border-t-2 border-light-hover dark:border-dark-hover ${theme.sectionPaddings.horizontalPx}`}>
     <div className="text-center mb-8">
         <Heading
           title="My Stats"
