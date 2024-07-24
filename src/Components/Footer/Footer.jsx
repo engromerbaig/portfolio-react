@@ -60,7 +60,8 @@ const Footer = ({ darkMode }) => {
 
       {/* site credits */}
       <div className="flex justify-center items-center py-3 border-b-2 border-gray-200">
-        Copyright © Muhammad Omer Baig 2024.
+        <p>Copyright ©<span className="text-theme-blue"> Muhammad Omer Baig 2024.</span></p>
+        
       </div>
     </div>
   );
