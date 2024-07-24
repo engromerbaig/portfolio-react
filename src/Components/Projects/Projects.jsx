@@ -12,8 +12,8 @@ const Projects = () => {
 
       <div className="text-center">
         <Heading 
-          title="Projects" 
-          text="My Recent Projects." 
+          title="Successful Projects I'm Proud Of" 
+          text="Nothing beats gaining experience through real-life projects." 
         />
       </div>
       {/* Here we create project details */}
