@@ -3,13 +3,18 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const defaultVariants = {
-  hidden: (index) => ({ x: index % 2 === 0 ? 100 : -100, opacity: 0 }),
+  hidden: (index) => ({
+    x: index % 2 === 0 ? '100%' : '-100%',  // Ensure the element is well outside the viewport
+    opacity: 0,
+  }),
   visible: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 1,  // Increase duration for smoother effect
       ease: 'easeInOut',
+      staggerChildren: 0.1, // Add a stagger effect
+
     },
   },
 };
