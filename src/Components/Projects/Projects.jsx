@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import SlideWrapper from '../../utilities/Animations/SlideWrapper';
 import ProjectDetail from './modules/ProjectDetail';
 import projectData from './modules/projectData';
@@ -12,6 +12,7 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
   const [projectsToShow, setProjectsToShow] = useState(numProjects === "all" ? 4 : numProjects);
   const [showLoadMore, setShowLoadMore] = useState(numProjects === "all" && projectData.length > 4);
   const [showShowLess, setShowShowLess] = useState(false);
+  const [fadeInButtons, setFadeInButtons] = useState(false);
   const containerRef = useRef(null);
 
   const borderClass = noBorder ? '' : 'border-b-2 border-light-hover dark:border-dark-hover';
@@ -24,6 +25,8 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        // Set fadeInButtons to true after scrolling
+        setTimeout(() => setFadeInButtons(true), 300); // Adjust delay as needed
       });
     });
   };
@@ -36,9 +39,16 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        // Set fadeInButtons to true after scrolling
+        setTimeout(() => setFadeInButtons(true), 300); // Adjust delay as needed
       });
     });
   };
+
+  useEffect(() => {
+    // Reset fadeInButtons to false when projectsToShow changes
+    setFadeInButtons(false);
+  }, [projectsToShow]);
 
   return (
     <div id="projects" ref={containerRef} className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
@@ -63,33 +73,23 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
         ))}
       </div>
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
-        <FadeWrapper>
-
-        {showLoadMore && (
-          <Button text="Load More" onClick={handleLoadMore} />
-        )}
-
+        <FadeWrapper isVisible={fadeInButtons}>
+          {showLoadMore && (
+            <Button text="Load More" onClick={handleLoadMore} />
+          )}
         </FadeWrapper>
-
-        <FadeWrapper>
-
-        {showShowLess && (
-          <Button text="Show Less" onClick={handleShowLess} />
-        )}
-
+        <FadeWrapper isVisible={fadeInButtons}>
+          {showShowLess && (
+            <Button text="Show Less" onClick={handleShowLess} />
+          )}
         </FadeWrapper>
-       
-       
-       <FadeWrapper>
-
-       {numProjects !== "all" && (
-          <ScrollToTopLink>
-          <Button text={buttonText} to={buttonLink} />
-
-          </ScrollToTopLink>
-        )}
-       </FadeWrapper>
-        
+        <FadeWrapper>
+          {numProjects !== "all" && (
+            <ScrollToTopLink>
+              <Button text={buttonText} to={buttonLink} />
+            </ScrollToTopLink>
+          )}
+        </FadeWrapper>
       </div>
     </div>
   );
