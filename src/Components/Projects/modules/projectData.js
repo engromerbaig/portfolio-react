@@ -32,6 +32,20 @@ const projectData = [
         siteLink:'https://matuszak-hygiene.de/',
        
     },
+
+    { image: matuszakImage, 
+        title: 'Matuszak Hygiene: Pest Management Company', 
+        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
+        siteLink:'https://matuszak-hygiene.de/',
+       
+    },
+
+    { image: matuszakImage, 
+        title: 'Matuszak Hygiene: Pest Management Company', 
+        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
+        siteLink:'https://matuszak-hygiene.de/',
+       
+    },
     // Add more projects as needed
   ];
 
