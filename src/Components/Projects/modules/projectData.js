@@ -2,6 +2,8 @@ import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
 import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
 import landesImage from '../../../assets/images/Projects/landes.png'
 import matuszakImage from '../../../assets/images/Projects/matuszak.png'
+import salespowerImage from '../../../assets/images/Projects/salespower.png'
+
 
 
 
@@ -34,10 +36,10 @@ const projectData = [
     },
 
     // new projects
-    { image: matuszakImage, 
-        title: 'Matuszak Hygiene: Pest Management Company', 
-        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
-        siteLink:'https://matuszak-hygiene.de/',
+    { image: salespowerImage, 
+        title: 'Salespower: Technical B2B Sales Insights', 
+        description: 'Developed the Salespower website, designed to enhance technical B2B sales with insights from brain research. Built using WordPress and the Avada theme, incorporating Slider Revolution for dynamic content presentation.',
+        siteLink:'https://salespower.de/',
        
     },
 
