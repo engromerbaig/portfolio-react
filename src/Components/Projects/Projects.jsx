@@ -13,22 +13,35 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
   const [showLoadMore, setShowLoadMore] = useState(numProjects === "all" && projectData.length > 4);
   const [showShowLess, setShowShowLess] = useState(false);
   const [fadeInButtons, setFadeInButtons] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // New loading state
   const containerRef = useRef(null);
 
   const borderClass = noBorder ? '' : 'border-b-2 border-light-hover dark:border-dark-hover';
 
+  // Prefetch next items if there are more available
+  const prefetchItems = () => {
+    const nextItems = projectData.slice(projectsToShow, projectsToShow + 2);
+    return nextItems;
+  };
+
   const handleLoadMore = () => {
+    setIsLoading(true); // Start loading state
     const newCount = projectsToShow + 2;
-    setProjectsToShow(newCount);
-    setShowShowLess(true);
-    setShowLoadMore(newCount < projectData.length);
-    requestAnimationFrame(() => {
+
+    // Simulate fetching data
+    setTimeout(() => {
+      setProjectsToShow(newCount);
+      setShowShowLess(true);
+      setShowLoadMore(newCount < projectData.length);
+      setIsLoading(false); // End loading state
+      
       requestAnimationFrame(() => {
-        containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        // Set fadeInButtons to true after scrolling
-        setTimeout(() => setFadeInButtons(true), 300); // Adjust delay as needed
+        requestAnimationFrame(() => {
+          containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+          setTimeout(() => setFadeInButtons(true), 300); // Adjust delay as needed
+        });
       });
-    });
+    }, 500); // Simulate network delay (adjust as needed)
   };
   
   const handleShowLess = () => {
@@ -39,7 +52,6 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        // Set fadeInButtons to true after scrolling
         setTimeout(() => setFadeInButtons(true), 300); // Adjust delay as needed
       });
     });
@@ -49,6 +61,11 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     // Reset fadeInButtons to false when projectsToShow changes
     setFadeInButtons(false);
   }, [projectsToShow]);
+
+  useEffect(() => {
+    // Prefetch items when component mounts
+    prefetchItems();
+  }, []);
 
   return (
     <div id="projects" ref={containerRef} className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
@@ -75,7 +92,7 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
         <FadeWrapper isVisible={fadeInButtons}>
           {showLoadMore && (
-            <Button text="Load More" onClick={handleLoadMore} />
+            <Button text={isLoading ? "Loading..." : "Load More"} onClick={handleLoadMore} disabled={isLoading} />
           )}
         </FadeWrapper>
         <FadeWrapper isVisible={fadeInButtons}>
