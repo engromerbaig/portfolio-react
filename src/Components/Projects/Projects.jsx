@@ -7,18 +7,21 @@ import Heading from '../Heading/Heading';
 import Button from '../Button/Button';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
-const Projects = () => {
+const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projects", buttonLink = "/projects" }) => {
+  // Determine the number of projects to show
+  const projectsToShow = numProjects === "all" ? projectData : projectData.slice(0, numProjects);
+  const borderClass = noBorder ? '' : 'border-b-2 border-light-hover dark:border-dark-hover';
+
   return (
-    <div id="projects" className={`py-20 border-b-2 ${theme.sectionPaddings.horizontalPx} border-light-hover dark:border-dark-hover`}>
+    <div id="projects" className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
       <div className="text-center">
         <Heading
           title="Successful Projects I'm Proud Of"
           text="Nothing beats gaining experience through real-life projects."
         />
       </div>
-      {/* Here we create project details */}
       <div>
-        {projectData.map((project, index) => (
+        {projectsToShow.map((project, index) => (
           <SlideWrapper key={index} index={index}>
             <ProjectDetail
               image={project.image}
@@ -32,7 +35,7 @@ const Projects = () => {
         ))}
       </div>
       <FadeWrapper className="text-center">
-        <Button text="More Projects" to="/projects" />
+        <Button text={buttonText} to={buttonLink} />
       </FadeWrapper>
     </div>
   );
