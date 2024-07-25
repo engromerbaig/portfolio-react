@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import SlideWrapper from '../../utilities/Animations/SlideWrapper';
 import ProjectDetail from './modules/ProjectDetail';
 import projectData from './modules/projectData';
@@ -12,6 +12,7 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
   const [projectsToShow, setProjectsToShow] = useState(numProjects === "all" ? 4 : numProjects);
   const [showLoadMore, setShowLoadMore] = useState(numProjects === "all" && projectData.length > 4);
   const [showShowLess, setShowShowLess] = useState(false);
+  const containerRef = useRef(null);
 
   const borderClass = noBorder ? '' : 'border-b-2 border-light-hover dark:border-dark-hover';
 
@@ -20,6 +21,9 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     setProjectsToShow(newCount);
     setShowShowLess(true);
     setShowLoadMore(newCount < projectData.length);
+    setTimeout(() => {
+      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }, 0);
   };
 
   const handleShowLess = () => {
@@ -27,10 +31,13 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     setProjectsToShow(newCount);
     setShowShowLess(newCount > 4);
     setShowLoadMore(true);
+    setTimeout(() => {
+      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0);
   };
 
   return (
-    <div id="projects" className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
+    <div id="projects" ref={containerRef} className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
       <div className="text-center">
         <Heading
           title="Successful Projects I'm Proud Of"
