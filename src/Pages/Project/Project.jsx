@@ -1,9 +1,14 @@
 import { theme } from "../../theme";
 import Projects from "../../Components/Projects/Projects";
+import FadeInSection from "../../utilities/Animations/FadeInSection";
 
 const Project = ({}) => {
     return ( <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
-      <Projects noBorder={true} numProjects="all" />
+        <FadeInSection>
+
+        <Projects noBorder={true} numProjects="all" />
+
+        </FadeInSection>
       </div> );
 }
  
