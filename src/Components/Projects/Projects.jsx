@@ -21,19 +21,23 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     setProjectsToShow(newCount);
     setShowShowLess(true);
     setShowLoadMore(newCount < projectData.length);
-    setTimeout(() => {
-      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    }, 0);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      });
+    });
   };
-
+  
   const handleShowLess = () => {
     const newCount = projectsToShow - 2;
     setProjectsToShow(newCount);
     setShowShowLess(newCount > 4);
     setShowLoadMore(true);
-    setTimeout(() => {
-      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 0);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      });
+    });
   };
 
   return (
