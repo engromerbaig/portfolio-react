@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollToTopLink from '../Scroll/ScrollToTopLink';
+import { Link } from 'react-router-dom';
 import './Button.css'; // Import the CSS file for animation
 
 const Button = ({
@@ -19,7 +19,7 @@ const Button = ({
   onClick, // Optional onClick handler
   ...props
 }) => {
-  const ButtonComponent = href ? 'a' : to ? ScrollToTopLink : 'button';
+  const ButtonComponent = href ? 'a' : to ? Link : 'button';
 
   const baseClasses = [
     // Tailwind classes from theme
