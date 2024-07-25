@@ -3,6 +3,11 @@ import litigationtecImage from '../../../assets/images/Projects/Litigationtec.pn
 import landesImage from '../../../assets/images/Projects/landes.png'
 import matuszakImage from '../../../assets/images/Projects/matuszak.png'
 import salespowerImage from '../../../assets/images/Projects/salespower.png'
+// new imports
+import tresperImage from '../../../assets/images/Projects/tresper.png'
+import globalNationImage from '../../../assets/images/Projects/globalnation.png'
+import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.png'
+
 
 
 
@@ -43,21 +48,21 @@ const projectData = [
        
     },
 
-    { image: matuszakImage, 
+    { image: tresperImage, 
         title: 'Tresper: Bilingual Portfolio', 
         description: 'Created the bilingual Tresper.de portfolio using WordPress and Elementor Pro, migrating from Avada within 24 hours. The site features a modern design with custom CSS and HTML for optimal branding and user experience.',
         siteLink:'https://tresper.de/',
        
     },
     
-    { image: matuszakImage, 
+    { image: snHydraulikImage, 
         title: 'SN-Hydraulik: German Hydraulic Company', 
         description: 'Developed the SN-Hydraulik.de website using WordPress and Avada. Customized the theme for industry-specific needs, featuring a fully German interface and optimized for performance and branding.',
         siteLink:'https://sn-hydraulik.de/',
        
     },
 
-    { image: matuszakImage, 
+    { image: globalNationImage, 
         title: 'GlobalNation™: Creator Support Platform', 
         description: 'Developed the GlobalNation™ website, initially migrating from Wix to WordPress with Elementor, and then to React with a co-developer. The platform supports and inspires creators, optimized using Plesk for hosting.',
         siteLink:'https://globalnation.tv/',
