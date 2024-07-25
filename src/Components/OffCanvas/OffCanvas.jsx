@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import ScrollToTopLink from '../Scroll/ScrollToTopLink';
 import { FaTimes } from 'react-icons/fa';
 import { links } from '../Navbar/modules/links'; // Adjust path if necessary
 import { MdDarkMode } from 'react-icons/md';
@@ -14,8 +14,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
       if (isMenuOpen) {
         closeMenu();
       }
-    }, [location.pathname,darkMode]); // Trigger useEffect on route change
-
+    }, [location.pathname, darkMode]); // Trigger useEffect on route change
 
     // this turns off body scroll when offcanvas is opened
     useEffect(() => {
@@ -39,7 +38,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                 {links.map((link, index) => {
                     const Icon = link.icon; // Extract icon component from link
                     return (
-                        <Link 
+                        <ScrollToTopLink 
                             key={index} 
                             to={link.to} 
                             className="flex items-center w-full text-xl text-start p-4 hover:bg-light-hover dark:hover:bg-dark-hover"
@@ -47,7 +46,7 @@ const OffCanvas = ({ isMenuOpen, closeMenu, darkMode, toggleDarkMode }) => {
                         >
                             <Icon className="text-2xl mx-4" /> {/* Adjust icon size if necessary */}
                             <span>{link.label}</span>
-                        </Link>
+                        </ScrollToTopLink>
                     );
                 })}
                 <div

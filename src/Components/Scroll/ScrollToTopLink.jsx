@@ -1,20 +1,21 @@
-import { Link } from "react-router-dom";
+// src/components/ScrollToTopLink.js
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const ScrollToTopLink = ({ to, children, className, ...props }) => {
-  const handleLinkClick = () => {
-    // Ensure method exists
-    if (typeof window.scrollTo === 'function') {
-      setTimeout(() => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth", 
-        });
-      }, 0);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === to) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
-  };
+  }, [location, to]);
 
   return (
-    <Link to={to} className={className} onClick={handleLinkClick} {...props}>
+    <Link to={to} className={className} {...props}>
       {children}
     </Link>
   );
