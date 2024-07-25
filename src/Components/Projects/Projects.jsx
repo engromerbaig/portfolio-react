@@ -6,6 +6,7 @@ import { theme } from '../../theme';
 import Heading from '../Heading/Heading';
 import Button from '../Button/Button';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
+import ScrollToTopLink from '../Scroll/ScrollToTopLink';
 
 const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projects", buttonLink = "/projects" }) => {
   const [projectsToShow, setProjectsToShow] = useState(numProjects === "all" ? 4 : numProjects);
@@ -57,8 +58,12 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
         {showShowLess && (
           <Button text="Show Less" onClick={handleShowLess} />
         )}
+
         {numProjects !== "all" && (
+          <ScrollToTopLink>
           <Button text={buttonText} to={buttonLink} />
+
+          </ScrollToTopLink>
         )}
       </FadeWrapper>
     </div>
