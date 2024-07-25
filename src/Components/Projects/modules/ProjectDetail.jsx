@@ -16,7 +16,9 @@ const ProjectDetail = ({ image, title, description, siteLink,gitLink, index }) =
     >
       <img
         src={image}
-        alt=""
+        alt="projects"
+        loading="lazy" // Lazy loading attribute
+
         className={`w-full md:w-1/3 aspect-auto rounded-t-lg  md:rounded-lg ${isOdd ? 'order-1' : ''}`} // Remove order for even cases
       />
       {/* content container */}
