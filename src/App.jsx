@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
 import { links } from './Components/Navbar/modules/links';
 import Contact from './Pages/Contact/Contact';
+import Project from './Pages/Project/Project';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
 
 const App = () => {
@@ -24,6 +25,8 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} darkMode={darkMode} />
                     <Route path="/contact" element={<Contact />} darkMode={darkMode} />
+                    <Route path="/projects" element={<Project />} darkMode={darkMode} />
+
                 </Routes>
                 <Footer darkMode={darkMode} />
                 <CircleTracker /> {/* Add the CircleTracker component */}
