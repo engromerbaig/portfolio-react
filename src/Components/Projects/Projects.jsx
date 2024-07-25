@@ -58,21 +58,35 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
           </SlideWrapper>
         ))}
       </div>
-      <FadeWrapper className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
+        <FadeWrapper>
+
         {showLoadMore && (
           <Button text="Load More" onClick={handleLoadMore} />
         )}
+
+        </FadeWrapper>
+
+        <FadeWrapper>
+
         {showShowLess && (
           <Button text="Show Less" onClick={handleShowLess} />
         )}
 
-        {numProjects !== "all" && (
+        </FadeWrapper>
+       
+       
+       <FadeWrapper>
+
+       {numProjects !== "all" && (
           <ScrollToTopLink>
           <Button text={buttonText} to={buttonLink} />
 
           </ScrollToTopLink>
         )}
-      </FadeWrapper>
+       </FadeWrapper>
+        
+      </div>
     </div>
   );
 };
