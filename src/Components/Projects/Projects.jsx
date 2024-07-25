@@ -46,7 +46,7 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
       </div>
       <div>
         {projectData.slice(0, projectsToShow).map((project, index) => (
-          <SlideWrapper key={index} index={index}>
+          <FadeWrapper key={index} index={index}>
             <ProjectDetail
               image={project.image}
               title={project.title}
@@ -55,7 +55,7 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
               gitLink={project.gitLink}
               index={index}
             />
-          </SlideWrapper>
+          </FadeWrapper>
         ))}
       </div>
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
