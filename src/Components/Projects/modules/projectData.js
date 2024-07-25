@@ -44,9 +44,9 @@ const projectData = [
     },
 
     { image: matuszakImage, 
-        title: 'Matuszak Hygiene: Pest Management Company', 
-        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
-        siteLink:'https://matuszak-hygiene.de/',
+        title: 'Tresper: Bilingual Portfolio Website', 
+        description: 'Created the bilingual Tresper.de portfolio using WordPress and Elementor Pro, migrating from Avada within 24 hours. The site features a modern design with custom CSS and HTML for optimal branding and user experience.',
+        siteLink:'https://tresper.de/',
        
     },
     
