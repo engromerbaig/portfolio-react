@@ -44,23 +44,23 @@ const projectData = [
     },
 
     { image: matuszakImage, 
-        title: 'Tresper: Bilingual Portfolio Website', 
+        title: 'Tresper: Bilingual Portfolio', 
         description: 'Created the bilingual Tresper.de portfolio using WordPress and Elementor Pro, migrating from Avada within 24 hours. The site features a modern design with custom CSS and HTML for optimal branding and user experience.',
         siteLink:'https://tresper.de/',
        
     },
     
     { image: matuszakImage, 
-        title: 'Matuszak Hygiene: Pest Management Company', 
-        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
-        siteLink:'https://matuszak-hygiene.de/',
+        title: 'SN-Hydraulik: German Hydraulic Company', 
+        description: 'Developed the SN-Hydraulik.de website using WordPress and Avada. Customized the theme for industry-specific needs, featuring a fully German interface and optimized for performance and branding.',
+        siteLink:'https://sn-hydraulik.de/',
        
     },
 
     { image: matuszakImage, 
-        title: 'Matuszak Hygiene: Pest Management Company', 
-        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
-        siteLink:'https://matuszak-hygiene.de/',
+        title: 'GlobalNation™: Creator Support Platform', 
+        description: 'Developed the GlobalNation™ website, initially migrating from Wix to WordPress with Elementor, and then to React with a co-developer. The platform supports and inspires creators, optimized using Plesk for hosting.',
+        siteLink:'https://globalnation.tv/',
        
     },
   ];
