@@ -2,10 +2,15 @@ import { Link } from "react-router-dom";
 
 const ScrollToTopLink = ({ to, children, className, ...props }) => {
   const handleLinkClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", 
-    });
+    // Ensure method exists
+    if (typeof window.scrollTo === 'function') {
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", 
+        });
+      }, 0);
+    }
   };
 
   return (
