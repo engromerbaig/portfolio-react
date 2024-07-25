@@ -7,6 +7,7 @@ import salespowerImage from '../../../assets/images/Projects/salespower.png'
 import tresperImage from '../../../assets/images/Projects/tresper.png'
 import globalNationImage from '../../../assets/images/Projects/globalnation.png'
 import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.png'
+import econsImage from '../../../assets/images/Projects/econs.png'
 
 
 
@@ -66,6 +67,13 @@ const projectData = [
         title: 'GlobalNation™: Creator Support Platform', 
         description: 'Developed the GlobalNation™ website, initially migrating from Wix to WordPress with Elementor, and then to React with a co-developer. The platform supports and inspires creators, optimized using Plesk for hosting.',
         siteLink:'https://globalnation.tv/',
+       
+    },
+
+    { image: econsImage, 
+        title: 'Econs: MEP Consultancy Website', 
+        description: 'Developed the Econs website using WordPress and Elementor Pro, integrating custom CSS and HTML for design and functionality. Included SEO-friendly content and a job application portal.',
+        siteLink:'https://econsmep.com/',
        
     },
   ];
