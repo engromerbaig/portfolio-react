@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 
 const CircleTracker = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
+  // Set initial cursor and circle positions to the center of the viewport
+  const [cursorPosition, setCursorPosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+  const [circlePosition, setCirclePosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
   const [lerpFactor, setLerpFactor] = useState(0.2);
+
   useEffect(() => {
     const handleMouseMove = (event) => {
       setCursorPosition({
@@ -28,7 +30,7 @@ const CircleTracker = () => {
     };
 
     setCirclePosition(newCirclePosition);
-  }, [cursorPosition, lerpFactor]);
+  }, [cursorPosition, lerpFactor, circlePosition]);
 
   return (
     <div
