@@ -29,7 +29,7 @@ const Hero = () => {
 
               <Button
                 text="MY PROJECTS"
-                href=""
+                href="#projects"
                 hover
               />
               </FadeWrapper>
