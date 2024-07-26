@@ -1,0 +1,31 @@
+/* styles.css */
+.floating-label {
+    position: absolute;
+    left: 10px;
+    /* initial position of place holder */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    pointer-events: none;
+    /* place holder color */
+    color: #999;
+    /* background:red; */
+    padding: 0 5px;
+  }
+  
+  .floating-label.floating {
+    top: -10px;
+    left: 10px;
+    font-size: 0.75rem;
+    /* float color here */
+    color: #3B82F6;
+  }
+  
+  input:focus ~ .floating-label,
+  textarea:focus ~ .floating-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: #333;
+  }
+  

@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import inputStyle from './inputStyles';
-import './styles.css'
+import './styles.css';
 
 const FormField = ({ field, value, onChange }) => {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => setIsFocused(true);
+  const handleBlur = () => setIsFocused(false);
+
+  const isFloating = isFocused || value;
+
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+      <label
+        htmlFor={field.id}
+        className={`floating-label ${isFloating ? 'floating' : ''}`}
+      >
+        {field.label}
+      </label>
       { field.type === 'textarea' ? (
         <textarea
           id={field.id}
@@ -12,28 +25,14 @@ const FormField = ({ field, value, onChange }) => {
           required={field.required}
           value={value}
           onChange={onChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
           rows={field.rows || 5} // default to 5 rows if not specified
           cols={field.cols || 30} // default to 30 cols if not specified
-          placeholder={field.label} // Use label as placeholder
+          placeholder=" " // Empty placeholder to prevent overlap with label
           style={{
             resize: 'none',
             overflow: 'auto',
-            paddingLeft: '10px' // add 10px margin left to the placeholder
-          }}
-        />
-      ) : field.type === 'tel' ? (
-        <input
-          type="tel"
-          id={field.id}
-          className={inputStyle}
-          required={field.required}
-          value={value}
-          onChange={onChange}
-          placeholder={field.label} // Use label as placeholder
-          pattern="[0-9\s\+\-\.]{9,}" // allow digits, spaces, +, -, and .
-          maxLength={20} // limit to 20 characters
-          style={{
-            paddingLeft: '10px' // add 10px margin left to the placeholder
           }}
         />
       ) : (
@@ -44,10 +43,9 @@ const FormField = ({ field, value, onChange }) => {
           required={field.required}
           value={value}
           onChange={onChange}
-          placeholder={field.label} // Use label as placeholder
-          style={{
-            paddingLeft: '10px' // add 10px margin left to the placeholder
-          }}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          placeholder=" " // Empty placeholder to prevent overlap with label
         />
       )}
     </div>
