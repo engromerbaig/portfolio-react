@@ -3,10 +3,12 @@ import Heading from "../../Components/Heading/Heading";
 import ContactForm from "../../Components/ContactForm/ContactForm";
 import formFields from "../../Components/ContactForm/modules/formFields";
 import { originalRowConfig } from "../../Components/ContactForm/modules/originalRowConfig";
+import FadeInSection from "../../utilities/Animations/FadeInSection";
 
 
 const Contact = ({darkMode}) => {
     return ( <div className={`py-44 overflow-hidden ${theme.sectionPaddings.horizontalPx} ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
+        <FadeInSection>
         <div className="text-center">
         <Heading
           title="Let's achieve the impossible together"
@@ -20,6 +22,10 @@ const Contact = ({darkMode}) => {
       </div>
 
         {/* Forms here now */}
+
+
+        </FadeInSection>
+      
 
 
     </div> );
