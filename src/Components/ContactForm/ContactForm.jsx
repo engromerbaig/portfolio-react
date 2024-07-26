@@ -42,7 +42,7 @@ const ContactForm = ({ formFields, rowConfig }) => {
     <form onSubmit={handleSubmit}>
       <div className="flex flex-col text-start space-y-4">
         {rows.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex flex-col py-2 lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+          <div key={rowIndex} className="flex  py-2 flex-row space-x-4 space-y-0 ">
             {row.map((field) => (
               <FormField
                 key={field.id}
@@ -55,7 +55,7 @@ const ContactForm = ({ formFields, rowConfig }) => {
         ))}
 
         <div className="flex justify-center mt-2">
-          <Button text="SUBMIT" className="mt-10" />
+          <Button text="SUBMIT" className="mt-2" />
         </div>
 
         {showSuccessMessage && (
