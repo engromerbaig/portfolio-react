@@ -1,7 +1,7 @@
 import { links } from "../Navbar/modules/links";
-import { Link } from "react-router-dom";
 import SocialRow from "./modules/SocialRow";
 import { myDescription } from "../AboutMe/myDescription";
+import ScrollToTopLink from "../Scroll/ScrollToTopLink";
 
 const Footer = ({ darkMode }) => {
   return (
@@ -26,13 +26,13 @@ const Footer = ({ darkMode }) => {
             const Icon = link.icon; // Extract icon component from link
 
             return (
-              <Link
+              <ScrollToTopLink
                 key={index}
                 to={link.to}
                 className="text-theme-blue font-semibold"
               >
                 {link.label}
-              </Link>
+              </ScrollToTopLink>
             );
           })}
         </div>
