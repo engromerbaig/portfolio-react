@@ -4,7 +4,7 @@ const inputStyle = `
   rounded-sm
   border-2
   border-form-border
-  bg-form-field
+  bg-transparent
   <px-4></px-4>
   py-4
   focus:outline-none
