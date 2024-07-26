@@ -1,6 +1,9 @@
 // inputStyles.js
 const inputStyle = `
   w-full
+font-medium	
+text-black
+dark:text-white
   rounded-sm
   border-2
   border-form-border
