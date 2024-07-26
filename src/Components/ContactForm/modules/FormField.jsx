@@ -14,7 +14,7 @@ const FormField = ({ field, value, onChange }) => {
     <div className="w-full relative">
       <label
         htmlFor={field.id}
-        className={`floating-label ${isFloating ? 'floating dark:bg-theme-dark bg-theme-light' : ''}`}
+        className={`floating-label ${isFloating ? 'floating dark:bg-theme-dark bg-theme-light transition-colors' : ''}`}
       >
         {field.label}
       </label>
