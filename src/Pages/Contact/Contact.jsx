@@ -10,6 +10,11 @@ const Contact = ({darkMode}) => {
           text="If you need help or have some questions, I'll be there ready and happy to help."
         />
       </div>
+
+
+        {/* Forms here now */}
+
+
     </div> );
 }
  
