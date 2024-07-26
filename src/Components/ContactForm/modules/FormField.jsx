@@ -14,7 +14,11 @@ const FormField = ({ field, value, onChange }) => {
           rows={field.rows || 5} // default to 5 rows if not specified
           cols={field.cols || 30} // default to 30 cols if not specified
           placeholder={field.label} // Use label as placeholder
-          style={{ resize: 'none', overflow: 'auto' }} // add this inline style
+          style={{
+            resize: 'none',
+            overflow: 'auto',
+            paddingLeft: '10px' // add 10px margin left to the placeholder
+          }}
         />
       ) : field.type === 'tel' ? (
         <input
@@ -27,6 +31,9 @@ const FormField = ({ field, value, onChange }) => {
           placeholder={field.label} // Use label as placeholder
           pattern="[0-9\s\+\-\.]{9,}" // allow digits, spaces, +, -, and .
           maxLength={20} // limit to 20 characters
+          style={{
+            paddingLeft: '10px' // add 10px margin left to the placeholder
+          }}
         />
       ) : (
         <input
@@ -37,6 +44,9 @@ const FormField = ({ field, value, onChange }) => {
           value={value}
           onChange={onChange}
           placeholder={field.label} // Use label as placeholder
+          style={{
+            paddingLeft: '10px' // add 10px margin left to the placeholder
+          }}
         />
       )}
     </div>
