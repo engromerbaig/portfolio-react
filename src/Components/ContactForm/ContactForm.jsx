@@ -19,34 +19,22 @@ const ContactForm = ({ formFields, rowConfig }) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('http://10.167.1.171:5000/submit', { 
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      if (response.ok) {
-        setShowSuccessMessage(true); // Show success message
-  
-        // Reset form fields
-        setFormData(initialFormData);
-  
-        setTimeout(() => {
-          setShowSuccessMessage(false);
-        }, 2000); // Hide success message after 2 seconds
-      } else {
-        console.error('Form submission failed');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+
+    // Log the form data to the console
+    console.log('Form submitted:', formData);
+    
+    // Show success message
+    setShowSuccessMessage(true);
+
+    // Reset form fields
+    setFormData(initialFormData);
+
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 2000); // Hide success message after 2 seconds
   };
-  
 
   const rows = rowConfig(formFields);
 
