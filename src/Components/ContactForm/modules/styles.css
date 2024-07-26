@@ -5,23 +5,20 @@
     /* initial position of placeholder */
     top: 16px; /* Align with input text */
     transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all; /* Safari */
     pointer-events: none;
     /* placeholder color */
     color: #999;
     padding: 0 5px;
-    transform: translateZ(0); /* Force hardware acceleration */
-    -webkit-transform: translateZ(0); /* Safari */
   }
   
   .floating-label.floating {
     top: -10px;
     left: 10px;
     font-size: 0.75rem;
+    transition: 0.2s ease all;
+
     /* float color here */
-    color: #999;
-    transform: translateZ(0); /* Force hardware acceleration */
-    -webkit-transform: translateZ(0); /* Safari */
+    color: #3B82F6;
   }
   
   input:focus ~ .floating-label,
@@ -29,8 +26,8 @@
     top: -10px;
     left: 10px;
     font-size: 0.75rem;
-    color: #999;
-    transform: translateZ(0); /* Force hardware acceleration */
-    -webkit-transform: translateZ(0); /* Safari */
+    transition: 0.2s ease all;
+
+    color: #3B82F6;
   }
   
