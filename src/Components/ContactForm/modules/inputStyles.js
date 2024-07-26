@@ -3,7 +3,7 @@ const inputStyle = `
   font-medium
   text-black
   dark:text-white
-  rounded-sm
+  rounded-md
   border-2
   border-[#c4c4c4]
   dark:hover:border-light-hover
@@ -16,6 +16,9 @@ const inputStyle = `
   focus:border-transparent
   focus:ring-1
   focus:ring-theme-blue
+  transition-colors
+  duration-300
+  ease-in-out
 `;
 
 export default inputStyle;
