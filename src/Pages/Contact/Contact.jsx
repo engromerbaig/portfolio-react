@@ -1,5 +1,6 @@
 import { theme } from "../../theme";
 import Heading from "../../Components/Heading/Heading";
+import ContactForm from "../../Components/ContactForm/ContactForm";
 
 
 const Contact = ({darkMode}) => {
@@ -11,6 +12,10 @@ const Contact = ({darkMode}) => {
         />
       </div>
 
+
+      <div className="py-10">
+        {/* <ContactForm formFields={formFields} rowConfig={originalRowConfig} /> */}
+      </div>
 
         {/* Forms here now */}
 
