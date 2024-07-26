@@ -59,7 +59,7 @@ const ContactForm = ({ formFields, rowConfig }) => {
         </div>
 
         {showSuccessMessage && (
-          <p className="text-green-800 text-start font-semibold mt-10">&#10003; Form submitted successfully</p>
+          <p className="text-theme-blue text-center font-semibold mt-10">&#10003; Form submitted successfully</p>
         )}
       </div>
     </form>
