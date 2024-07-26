@@ -1,5 +1,6 @@
 import React from 'react';
 import inputStyle from './inputStyles';
+import './styles.css'
 
 const FormField = ({ field, value, onChange }) => {
   return (
