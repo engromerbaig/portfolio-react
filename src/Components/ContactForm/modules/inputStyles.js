@@ -5,7 +5,7 @@ const inputStyle = `
   dark:text-white
   rounded-sm
   border-2
-  border-light-hover
+  border-[#c4c4c4]
   dark:border-dark-hover
   bg-transparent
   px-4
