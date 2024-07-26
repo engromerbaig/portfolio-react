@@ -8,21 +8,7 @@ const FormField = ({ field, value, onChange }) => {
         {field.label}
         {field.required && <span> *</span>}
       </label>
-      {field.type === 'select' ? (
-        <select
-          id={field.id}
-          className={inputStyle}
-          required={field.required}
-          value={value}
-          onChange={onChange}
-        >
-          {field.options.map((option, idx) => (
-            <option key={idx} value={option.value} disabled={option.value === ''}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-      ) : field.type === 'textarea' ? (
+      { field.type === 'textarea' ? (
         <textarea
           id={field.id}
           className={inputStyle}
