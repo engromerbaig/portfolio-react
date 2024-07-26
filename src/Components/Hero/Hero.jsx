@@ -4,16 +4,9 @@ import Button from '../Button/Button';
 import Heading from '../Heading/Heading';
 import omerImage from '../../assets/images/omer.jpg';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
+import ScrollSamePage from '../../utilities/Scroll/ScrollSamePage';
 
 const Hero = () => {
-  // Smooth scroll to the projects section
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className={`${theme.hero.bgColor} ${theme.sectionPaddings.horizontalPx} py-12 font-sans`}>
       <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
@@ -33,11 +26,12 @@ const Hero = () => {
             </FadeWrapper>
 
             <FadeWrapper order={2}>
-              <Button
-                text="MY PROJECTS"
-                onClick={scrollToProjects} // Attach the scroll handler here
-                hover
-              />
+              <ScrollSamePage targetId="projects">
+                <Button
+                  text="MY PROJECTS"
+                  hover
+                />
+              </ScrollSamePage>
             </FadeWrapper>
 
           </div>
