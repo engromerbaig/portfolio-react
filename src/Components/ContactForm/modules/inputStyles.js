@@ -6,8 +6,8 @@ const inputStyle = `
   rounded-md
   border-2
   border-[#c4c4c4]
-  dark:hover:border-light-hover
-  hover:border-black
+  dark:hover:border-theme-blue
+  hover:border-theme-blue
   dark:border-dark-hover
   bg-transparent
   px-4
