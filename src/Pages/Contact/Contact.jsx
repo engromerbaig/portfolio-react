@@ -15,7 +15,7 @@ const Contact = ({darkMode}) => {
       </div>
 
 
-      <div className="py-10 px-14 md:px-48">
+      <div className="py-10 px-14 md:px-80">
         <ContactForm formFields={formFields} rowConfig={originalRowConfig} />
       </div>
 
