@@ -4,12 +4,13 @@ import ContactForm from "../../Components/ContactForm/ContactForm";
 import formFields from "../../Components/ContactForm/modules/formFields";
 import { originalRowConfig } from "../../Components/ContactForm/modules/originalRowConfig";
 import FadeInSection from "../../utilities/Animations/FadeInSection";
+import SlideWrapper from "../../utilities/Animations/SlideWrapper";
 
 
 const Contact = ({darkMode}) => {
-    return ( <div className={`py-44 overflow-hidden ${theme.sectionPaddings.horizontalPx} ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
+    return ( <div className={`py-44 overflow-hidden  ${theme.sectionPaddings.horizontalPx} ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
         <FadeInSection>
-        <div className="text-center">
+        <div className={` text-center`}>
         <Heading
           title="Let's achieve the impossible together"
           text="If you need help or have some questions, I'll be there ready and happy to help."
@@ -17,8 +18,12 @@ const Contact = ({darkMode}) => {
       </div>
 
 
-      <div className="py-10 px-14 md:px-80">
+      <div className="py-10 px-0 md:px-80">
+        <SlideWrapper>
+
         <ContactForm formFields={formFields} rowConfig={originalRowConfig} />
+
+        </SlideWrapper>
       </div>
 
         {/* Forms here now */}
