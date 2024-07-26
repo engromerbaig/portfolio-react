@@ -2,14 +2,12 @@
 .floating-label {
     position: absolute;
     left: 10px;
-    /* initial position of place holder */
-    top: 50%;
-    transform: translateY(-50%);
+    /* initial position of placeholder */
+    top: 16px; /* Align with input text */
     transition: 0.2s ease all;
     pointer-events: none;
-    /* place holder color */
+    /* placeholder color */
     color: #999;
-    /* background:red; */
     padding: 0 5px;
   }
   
@@ -19,6 +17,7 @@
     font-size: 0.75rem;
     /* float color here */
     color: #3B82F6;
+    background:white;
   }
   
   input:focus ~ .floating-label,
@@ -26,6 +25,6 @@
     top: -10px;
     left: 10px;
     font-size: 0.75rem;
-    color: #333;
+    color: #3B82F6;
   }
   
