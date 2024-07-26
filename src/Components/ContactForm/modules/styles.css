@@ -17,7 +17,6 @@
     font-size: 0.75rem;
     /* float color here */
     color: #3B82F6;
-    background:white;
   }
   
   input:focus ~ .floating-label,
