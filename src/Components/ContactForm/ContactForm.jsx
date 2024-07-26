@@ -54,7 +54,7 @@ const ContactForm = ({ formFields, rowConfig }) => {
           </div>
         ))}
 
-        <div className="flex justify-center lg:justify-start mt-2">
+        <div className="flex justify-center mt-2">
           <Button text="SUBMIT" className="mt-10" />
         </div>
 
