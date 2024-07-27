@@ -5,6 +5,15 @@ const JobDescription = ({ profile }) => {
 
   const sharedClass = "p-4 border-2 border-job-light dark:border-job-dark";
 
+  // Create a mapping for the category titles
+  const categoryTitles = {
+    languages: 'Languages',
+    frameworksLibraries: 'Framework & Libraries',
+    CMS: 'CMS',
+    management: 'Management',
+    misc: 'Misc'
+  };
+
   return (
     <div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
@@ -56,12 +65,10 @@ const JobDescription = ({ profile }) => {
           <h1>Skills & Languages</h1>
           {Object.entries(profile.skills).map(([category, skills]) => (
             <div key={category}>
-              <h2 className=' text-theme-blue pt-2'>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-              <ul className="flex flex-wrap">
-                {skills.map((skill, idx) => (
-                  <li key={idx} className="mr-2">{skill}</li>
-                ))}
-              </ul>
+              <h2 className='text-theme-blue pt-2'>{categoryTitles[category] || category}</h2>
+              <p>
+                {skills.join(', ')}.
+              </p>
             </div>
           ))}
         </div>
