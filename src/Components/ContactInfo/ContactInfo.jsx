@@ -1,8 +1,9 @@
 import React from "react";
+import { theme } from "../../theme";
 
 function ContactInfo({ contactInfo }) {
   return (
-    <div className="grid md:grid-cols-2 justify-center w-full py-20  border-t-2  border-b-2 my-20 gap-4 lg:gap-8">
+    <div className={'grid md:grid-cols-2 justify-center w-full py-20  border-t-2  border-b-2 my-20 gap-4 lg:gap-8 border-light-hover dark:border-dark-hover'}>
       {contactInfo.map((info, index) => (
         <React.Fragment key={index}>
           {/* lhs - Heading */}
