@@ -17,20 +17,21 @@ const App = () => {
         setDarkMode(!darkMode);
     }
 
-
     return (
         <Router>
-            <div className= {darkMode ? 'dark' : ''}>
+            <div className={darkMode ? 'dark' : ''}>
                 <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <Routes>
-                    <Route path="/" element={<Home />} darkMode={darkMode} />
+                    <Route path="/" element={
+                        <>
+                            <Home darkMode={darkMode} />
+                            <CircleTracker /> {/* Only render on Home page */}
+                        </>
+                    } />
                     <Route path="/contact" element={<Contact />} darkMode={darkMode} />
-                    {/* still dark working here */}
-                    <Route path="/projects" element={<Project />}  /> 
-
+                    <Route path="/projects" element={<Project />} />
                 </Routes>
                 <Footer darkMode={darkMode} />
-                <CircleTracker /> {/* Add the CircleTracker component */}
             </div>
         </Router>
     );
