@@ -19,7 +19,7 @@ const JobProfiles = ({ selectedTab, setSelectedTab }) => {
       </div>
 
       {/* Job Description */}
-      <div className="p-4">
+      <div className="py-4 px-10">
         <JobDescription profile={jobProfiles[selectedTab]} />
       </div>
     </div>
