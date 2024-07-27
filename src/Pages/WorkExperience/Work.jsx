@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { theme } from '../../theme';
 import JobProfiles from '../../Components/JobProfiles/JobProfiles';
+
 const Work = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0); // Initialize state with the first tab (0)
 
   return (
     <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
