@@ -1,4 +1,5 @@
 import React from 'react';
+import { categoryTitles } from '../JobProfiles/modules/categoryTitles';
 
 const JobDescription = ({ profile }) => {
   if (!profile) return <p>Select a profile to view details.</p>;
@@ -6,13 +7,6 @@ const JobDescription = ({ profile }) => {
   const sharedClass = "p-4 border-2 border-job-light dark:border-job-dark";
 
   // Create a mapping for the category titles
-  const categoryTitles = {
-    languages: 'Languages',
-    frameworksLibraries: 'Framework & Libraries',
-    CMS: 'CMS',
-    management: 'Management',
-    misc: 'Misc'
-  };
 
   return (
     <div>
