@@ -21,7 +21,7 @@ const JobDescription = ({ profile }) => {
         </div>
 
         <div className={`flex flex-col ${sharedClass}`}>
-          <h1 className='font-bold'>{profile.designation}</h1>
+          <h1 className='font-bold text-theme-blue'>{profile.designation}</h1>
         </div>
 
         <div className={`flex flex-col ${sharedClass}`}>
@@ -39,7 +39,7 @@ const JobDescription = ({ profile }) => {
           <h1>Key Projects</h1>
           <ul>
             {profile.projects.map((project, idx) => (
-              <li key={idx}>{project}</li>
+              <li key={idx} className='text-theme-blue'>{project}</li>
             ))}
           </ul>
         </div>
