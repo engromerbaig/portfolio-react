@@ -6,13 +6,12 @@ const JobDescription = ({ profile }) => {
   return (
     <div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-        <div className="flex flex-col p-4 border-2 border-job-light items-center dark:border-job-dark">
-        <img src={profile.img} alt="" className='w-1/2 ' />
+        <div className="flex flex-col h-32 p-4 border-2 border-job-light  dark:border-job-dark">
+        <h1 className='font-bold'>{profile.company}</h1>
         </div>
 
         <div className="flex flex-col p-4 border-2 border-job-light dark:border-job-dark">
-        <h1 className='font-bold'>{profile.company}</h1>
-          <p>{profile.location}</p>
+          <h1>{profile.location}</h1>
         </div>
 
         <div className="flex flex-col p-4 border-2 border-job-light dark:border-job-dark">
