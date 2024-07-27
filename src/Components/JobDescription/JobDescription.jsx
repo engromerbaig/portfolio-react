@@ -7,7 +7,7 @@ const JobDescription = ({ profile }) => {
     <div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
         <div className="flex flex-col p-4 border-2 border-job-light dark:border-job-dark">
-          <h1>{profile.company}</h1>
+          <h1 className='font-bold'>{profile.company}</h1>
           <p>{profile.location}</p>
         </div>
 
