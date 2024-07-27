@@ -41,7 +41,7 @@ const Contact = ({darkMode}) => {
         {/* now contact fields */}
         <div>
 
-        <SocialRow/>
+        <SocialRow justify="justify-between"/>
 
         </div>
 

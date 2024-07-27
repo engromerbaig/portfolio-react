@@ -1,7 +1,7 @@
 import { socialMediaLinks } from "./socialMediaLinks";
 
-const SocialRow = () => {
-    return (           <div className="flex gap-6">
+const SocialRow = ({justify}) => {
+    return (           <div className={`flex  gap-6 ${justify}`}>
         {socialMediaLinks.map((link, index) => {
           const Icon = link.icon; // Extract icon component from link
 
