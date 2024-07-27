@@ -23,6 +23,8 @@ const Contact = ({darkMode}) => {
         <SlideWrapper>
 
         <ContactForm formFields={formFields} rowConfig={originalRowConfig} />
+        <ContactInfo contactInfo={contactInfo}     />
+
 
         </SlideWrapper>
       </div>
@@ -32,7 +34,6 @@ const Contact = ({darkMode}) => {
 
         {/* now contact fields */}
 
-   <ContactInfo contactInfo={contactInfo}     />
 
 
         </FadeInSection>
