@@ -20,10 +20,15 @@ export const jobProfiles = [
       misc: ['SEO'],
     },
     projects: [
-      { title: 'Custom WordPress Themes Implementation', link: 'https://example.com/project1' },
-      { title: 'PR and Art Direction Alignment', link: 'https://example.com/project2' },
-      { title: 'Content Management System Optimization', link: 'https://example.com/project3' },
-      { title: 'SEO and Digital Marketing Strategies', link: 'https://example.com/project4' }
+      { title: 'Matuszak Hygiene: Pest Management Company', link: 'http://matuszak-hygiene.de/' },
+      { title: 'SN-Hydraulik: German Hydraulic Company', link: 'https://sn-hydraulik.de/' },
+      { title: 'Landes & Kollegen: German Cosmetic Clinic', link: 'https://landes-und-kollegen.com/' },
+      { title: 'Philips Connect: Event & Marketing Materials', link: 'https://philips-connect.com/' },
+      { title: 'Salespower: Technical B2B Sales Insights', link: 'https://salespower.de/' },
+      { title: 'Tresper: Bilingual Portfolio', link: 'https://tresper.de/' },
+
+
+
     ],
   },
   {
