@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactInfo({ contactInfo }) {
   return (
-    <div className="grid grid-cols-2 justify-center w-full px-80 gap-8">
+    <div className="grid md:grid-cols-2 justify-center w-full  gap-4 lg:gap-8">
       {contactInfo.map((info, index) => (
         <React.Fragment key={index}>
           {/* lhs - Heading */}
@@ -11,7 +11,7 @@ function ContactInfo({ contactInfo }) {
           </div>
           {/* rhs - Title and Address */}
           <div className="flex flex-col items-start">
-            <h2>{info.title}</h2>
+            <h2 className="font-semibold">{info.title}</h2>
             {info.link ? (
               <a href={info.link} target="_blank" rel="noopener noreferrer">
                 {info.address}
