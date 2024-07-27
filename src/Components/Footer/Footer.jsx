@@ -3,6 +3,7 @@ import SocialRow from "./modules/SocialRow";
 import { myDescription } from "../AboutMe/myDescription";
 import ScrollToTopLink from "../Scroll/ScrollToTopLink";
 import { contactInfo } from "./modules/contactInfo";
+import SiteCredits from "./modules/SiteCredits";
 
 const Footer = ({ darkMode }) => {
   return (
@@ -53,11 +54,10 @@ const Footer = ({ darkMode }) => {
       </div>
 
       {/* site credits */}
-      <div className="flex justify-center items-center py-3 border-b-2 border-gray-200">
-        <p>Copyright ©<span className="text-theme-blue"> Muhammad Omer Baig 2024.</span></p>
-      </div>
+ <SiteCredits     />
     </div>
   );
 };
 
 export default Footer;
+
