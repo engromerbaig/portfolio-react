@@ -57,9 +57,9 @@ const JobDescription = ({ profile }) => {
           {Object.entries(profile.skills).map(([category, skills]) => (
             <div key={category}>
               <h2 className=' text-theme-blue pt-2'>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-              <ul>
+              <ul className="flex flex-wrap">
                 {skills.map((skill, idx) => (
-                  <li key={idx}>{skill}</li>
+                  <li key={idx} className="mr-2">{skill}</li>
                 ))}
               </ul>
             </div>
