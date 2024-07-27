@@ -40,15 +40,9 @@ const Footer = ({ darkMode }) => {
           <h1>Contact</h1>
           {contactInfo.map((info, index) => (
             <div key={index}>
-              {info.title === "Email" ? (
-                <a href={`mailto:${info.address}`}>{info.address}</a>
-              ) : info.title === "Call Now" ? (
-                <a href={`https://wa.me/${info.address}`} target="_blank" rel="noopener noreferrer">
-                  {info.address}
-                </a>
-              ) : (
-                <p>{info.address}</p>
-              )}
+              <a href={info.link} target="_blank" rel="noopener noreferrer">
+                {info.address}
+              </a>
             </div>
           ))}
 
