@@ -7,6 +7,7 @@ import Heading from '../Heading/Heading';
 import Button from '../Button/Button';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 import ScrollToTopLink from '../Scroll/ScrollToTopLink';
+import PreloadImages from '../../utilities/Loaders/PreloadImages/PreloadImages';
 
 const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projects", buttonLink = "/projects" }) => {
   const [projectsToShow, setProjectsToShow] = useState(numProjects === "all" ? 4 : numProjects);
@@ -54,6 +55,11 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
     setFadeInButtons(false);
   }, [projectsToShow]);
 
+  // Get the next two images to preload
+  const nextImagesToPreload = projectData
+    .slice(projectsToShow, projectsToShow + 2)
+    .map((project) => project.image);
+
   return (
     <div id="projects" ref={containerRef} className={`py-20 ${theme.sectionPaddings.horizontalPx} ${borderClass}`}>
       <div className="text-center">
@@ -76,11 +82,12 @@ const Projects = ({ numProjects = 4, noBorder = false, buttonText = "More Projec
           </FadeWrapper>
         ))}
       </div>
+      <PreloadImages images={nextImagesToPreload} />
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center text-center">
         <FadeWrapper isVisible={fadeInButtons}>
           {showLoadMore && (
             <Button
-            text={isLoading ? "Loading..." : "Load More"}
+              text={isLoading ? "Loading..." : "Load More"}
               onClick={handleLoadMore}
               disabled={isLoading}
             />
