@@ -2,22 +2,21 @@ import { links } from "../Navbar/modules/links";
 import SocialRow from "./modules/SocialRow";
 import { myDescription } from "../AboutMe/myDescription";
 import ScrollToTopLink from "../Scroll/ScrollToTopLink";
+import { contactInfo } from "./modules/contactInfo";
 
 const Footer = ({ darkMode }) => {
   return (
-    // parent for full footer
     <div className="bg-theme-light dark:bg-theme-dark text-body-text-light dark:text-body-text-dark">
       {/* parent for main footer */}
       <div className="grid grid-col md:grid-cols-12 justify-center items-start border-t-2 border-b-2 border-light-hover dark:border-dark-hover px-28 py-14 gap-10 md:gap-4">
         <div className="col-span-6 flex flex-col gap-4 lg:pr-20">
           <h1>About</h1>
           <p className="leading-relaxed">
-          {myDescription.text}
+            {myDescription.text}
           </p>
 
           <h1>Languages</h1>
           <p>English (Native) & German (A2) </p>
-
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
@@ -39,21 +38,22 @@ const Footer = ({ darkMode }) => {
 
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Contact</h1>
-          <a href="mailto:omerbaigde@gmail.com">omerbaigde@gmail.com</a>
-          <p>Hamburg, Germany</p>
-          <a
-            href="https://wa.me/4915217143817"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            +4915217143817
-          </a>
+          {contactInfo.map((info, index) => (
+            <div key={index}>
+              {info.title === "Email" ? (
+                <a href={`mailto:${info.address}`}>{info.address}</a>
+              ) : info.title === "Call Now" ? (
+                <a href={`https://wa.me/${info.address}`} target="_blank" rel="noopener noreferrer">
+                  {info.address}
+                </a>
+              ) : (
+                <p>{info.address}</p>
+              )}
+            </div>
+          ))}
 
           <div className="flex gap-4">
-            {/* social row now */}
-          
-          <SocialRow />
-
+            <SocialRow />
           </div>
         </div>
       </div>
@@ -61,7 +61,6 @@ const Footer = ({ darkMode }) => {
       {/* site credits */}
       <div className="flex justify-center items-center py-3 border-b-2 border-gray-200">
         <p>Copyright ©<span className="text-theme-blue"> Muhammad Omer Baig 2024.</span></p>
-        
       </div>
     </div>
   );
