@@ -1,4 +1,6 @@
-import { jobProfiles } from "./modules/jobProfiles";
+import React from 'react';
+import { jobProfiles } from './modules/jobProfiles';
+import JobDescription from '../JobDescription/JobDescription';
 
 const JobProfiles = ({ selectedTab, setSelectedTab }) => {
   return (
@@ -15,8 +17,7 @@ const JobProfiles = ({ selectedTab, setSelectedTab }) => {
         ))}
       </div>
       <div className="p-4">
-        <h2>{jobProfiles[selectedTab].title}</h2>
-        <p>{jobProfiles[selectedTab].content}</p>
+        <JobDescription profile={jobProfiles[selectedTab]} />
       </div>
     </div>
   );
