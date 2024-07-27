@@ -20,7 +20,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
     return (
         <>
-            <nav className={`fixed backdrop-blur-sm py-6 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b  border-light-hover dark:border-dark-hover shadow-sm ${theme.sectionPaddings.horizontalPx}`}>
+            <nav className={`fixed backdrop-blur-sm py-3 flex justify-between items-center w-full top-0 z-50 bg-transparent border-b-2  border-light-hover dark:border-dark-hover shadow-sm ${theme.sectionPaddings.horizontalPx}`}>
                 <div className="flex items-center">
                     <ScrollToTopLink to="/">
                         <img 
