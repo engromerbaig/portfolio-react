@@ -58,9 +58,8 @@ export const jobProfiles = [
       { title: 'Brighter Teeth CA', link: 'https://brighterteeth.ca' },
       { title: 'Gumbo Mix and Merch', link: 'https://gumbomixandmerch.com' },
       { title: 'NFTuence', link: 'https://nftuence.com' },
-      { title: 'Moonimals NFT', link: 'https://moonimalsnft.com' },
-      { title: 'Jennia Edits', link: 'https://jenniaedits.com' }
-  ]
+
+  ],
   
   },
   {
@@ -85,10 +84,12 @@ export const jobProfiles = [
       misc: ['Tailwind CSS', 'Bootstrap', 'Figma', 'Adobe XD'],
     },
     projects: [
-      { title: 'UI/UX Optimization with WordPress Elementor', link: 'https://example.com/project1' },
-      { title: 'SEO/SEM Strategies and Google Analytics', link: 'https://example.com/project2' },
-      { title: 'Performance UIs with React.js and Vue.js', link: 'https://example.com/project3' },
-      { title: 'JavaScript and TypeScript Development', link: 'https://example.com/project4' }
-    ],
+      { title: 'Elite Design Studios', link: 'https://elitedesignstudios.com' },
+      { title: 'Logo Marshal', link: 'http://logomarshal.com' },
+      { title: 'Web Designs Vikings', link: 'https://webdesignsvikings.com' },
+      { title: 'Moonimals NFT', link: 'https://moonimalsnft.com' },
+      { title: 'Jennia Edits', link: 'https://jenniaedits.com' }
+  ],
+  
   },
 ];
