@@ -40,6 +40,8 @@ const Work = () => {
           <div className="py-20 text-center mb-8">
         <h1 className="text-3xl font-bold">Work Experience</h1>
       </div>
+
+      {/* profiles */}
       <div className="flex justify-center mb-4">
         {jobProfiles.map((profile, index) => (
           <button
