@@ -32,7 +32,11 @@ const JobDescription = ({ profile }) => {
       <div className="grid grid-cols-1 lg:grid-cols-3 py-4 gap-4">
         <div className={`flex flex-col ${sharedClass}`}>
           <h1>Role Description</h1>
-          <p>{profile.content}</p>
+          <ul>
+            {profile.content.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
         </div>
 
         <div className={`flex flex-col ${sharedClass}`}>
@@ -46,18 +50,16 @@ const JobDescription = ({ profile }) => {
 
         <div className={`flex flex-col ${sharedClass}`}>
           <h1>Skills & Languages</h1>
-          <h2>Skills</h2>
-          <ul>
-            {profile.skills.map((skill, idx) => (
-              <li key={idx}>{skill}</li>
-            ))}
-          </ul>
-          <h2>Languages</h2>
-          <ul>
-            {profile.languages.map((language, idx) => (
-              <li key={idx}>{language}</li>
-            ))}
-          </ul>
+          {Object.entries(profile.skills).map(([category, skills]) => (
+            <div key={category}>
+              <h2 className='pt-2 text-theme-blue'>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+              <ul>
+                {skills.map((skill, idx) => (
+                  <li key={idx}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
