@@ -20,10 +20,10 @@ export const jobProfiles = [
       misc: ['SEO'],
     },
     projects: [
-      'Custom WordPress Themes Implementation',
-      'PR and Art Direction Alignment',
-      'Content Management System Optimization',
-      'SEO and Digital Marketing Strategies'
+      { title: 'Custom WordPress Themes Implementation', link: 'https://example.com/project1' },
+      { title: 'PR and Art Direction Alignment', link: 'https://example.com/project2' },
+      { title: 'Content Management System Optimization', link: 'https://example.com/project3' },
+      { title: 'SEO and Digital Marketing Strategies', link: 'https://example.com/project4' }
     ],
   },
   {
@@ -47,10 +47,10 @@ export const jobProfiles = [
       misc: ['SEO', 'UX Design'],
     },
     projects: [
-      'Website Creation and Customization',
-      'Responsive Design Overhaul',
-      'React Component Implementation',
-      'SEO and UX Design'
+      { title: 'Website Creation and Customization', link: 'https://example.com/project1' },
+      { title: 'Responsive Design Overhaul', link: 'https://example.com/project2' },
+      { title: 'React Component Implementation', link: 'https://example.com/project3' },
+      { title: 'SEO and UX Design', link: 'https://example.com/project4' }
     ],
   },
   {
@@ -75,10 +75,10 @@ export const jobProfiles = [
       misc: ['Tailwind CSS', 'Bootstrap', 'Figma', 'Adobe XD'],
     },
     projects: [
-      'UI/UX Optimization with WordPress Elementor',
-      'SEO/SEM Strategies and Google Analytics',
-      'Performance UIs with React.js and Vue.js',
-      'JavaScript and TypeScript Development'
+      { title: 'UI/UX Optimization with WordPress Elementor', link: 'https://example.com/project1' },
+      { title: 'SEO/SEM Strategies and Google Analytics', link: 'https://example.com/project2' },
+      { title: 'Performance UIs with React.js and Vue.js', link: 'https://example.com/project3' },
+      { title: 'JavaScript and TypeScript Development', link: 'https://example.com/project4' }
     ],
   },
 ];
