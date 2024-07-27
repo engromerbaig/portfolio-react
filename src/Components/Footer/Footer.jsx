@@ -8,7 +8,7 @@ const Footer = ({ darkMode }) => {
   return (
     <div className="bg-theme-light dark:bg-theme-dark text-body-text-light dark:text-body-text-dark">
       {/* parent for main footer */}
-      <div className="grid grid-col md:grid-cols-12 justify-center items-start border-t-2 border-b-2 border-light-hover dark:border-dark-hover px-28 py-14 gap-10 md:gap-4">
+      <div className="grid grid-col lg:grid-cols-12 justify-center items-start border-t-2 border-b-2 border-light-hover dark:border-dark-hover px-28 py-14 gap-10 lg:gap-4">
         <div className="col-span-6 flex flex-col gap-4 lg:pr-20">
           <h1>About</h1>
           <p className="leading-relaxed">
