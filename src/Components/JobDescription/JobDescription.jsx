@@ -11,7 +11,8 @@ const JobDescription = ({ profile }) => {
 
         {/* (1,1) */}
         <div className={` ${sharedClass}`}>
-          <h1>Company Name Here</h1>
+          <h1>Company</h1>
+          <p>Company Name Here</p>
           <img src="company logo here" alt="Company Logo" />
         </div>
 
@@ -23,13 +24,13 @@ const JobDescription = ({ profile }) => {
 
         {/* (1,3) */}
         <div className={` ${sharedClass}`}>
-          <h1>Designation</h1>
+          <h1>Job Title</h1>
           <p>Designation Role</p>
         </div>
 
         {/* (1,4) */}
         <div className={`${sharedClass}`}>
-          <h1>Dates</h1>
+          <h1>Employment Dates</h1>
           <p>Month, Year - Month, Year</p>
         </div>
 
@@ -40,19 +41,19 @@ const JobDescription = ({ profile }) => {
 
         {/* (2,1) */}
         <div className={` ${sharedClass}`}>
-          <h1>Job Roles</h1>
+          <h1>Key Responsibilities</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae rerum corrupti aut ut amet inventore voluptates perferendis, magnam tempora, cumque molestiae sunt, expedita itaque iusto sequi similique eos fugit. Deserunt?</p>
         </div>
 
         {/* (2,2) */}
         <div className={` ${sharedClass}`}>
-          <h1>Projects</h1>
+          <h1>Key Projects</h1>
           <p>My projects list</p>
         </div>
 
         {/* (2,3) */}
         <div className={`${sharedClass}`}>
-          <h1>Languages/Skills</h1>
+          <h1>Programming Languages & Skills</h1>
           <p>Programming, Vue.js, React, etc.</p>
         </div>
 
