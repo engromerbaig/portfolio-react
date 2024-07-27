@@ -1,8 +1,9 @@
 export const jobProfiles = [
   {
     company: 'Dasign GmbH',
+    companyLink: 'https://www.dasign.de',
     location: 'Darmstadt, Germany',
-    title: 'Dasign GmbH',
+    title: 'Working Student WordPress Developer',
     designation: 'WordPress Developer',
     dates: 'December 2023 - May 2024',
     content: 'Enhanced website functionality by implementing clean customized WordPress themes using Elementor and Avada; optimized user experience resulting in a 30% increase in website traffic and a rise in conversion rates. Championed the alignment of PR and art direction efforts to execute innovative design concepts; led to a 30% increase in social media reach and a 20% growth in conversion rates. Optimized content editing processes by implementing a new CMS system and collaboration resulting in a 40% reduction in content errors and a 25% increase in publishing speed. Implemented SEO and digital marketing strategies resulting in surge in website traffic, tracked and analyzed through Google Analytics.',
@@ -17,8 +18,9 @@ export const jobProfiles = [
   },
   {
     company: 'Voic Digital',
+    companyLink: 'https://voicdigital.com/',
     location: 'Karachi, Pakistan',
-    title: 'Voic Digital',
+    title: 'Front-end Developer',
     designation: 'Front-end Developer',
     dates: 'October 2022 - August 2023',
     content: 'Strong proficiency in front-end technologies including HTML5, CSS3, JavaScript (ES6+), and jQuery. Implemented website creation and customization with popular CMS platforms, including WordPress, Elementor Pro, WooCommerce, Shopify, and Wix; leveraged SEO best practices and UX design to boost organic traffic by 50% and decrease bounce rates by 20%. Directed the implementation of a responsive design overhaul, resulting in a 50% decrease in bounce rate and a 30% increase in mobile conversion rates. Directed implementation of React components resulting in a 30% increase in user retention and a 20% boost in conversion rates for a SaaS application.',
@@ -33,8 +35,9 @@ export const jobProfiles = [
   },
   {
     company: 'Voxtron (Pvt) Ltd',
+    companyLink: 'https://www.voxtrongroup.com/',
     location: 'Karachi, Pakistan',
-    title: 'Voxtron (Pvt) Ltd',
+    title: 'Jr. Front-end Developer',
     designation: 'Junior Front-end Developer',
     dates: 'October 2020 - September 2022',
     content: 'Improved website traffic by 20% and conversions by 15% by optimizing UI/UX across platforms using WordPress Elementor. Achieved up to 30% traffic increase and 20% higher conversions through SEO/SEM and Google Analytics. Developed performant UIs with React.js and Vue.js, utilizing Redux for data management. Utilized JavaScript, TypeScript, Tailwind CSS, and Bootstrap for efficient front-end development. Designed user-centric interfaces with Figma and Adobe XD.',
