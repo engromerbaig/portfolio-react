@@ -39,6 +39,9 @@ export default {
         'light-hover':"#F5F5F5",
         'body-text-light':"#737373",
         'body-text-dark':"#fff",
+        'job-light':"#e5e7eb",
+        'job-dark':"#353535",
+
 
 
 
