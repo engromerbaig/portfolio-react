@@ -28,9 +28,9 @@ const Contact = ({darkMode}) => {
         <FadeWrapper>
 
         <ContactInfo contactInfo={contactInfo}     />
-        <div className="">
+        <div className="px-8">
 
-        <SocialRow justify="justify-between"/>
+        <SocialRow justify="justify-between" showAlt="true"/>
 
         </div>
 
