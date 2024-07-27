@@ -40,7 +40,7 @@ export default {
         'body-text-light':"#737373",
         'body-text-dark':"#fff",
         'job-light':"#e5e7eb",
-        'job-dark':"#353535",
+        'job-dark':"#F5F5F5",
 
 
 
