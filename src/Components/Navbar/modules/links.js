@@ -7,4 +7,6 @@ export const links = [
     { label: 'Home', to: '/', icon: FaHome },
     { label: 'Contact', to: '/contact', icon: GrContact },
     { label: 'Projects', to: '/projects', icon: GrProjects },
+    { label: 'Work Experience', to: '/work-experience', icon: GrProjects },
+
 ];

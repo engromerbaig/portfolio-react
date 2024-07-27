@@ -9,6 +9,7 @@ import { links } from './Components/Navbar/modules/links';
 import Contact from './Pages/Contact/Contact';
 import Project from './Pages/Project/Project';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
+import Work from './Pages/WorkExperience/Work';
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -30,6 +31,8 @@ const App = () => {
                     } />
                     <Route path="/contact" element={<Contact />} darkMode={darkMode} />
                     <Route path="/projects" element={<Project />} />
+                    <Route path="/work-experience" element={<Work />} />
+
                 </Routes>
                 <Footer darkMode={darkMode} />
             </div>
