@@ -19,7 +19,7 @@ const JobDescription = ({ profile }) => {
         </div>
 
         <div className="flex flex-col p-4 border-2 border-job-light dark:border-job-dark">
-          <h1>{profile.dates}</h1>
+          <h1 className='text-xl'>{profile.dates}</h1>
         </div>
       </div>
 
