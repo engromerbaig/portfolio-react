@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { theme } from '../../theme';
 import JobProfiles from '../../Components/JobProfiles/JobProfiles';
 import Heading from '../../Components/Heading/Heading';
+import FadeInSection from '../../utilities/Animations/FadeInSection';
 
 const Work = () => {
   const [selectedTab, setSelectedTab] = useState(0); // Initialize state with the first tab (0)
 
   return (
+    <FadeInSection>
     <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor} `}>
         <div className={`${theme.sectionPaddings.horizontalPx} py-20 text-center `}>
 
@@ -14,6 +16,10 @@ const Work = () => {
       </div>
       <JobProfiles selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
     </div>
+
+
+    </FadeInSection>
+
   );
 };
 
