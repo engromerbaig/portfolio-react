@@ -2,25 +2,30 @@ import React from 'react';
 import omerImage from '../../assets/images/omer2.jpg';
 import Heading from '../Heading/Heading';
 import SocialRow from '../Footer/modules/SocialRow';
+import { theme } from '../../theme';
+import { myDescription } from './myDescription';
+import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
 const AboutMe = () => {
-  const fullText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tempore, cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium. cupiditate pariatur debitis magnam? Tenetur recusandae pariatur dolor, esse minus expedita itaque vero sint dignissimos qui ad, delectus laudantium";
+  const combinedDescription = `${myDescription.text}\n${myDescription.additionalText}`;
 
   return (
-    <div className="grid md:grid-cols-2 py-24 px-20">
-      <div className="flex justify-center p-2">
-        <img src={omerImage} alt="Hero" className="w-full lg:w-2/5 aspect-auto shadow-aboutme-image" />
-      </div>
+    <div className={`grid md:grid-cols-2 gap-10 py-24 ${theme.sectionPaddings.horizontalPx}`} >
+      <FadeWrapper className="flex justify-center items-center p-0">
+        <img src={omerImage} alt="Hero" className="w-3/4 md:w-1/2 md:h-3/4  h-full shadow-aboutme-image" />
+      </FadeWrapper>
 
-      <div className="flex flex-col px-12">
-        <Heading title="About Me, I'm Muhammad Omer Baig" />
-          <p className="text-ellipsis h-full">
-            {fullText}
+      <div className="flex flex-col gap-6 py-14 px-4 ">
+          <p className="h-full">
+          <Heading title={myDescription.title} />
+
+            {combinedDescription}
+
           </p>
           {/* social row now */}
+
           <SocialRow />
 
-            
       </div>
     </div>
   );

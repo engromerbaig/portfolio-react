@@ -7,6 +7,8 @@
   padding: 0;
   position: relative;
   text-transform: uppercase;
+  display: inline-block;
+
 }
 
 .btn-31:disabled {

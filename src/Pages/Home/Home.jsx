@@ -7,17 +7,18 @@ import Projects from "../../Components/Projects/Projects";
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import Message from "../../Components/Message/Message";
 import { theme } from "../../theme";
+import FadeInSection from "../../utilities/Animations/FadeInSection";
 
-const Home = ({darkMode}) => {
+const Home = ({ darkMode }) => {
   return (
-    <div className={`py-24 ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
-      <Hero />
-      <Service />
-      <Tools />
-      <Statistics />
-      <Projects />
-      <AboutMe />
-      <Message />
+    <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
+      <FadeInSection><Hero /></FadeInSection>
+      <FadeInSection><Service /></FadeInSection>
+      <FadeInSection><Tools /></FadeInSection>
+      <FadeInSection><Statistics /></FadeInSection>
+      <FadeInSection><Projects /></FadeInSection>
+      <FadeInSection><AboutMe /></FadeInSection>
+      <FadeInSection><Message /></FadeInSection>
     </div>
   );
 }

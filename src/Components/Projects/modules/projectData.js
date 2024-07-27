@@ -2,6 +2,14 @@ import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
 import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
 import landesImage from '../../../assets/images/Projects/landes.png'
 import matuszakImage from '../../../assets/images/Projects/matuszak.png'
+import salespowerImage from '../../../assets/images/Projects/salespower.png'
+// new imports
+import tresperImage from '../../../assets/images/Projects/tresper.png'
+import globalNationImage from '../../../assets/images/Projects/globalnation.png'
+import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.png'
+import econsImage from '../../../assets/images/Projects/econs.png'
+
+
 
 
 
@@ -28,11 +36,46 @@ const projectData = [
 
     { image: matuszakImage, 
         title: 'Matuszak Hygiene: Pest Management Company', 
-        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting. Features tailored design and functionality for effective service presentation.',
+        description: 'Developed the bilingual Matuszak Hygiene website for a German pest management company using WordPress and Elementor, with Plesk for hosting.',
         siteLink:'https://matuszak-hygiene.de/',
        
     },
-    // Add more projects as needed
+
+    // new projects
+    { image: salespowerImage, 
+        title: 'Salespower: Technical B2B Sales Insights', 
+        description: 'Developed the Salespower website, designed to enhance technical B2B sales with insights from brain research. Built using WordPress and the Avada theme, incorporating Slider Revolution for dynamic content presentation.',
+        siteLink:'https://salespower.de/',
+       
+    },
+
+    { image: tresperImage, 
+        title: 'Tresper: Bilingual Portfolio', 
+        description: 'Created the bilingual Tresper.de portfolio using WordPress and Elementor Pro, migrating from Avada within 24 hours. The site features a modern design with custom CSS and HTML for optimal branding and user experience.',
+        siteLink:'https://tresper.de/',
+       
+    },
+    
+    { image: snHydraulikImage, 
+        title: 'SN-Hydraulik: German Hydraulic Company', 
+        description: 'Developed the SN-Hydraulik.de website using WordPress and Avada. Customized the theme for industry-specific needs, featuring a fully German interface and optimized for performance and branding.',
+        siteLink:'https://sn-hydraulik.de/',
+       
+    },
+
+    { image: globalNationImage, 
+        title: 'GlobalNation™: Creator Support Platform', 
+        description: 'Developed the GlobalNation™ website, initially migrating from Wix to WordPress with Elementor, and then to React with a co-developer. The platform supports and inspires creators, optimized using Plesk for hosting.',
+        siteLink:'https://globalnation.tv/',
+       
+    },
+
+    { image: econsImage, 
+        title: 'Econs: MEP Consultancy Website', 
+        description: 'Developed the Econs website using WordPress and Elementor Pro, integrating custom CSS and HTML for design and functionality. Included SEO-friendly content and a job application portal.',
+        siteLink:'https://econsmep.com/',
+       
+    },
   ];
 
   export default projectData;

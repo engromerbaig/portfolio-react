@@ -1,5 +1,10 @@
 /* src/index.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -8,3 +13,17 @@
 *{
     @apply transition-colors duration-200;
 }
+
+
+
+/* Turning Off Horizontal Scroll */
+
+/* html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} */

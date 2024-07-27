@@ -37,9 +37,10 @@ const CircleTracker = () => {
         top: `${circlePosition.y}px`,
         pointerEvents: 'none', // Prevents the circle from interfering with mouse events
       }}
-      className="fixed w-5 h-5 z-50 border-4 border-theme-blue rounded-full transform -translate-x-1/2 -translate-y-1/2"
+      className="fixed w-5 h-5 hidden lg:block z-50 border-4 border-theme-blue rounded-full transform -translate-x-1/2 -translate-y-1/2"
     />
   );
 };
 
 export default CircleTracker;
+

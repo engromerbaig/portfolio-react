@@ -7,21 +7,27 @@ import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
 import { links } from './Components/Navbar/modules/links';
 import Contact from './Pages/Contact/Contact';
+import Project from './Pages/Project/Project';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
+
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
     }
 
+
     return (
         <Router>
-            <div className={darkMode ? 'dark' : ''}>
+            <div className= {darkMode ? 'dark' : ''}>
                 <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <Routes>
                     <Route path="/" element={<Home />} darkMode={darkMode} />
                     <Route path="/contact" element={<Contact />} darkMode={darkMode} />
+                    {/* still dark working here */}
+                    <Route path="/projects" element={<Project />}  /> 
+
                 </Routes>
                 <Footer darkMode={darkMode} />
                 <CircleTracker /> {/* Add the CircleTracker component */}

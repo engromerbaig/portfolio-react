@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { theme } from '../../theme';
 import './Button.css'; // Import the CSS file for animation
 
 const Button = ({
@@ -17,36 +16,33 @@ const Button = ({
   borderColor = 'border-theme-blue', // Default border color
   // hoverBorderColor = '#001529', // Default hover border color
   // end new
+  onClick, // Optional onClick handler
   ...props
 }) => {
   const ButtonComponent = href ? 'a' : to ? Link : 'button';
 
   const baseClasses = [
     // Tailwind classes from theme
-
-    
     'py-2.5 px-7',
     textColor,
     borderColor,
     'bg-transparent',
     'border-4',
-    'border-theme-blue', //make optional with this as default value
+    'border-theme-blue', // make optional with this as default value
     'bg-transparent',
-    'transition: transition duration-200',
-
-    'btn-31'  // Add the new class for the border effect
+    'transition duration-200',
+    'btn-31', // Add the new class for the border effect
   ];
 
   const hoverClasses = hover
-    ? [
-        
-      ]
+    ? []
     : [];
 
   return (
     <ButtonComponent
       to={to}
       href={href}
+      onClick={onClick} // Include onClick handler
       className={[...baseClasses, ...hoverClasses, className].join(' ')}
       {...props}
       style={{
