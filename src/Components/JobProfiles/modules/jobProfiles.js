@@ -1,5 +1,8 @@
+import dasignImage from '../../../assets/images/Jobs/dasign.png'
+
 export const jobProfiles = [
   {
+    img: dasignImage,
     company: 'Tech Innovations Ltd.',
     location: 'Berlin, Germany',
     title: 'Web Developer',
