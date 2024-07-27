@@ -28,6 +28,12 @@ const Contact = ({darkMode}) => {
         <FadeWrapper>
 
         <ContactInfo contactInfo={contactInfo}     />
+        <div className="">
+
+        <SocialRow justify="justify-between"/>
+
+        </div>
+
 
         </FadeWrapper>
 
@@ -41,7 +47,6 @@ const Contact = ({darkMode}) => {
         {/* now contact fields */}
         <div>
 
-        <SocialRow justify="justify-between"/>
 
         </div>
 
