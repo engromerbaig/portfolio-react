@@ -8,6 +8,7 @@ import SlideWrapper from "../../utilities/Animations/SlideWrapper";
 import ContactInfo from "../../Components/ContactInfo/ContactInfo";
 import { contactInfo } from "../../Components/Footer/modules/contactInfo";
 import FadeWrapper from "../../utilities/Animations/FadeWrapper";
+import SocialRow from "../../Components/Footer/modules/SocialRow";
 
 const Contact = ({darkMode}) => {
     return ( <div className={`py-44 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
@@ -38,6 +39,12 @@ const Contact = ({darkMode}) => {
 
 
         {/* now contact fields */}
+        <div>
+
+        <SocialRow/>
+
+        </div>
+
 
 
 
