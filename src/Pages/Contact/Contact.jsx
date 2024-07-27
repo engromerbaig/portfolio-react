@@ -6,6 +6,7 @@ import { originalRowConfig } from "../../Components/ContactForm/modules/original
 import FadeInSection from "../../utilities/Animations/FadeInSection";
 import SlideWrapper from "../../utilities/Animations/SlideWrapper";
 import ContactInfo from "../../Components/ContactInfo/ContactInfo";
+import { contactInfo } from "../../Components/Footer/modules/contactInfo";
 
 const Contact = ({darkMode}) => {
     return ( <div className={`py-44 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
@@ -31,7 +32,7 @@ const Contact = ({darkMode}) => {
 
         {/* now contact fields */}
 
-   <ContactInfo     />
+   <ContactInfo contactInfo={contactInfo}     />
 
 
         </FadeInSection>
