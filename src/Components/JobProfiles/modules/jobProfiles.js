@@ -52,11 +52,16 @@ export const jobProfiles = [
       misc: ['SEO', 'UX Design'],
     },
     projects: [
-      { title: 'Website Creation and Customization', link: 'https://example.com/project1' },
-      { title: 'Responsive Design Overhaul', link: 'https://example.com/project2' },
-      { title: 'React Component Implementation', link: 'https://example.com/project3' },
-      { title: 'SEO and UX Design', link: 'https://example.com/project4' }
-    ],
+      { title: 'Elegant Esthetics OC', link: 'https://elegantestheticsoc.com' },
+      { title: 'Quick Assignments UK', link: 'https://quickassignments.uk' },
+      { title: 'T-Shirt Studio USA', link: 'https://tshirtstudiousa.com' },
+      { title: 'Brighter Teeth CA', link: 'https://brighterteeth.ca' },
+      { title: 'Gumbo Mix and Merch', link: 'https://gumbomixandmerch.com' },
+      { title: 'NFTuence', link: 'https://nftuence.com' },
+      { title: 'Moonimals NFT', link: 'https://moonimalsnft.com' },
+      { title: 'Jennia Edits', link: 'https://jenniaedits.com' }
+  ]
+  
   },
   {
     company: 'Voxtron (Pvt) Ltd',
