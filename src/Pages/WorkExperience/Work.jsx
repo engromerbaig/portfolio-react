@@ -8,8 +8,8 @@ const Work = () => {
 
   return (
     <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor}`}>
-      <div className="py-20 text-center mb-8">
-        <h1 className="text-3xl font-bold">Work Experience</h1>
+      <div className="pt-20 text-center">
+        <Heading title="Work Experience" text="My Work here daskdakdacnlsdnvsvncmvx,v" />
       </div>
       <JobProfiles selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
     </div>
