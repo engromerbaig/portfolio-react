@@ -21,7 +21,7 @@ const Contact = ({darkMode}) => {
       </div>
 
 
-      <div className="py-10 px-4 md:px-80">
+      <div className="py-10 px-4 md:px-40 lg:px-80">
         <SlideWrapper>
 
         <ContactForm formFields={formFields} rowConfig={originalRowConfig} />
