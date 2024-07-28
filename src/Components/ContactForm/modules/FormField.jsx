@@ -21,15 +21,16 @@ const FormField = ({ field, value, onChange }) => {
       { field.type === 'textarea' ? (
         <textarea
           id={field.id}
+          name={field.id}
           className={inputStyle}
           required={field.required}
           value={value}
           onChange={onChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          rows={field.rows || 5} // default to 5 rows if not specified
-          cols={field.cols || 30} // default to 30 cols if not specified
-          placeholder=" " // Empty placeholder to prevent overlap with label
+          rows={field.rows || 5}
+          cols={field.cols || 30}
+          placeholder=" "
           style={{
             resize: 'none',
             overflow: 'auto',
@@ -39,13 +40,14 @@ const FormField = ({ field, value, onChange }) => {
         <input
           type={field.type}
           id={field.id}
+          name={field.id}
           className={inputStyle}
           required={field.required}
           value={value}
           onChange={onChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          placeholder=" " // Empty placeholder to prevent overlap with label
+          placeholder=" "
         />
       )}
     </div>

@@ -7,6 +7,14 @@
     <title>Omer's Portfolio</title>
   </head>
   <body>
+    <!-- Add this hidden form for Netlify -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <!-- Add any other fields that are in your React form -->
+    </form>
+
     <div id="root">
       <!-- Root Injected Dynamically here -->
     </div>

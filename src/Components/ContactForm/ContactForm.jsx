@@ -19,30 +19,46 @@ const ContactForm = ({ formFields, rowConfig }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Log the form data to the console
-    console.log('Form submitted:', formData);
+    const formData = new FormData(e.target);
     
-    // Show success message
-    setShowSuccessMessage(true);
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      });
 
-    // Reset form fields
-    setFormData(initialFormData);
+      if (response.ok) {
+        // Show success message
+        setShowSuccessMessage(true);
 
-    setTimeout(() => {
-      setShowSuccessMessage(false);
-    }, 2000); // Hide success message after 2 seconds
+        // Reset form fields
+        setFormData(initialFormData);
+
+        setTimeout(() => {
+          setShowSuccessMessage(false);
+        }, 2000); // Hide success message after 2 seconds
+      } else {
+        console.error('Form submission failed');
+        // Handle error (e.g., show error message to user)
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle error (e.g., show error message to user)
+    }
   };
 
   const rows = rowConfig(formFields);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} netlify name="contact">
+      <input type="hidden" name="form-name" value="contact" />
       <div className="flex flex-col text-start space-y-4">
         {rows.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex  py-2 flex-row space-x-4 space-y-0 ">
+          <div key={rowIndex} className="flex py-2 flex-row space-x-4 space-y-0">
             {row.map((field) => (
               <FormField
                 key={field.id}
