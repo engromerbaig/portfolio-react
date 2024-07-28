@@ -1,4 +1,5 @@
 // src/Pages/NotFound/NotFound.js
+// redirect
 
 import React from 'react';
 import { theme } from '../../theme';
