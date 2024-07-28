@@ -22,8 +22,9 @@ const App = () => {
     return (
         <Router>
             <div className={darkMode ? 'dark' : ''}>
+            <Suspense fallback={<PreLoader />}>
+
                 <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-                <Suspense fallback={<PreLoader />}>
                     <Routes>
                         <Route path="/" element={
                             <>
@@ -35,8 +36,9 @@ const App = () => {
                         <Route path="/projects" element={<Project />} />
                         <Route path="/work-experience" element={<Work />} />
                     </Routes>
-                </Suspense>
                 <Footer darkMode={darkMode} />
+                </Suspense>
+
             </div>
         </Router>
     );
