@@ -5,7 +5,7 @@ export const jobProfiles = [
     location: 'Darmstadt, Germany',
     title: 'Working Student WordPress Developer',
     designation: 'WordPress Developer',
-    dates: 'December 2023 - May 2024',
+    dates: 'Dec 2023 - May 2024',
     content: [
       'Implemented custom WordPress themes using Elementor and Avada, increasing website traffic by 30%',
       'Aligned PR and art direction efforts, boosting social media reach by 30% and conversion rates by 20%',
@@ -39,7 +39,7 @@ export const jobProfiles = [
     location: 'Karachi, Pakistan',
     title: 'Front-end Developer',
     designation: 'Front-end Developer',
-    dates: 'October 2022 - August 2023',
+    dates: 'Oct 2022 - Aug 2023',
     content: [
       'Proficiency in HTML5, CSS3, JavaScript (ES6+), and jQuery',
       'Created and customized websites with WordPress, Elementor Pro, WooCommerce, Shopify, and Wix',
@@ -72,7 +72,7 @@ export const jobProfiles = [
     location: 'Karachi, Pakistan',
     title: 'Jr. Front-end Developer',
     designation: 'Junior Front-end Developer',
-    dates: 'October 2020 - September 2022',
+    dates: 'Oct 2020 - Sep 2022',
     content: [
       'Improved website traffic by 20% and conversions by 15% with optimized UI/UX using WordPress Elementor',
       'Achieved 30% traffic increase and 20% higher conversions through SEO/SEM and Google Analytics',
