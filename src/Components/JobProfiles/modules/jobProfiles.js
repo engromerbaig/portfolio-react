@@ -86,7 +86,7 @@ export const jobProfiles = [
       CMS: ['WordPress', 'Elementor','Shopify','TYPO3'],
       management: ['MS Teams', 'Slack'],
       uxui: [ 'Figma', 'Adobe XD', 'Adobe Illustrator', "Canva"],
-      misc: ['Tailwind CSS', 'Bootstrap', 'Figma', 'Adobe XD'],
+      misc: ['Microsoft Office 365','SEO','SEM', 'Digital Marketing','PPC'],
     },
     projects: [
       { title: 'Elite Design Studios', link: 'https://elitedesignstudios.com' },
