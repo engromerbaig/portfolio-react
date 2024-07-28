@@ -3,6 +3,7 @@ import { theme } from '../../theme';
 import JobProfiles from '../../Components/JobProfiles/JobProfiles';
 import Heading from '../../Components/Heading/Heading';
 import FadeInSection from '../../utilities/Animations/FadeInSection';
+import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
 const Work = () => {
   const [selectedTab, setSelectedTab] = useState(0); // Initialize state with the first tab (0)
@@ -14,7 +15,12 @@ const Work = () => {
 
         <Heading title="Work Experience" text="With 3+ years of experience, I have worked for reputed companies in Pakistan and Germany, alongside freelance projects. I excel in WordPress development, front-end technologies, and UI/UX design. My work has improved website traffic, user engagement, and content management. I am adept at handling tasks both remotely and in-house, collaborating effectively with international teams." />
       </div>
+
+      <FadeWrapper>
       <JobProfiles selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+
+
+      </FadeWrapper>
     </div>
 
 
