@@ -9,10 +9,10 @@
   <body>
     <!-- Add this hidden form for Netlify -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <!-- Add any other fields that are in your React form -->
+      <input type="text" name="name" id="name" />
+      <input type="tel" name="phone" id="phone" />
+      <input type="email" name="email" id="email" />
+      <textarea name="subject" id="subject"></textarea>
     </form>
 
     <div id="root">
