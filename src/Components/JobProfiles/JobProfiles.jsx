@@ -6,10 +6,10 @@ import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 
 const JobProfiles = ({ selectedTab, setSelectedTab }) => {
   return (
-    <div>
+    <div className='flex lg:flex-col gap-2'>
       {/* Tab Buttons */}
       <SlideWrapper>
-        <div className="flex justify-center mb-4">
+        <div className="flex flex-col  gap-4 lg:flex-row justify-center mb-4">
           {jobProfiles.map((profile, index) => (
             <button
               key={index}
@@ -24,7 +24,7 @@ const JobProfiles = ({ selectedTab, setSelectedTab }) => {
 
       {/* Job Description */}
       <FadeWrapper key={selectedTab}>
-        <div className="py-4 px-4 lg:px-10">
+        <div className="py-0 lg:py-4 px-4 lg:px-10">
           <JobDescription profile={jobProfiles[selectedTab]} />
         </div>
       </FadeWrapper>

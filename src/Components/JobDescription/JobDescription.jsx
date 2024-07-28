@@ -10,7 +10,7 @@ const JobDescription = ({ profile }) => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+      <div className="grid  lg:grid-cols-4 gap-4 mb-4">
         <div className={`flex flex-col ${sharedClass}`}>
           <h1 className='font-bold text-xl text-theme-blue'>
             <a href={profile.companyLink} target="_blank" rel="noopener noreferrer">
