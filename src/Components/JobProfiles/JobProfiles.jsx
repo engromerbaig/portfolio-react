@@ -1,12 +1,14 @@
 import React from 'react';
 import { jobProfiles } from './modules/jobProfiles';
 import JobDescription from '../JobDescription/JobDescription';
+import SlideWrapper from '../../utilities/Animations/SlideWrapper';
 
 const JobProfiles = ({ selectedTab, setSelectedTab }) => {
   return (
     <div>
       {/* Tab Buttons */}
-      <div className="flex justify-center mb-4">
+        <SlideWrapper>
+        <div className="flex justify-center mb-4">
         {jobProfiles.map((profile, index) => (
           <button
             key={index}
@@ -17,6 +19,8 @@ const JobProfiles = ({ selectedTab, setSelectedTab }) => {
           </button>
         ))}
       </div>
+        </SlideWrapper>
+   
 
       {/* Job Description */}
       <div className="py-4 px-4 lg:px-10">
