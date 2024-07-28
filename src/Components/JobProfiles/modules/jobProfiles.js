@@ -4,7 +4,7 @@ export const jobProfiles = [
     companyLink: 'https://www.dasign.de',
     location: 'Darmstadt, Germany',
     title: 'Working Student WordPress Developer',
-    designation: 'WordPress Developer',
+    designation: 'WordPress Developer (Working Student)',
     dates: 'Dec 2023 - May 2024',
     content: [
       'Implemented custom WordPress themes using Elementor and Avada, increasing website traffic by 30%',
@@ -71,7 +71,7 @@ export const jobProfiles = [
     companyLink: 'https://www.voxtrongroup.com/',
     location: 'Karachi, Pakistan',
     title: 'Jr. Front-end Developer',
-    designation: 'Junior Front-end Developer',
+    designation: 'Jr. Web Developer',
     dates: 'Oct 2020 - Sep 2022',
     content: [
       'Improved website traffic by 20% and conversions by 15% with optimized UI/UX using WordPress Elementor',
