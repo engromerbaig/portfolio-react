@@ -3,5 +3,8 @@ export const categoryTitles = {
     frameworksLibraries: 'Framework & Libraries',
     CMS: 'CMS',
     management: 'Management',
-    misc: 'Misc'
+    misc: 'Misc',
+    uxui: 'UX/UI',
+
+
   };

@@ -13,11 +13,13 @@ export const jobProfiles = [
       'Implemented SEO and digital marketing strategies, tracked via Google Analytics'
     ],
     skills: {
-      languages: ['JavaScript', 'HTML', 'CSS'],
-      frameworksLibraries: ['Elementor', 'Avada'],
-      CMS: ['WordPress'],
-      management: ['Google Analytics'],
-      misc: ['SEO'],
+      languages: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
+      frameworksLibraries: ['Vue.js', 'React','Tailwind CSS', 'Bootstrap',  ],
+      CMS: ['WordPress', 'Elementor', 'Avada'],
+      management: ['MS Teams'],
+      uxui: ['Figma', 'Adobe XD'],
+
+      misc: ['SEO', 'Google Analytics '],
     },
     projects: [
       { title: 'Matuszak Hygiene: Pest Management Company', link: 'http://matuszak-hygiene.de/' },
@@ -45,11 +47,13 @@ export const jobProfiles = [
       'Directed React component implementation, increasing user retention by 30% and conversion rates for a SaaS application by 20%'
     ],
     skills: {
-      languages: ['HTML5', 'CSS3', 'JavaScript'],
-      frameworksLibraries: ['React', 'jQuery'],
-      CMS: ['WordPress', 'Elementor Pro', 'WooCommerce', 'Shopify', 'Wix'],
-      management: [],
-      misc: ['SEO', 'UX Design'],
+      languages: ['HTML', 'CSS', 'JavaScript'],
+      frameworksLibraries: ['React', 'jQuery',"Node.js", 'Bootstrap', 'Tailwind CSS'],
+      CMS: ['WordPress', 'Elementor', 'WooCommerce', 'Shopify', 'Wix'],
+      management: ['Jira'],
+      uxui: [ 'Figma', 'Adobe XD', 'Adobe Illustrator', "VistaCreate"],
+
+      misc: ['SEO', 'Digital Marketing', "Vegas Pro"],
     },
     projects: [
       { title: 'Elegant Esthetics OC', link: 'https://elegantestheticsoc.com' },
@@ -78,9 +82,10 @@ export const jobProfiles = [
     ],
     skills: {
       languages: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
-      frameworksLibraries: ['React.js', 'Vue.js', 'Redux'],
-      CMS: ['WordPress', 'Elementor'],
-      management: ['Google Analytics'],
+      frameworksLibraries: ['React.js', 'Vue.js', ,"Node.js","Express.js",'Redux', 'Bootstrap', 'Tailwind CSS'],
+      CMS: ['WordPress', 'Elementor','Shopify','TYPO3'],
+      management: ['MS Teams', 'Slack'],
+      uxui: [ 'Figma', 'Adobe XD', 'Adobe Illustrator', "Canva"],
       misc: ['Tailwind CSS', 'Bootstrap', 'Figma', 'Adobe XD'],
     },
     projects: [
