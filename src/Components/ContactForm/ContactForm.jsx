@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import FormField from './modules/FormField';
 import Button from '../Button/Button';
 
+// form submissions are working now my g
+
 const ContactForm = ({ formFields, rowConfig }) => {
   const initialFormData = formFields.reduce((acc, field) => {
     acc[field.id] = '';
