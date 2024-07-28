@@ -15,11 +15,11 @@ export const jobProfiles = [
     skills: {
       languages: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
       frameworksLibraries: ['Vue.js', 'React','Tailwind CSS', 'Bootstrap',  ],
-      CMS: ['WordPress', 'Elementor', 'Avada'],
+      CMS: ['WordPress', 'Elementor', 'Avada','Gutenberg'],
       management: ['MS Teams'],
       uxui: ['Figma', 'Adobe XD'],
 
-      misc: ['SEO', 'Google Analytics '],
+      misc: ['SEO', 'Google Analytics','Social Media Advertising'],
     },
     projects: [
       { title: 'Matuszak Hygiene: Pest Management Company', link: 'http://matuszak-hygiene.de/' },
@@ -83,7 +83,7 @@ export const jobProfiles = [
     skills: {
       languages: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
       frameworksLibraries: ['React.js', 'Vue.js', ,"Node.js","Express.js",'Redux', 'Bootstrap', 'Tailwind CSS'],
-      CMS: ['WordPress', 'Elementor','Shopify','TYPO3'],
+      CMS: ['WordPress', 'Elementor', 'Shopify','TYPO3'],
       management: ['MS Teams', 'Slack'],
       uxui: [ 'Figma', 'Adobe XD', 'Adobe Illustrator', "Canva"],
       misc: ['Microsoft Office 365','SEO','SEM', 'Digital Marketing','PPC'],
