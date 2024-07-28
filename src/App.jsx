@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import { links } from './Components/Navbar/modules/links';
 import CircleTracker from './Components/CircleTracker/CircleTracker';
+import PreLoader from './utilities/Loaders/PreLoader/PreLoader';
 
 // Lazy load the pages
 const Home = lazy(() => import('./Pages/Home/Home'));
@@ -22,7 +23,7 @@ const App = () => {
         <Router>
             <div className={darkMode ? 'dark' : ''}>
                 <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<PreLoader />}>
                     <Routes>
                         <Route path="/" element={
                             <>
