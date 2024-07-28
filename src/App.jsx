@@ -12,7 +12,7 @@ import CircleTracker from './Components/CircleTracker/CircleTracker';
 import Work from './Pages/WorkExperience/Work';
 
 const App = () => {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
