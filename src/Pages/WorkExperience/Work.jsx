@@ -9,7 +9,7 @@ const Work = () => {
 
   return (
     <FadeInSection>
-      <div className={`py-24 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor} `}>
+      <div className={`py-24 pb-40 overflow-hidden ${theme.sectionBg.bgColor} ${theme.sectionBg.textColor} `}>
         <div className={`${theme.sectionPaddings.horizontalPx} py-20 text-center `}>
           <Heading
             title="Work Experience"
