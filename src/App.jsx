@@ -1,3 +1,5 @@
+// src/App.js
+
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
@@ -11,6 +13,7 @@ const Home = lazy(() => import('./Pages/Home/Home'));
 const Contact = lazy(() => import('./Pages/Contact/Contact'));
 const Project = lazy(() => import('./Pages/Project/Project'));
 const Work = lazy(() => import('./Pages/WorkExperience/Work'));
+const NotFound = lazy(() => import('./Pages/NotFound/NotFound'));
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -22,9 +25,8 @@ const App = () => {
     return (
         <Router>
             <div className={darkMode ? 'dark' : ''}>
-            <Suspense fallback={<PreLoader />}>
-
-                <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                <Suspense fallback={<PreLoader />}>
+                    <Navbar links={links} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                     <Routes>
                         <Route path="/" element={
                             <>
@@ -35,10 +37,10 @@ const App = () => {
                         <Route path="/contact" element={<Contact darkMode={darkMode} />} />
                         <Route path="/projects" element={<Project />} />
                         <Route path="/work-experience" element={<Work />} />
+                        <Route path="*" element={<NotFound darkMode={darkMode} />} /> {/* Catch-all route for 404 */}
                     </Routes>
-                <Footer darkMode={darkMode} />
+                    <Footer darkMode={darkMode} />
                 </Suspense>
-
             </div>
         </Router>
     );
