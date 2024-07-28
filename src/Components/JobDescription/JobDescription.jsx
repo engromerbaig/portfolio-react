@@ -2,7 +2,7 @@ import React from 'react';
 import { categoryTitles } from '../JobProfiles/modules/categoryTitles';
 
 const JobDescription = ({ profile }) => {
-  if (!profile) return <p>Select a profile to view details.</p>;
+  if (!profile) return <p className='text-theme-blue'>Select a profile to view details.</p>;
 
   const sharedClass = "p-4 border-2 border-job-light dark:border-job-dark";
 
