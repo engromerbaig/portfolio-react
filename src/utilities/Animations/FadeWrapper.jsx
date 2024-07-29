@@ -24,7 +24,7 @@ const FadeWrapper = ({
   className,
 }) => {
   const [ref, inView] = useInView({
-    threshold: 0.2, // Trigger animation when 100% of the component is visible
+    threshold: 0.02,  //changed from 0.2 Trigger animation when 100% of the component is visible
     triggerOnce: true,
   });
 
