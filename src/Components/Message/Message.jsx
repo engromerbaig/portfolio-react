@@ -10,7 +10,7 @@ const Message = () => {
         />
         <Button
         text="Contact"
-        to=""
+        to="/contact"
         textColor="text-white"
         hoverTextColor="#3B82F6"
         hoverBgColor="white"
