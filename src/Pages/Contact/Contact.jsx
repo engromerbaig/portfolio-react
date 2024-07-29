@@ -15,8 +15,8 @@ const Contact = ({darkMode}) => {
         <FadeInSection>
         <div className={` text-center  ${theme.sectionPaddings.horizontalPx} `}>
         <Heading
-          title="Let's achieve the impossible together"
-          text="If you need help or have some questions, I'll be there ready and happy to help."
+          title="Get in Touch"
+          text="Reach out today, and let's turn your vision into reality together!"
         />
       </div>
 
