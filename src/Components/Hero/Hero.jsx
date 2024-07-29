@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
         <div className="flex flex-col w-full lg:w-1/2 justify-center items-start ">
           <Heading
-            title="From Pixels to Logic: Your One-Stop Dev Hub!"
+            title="From Pixels to Logic: Your One-Stop Dev Hub."
             text="I design, develop, and deploy stunning web applications, turning ideas into reality seamlessly. Let's discuss your project!"
           />
 

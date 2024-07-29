@@ -4,9 +4,15 @@ import Heading from '../Heading/Heading';
 import StatisticItem from './modules/StatisticItem';
 import { theme } from '../../theme';
 
-// Function to initialize lines of code
+// Function to initialize lines of code from localStorage or use default
 const getInitialLinesOfCode = () => {
-  return 10000; // Reset to 10000
+  const storedLines = parseInt(localStorage.getItem('linesOfCode') || '10000', 10);
+  return storedLines;
+};
+
+// Function to update lines of code in localStorage
+const updateLinesOfCode = (value) => {
+  localStorage.setItem('linesOfCode', value.toString());
 };
 
 // Function to get visitor count
@@ -43,17 +49,29 @@ const Statistics = () => {
   }, []); // Empty dependency array ensures this runs once on component mount
 
   useEffect(() => {
-    // Reset lines of code every time component mounts
-    setLinesOfCode(10000);
+    // Update lines of code every 4 hours
+    const updateInterval = 4 * 60 * 60 * 1000; // 4 hours in milliseconds
+    const now = new Date().getTime();
+    const lastUpdate = parseInt(localStorage.getItem('lastLinesUpdate') || '0', 10);
 
-    // Update lines of code every 3 hours
+    if (now - lastUpdate > updateInterval) {
+      // Update lines of code
+      const newLines = getInitialLinesOfCode() + 5;
+      setLinesOfCode(newLines);
+      updateLinesOfCode(newLines);
+      localStorage.setItem('lastLinesUpdate', now.toString());
+    }
+
     const intervalId = setInterval(() => {
-      setLinesOfCode(prevLines => prevLines + 10);
-    }, 3 * 60 * 60 * 1000); // 3 hours in milliseconds
+      const newLines = getInitialLinesOfCode() + 5;
+      setLinesOfCode(newLines);
+      updateLinesOfCode(newLines);
+      localStorage.setItem('lastLinesUpdate', new Date().getTime().toString());
+    }, updateInterval);
 
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array ensures this runs once on component mount
+  }, []);
 
   // Variants for framer-motion
   const containerVariants = {
