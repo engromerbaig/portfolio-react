@@ -2,7 +2,7 @@ import React from 'react';
 import { theme } from '../../theme';
 import Button from '../Button/Button';
 import Heading from '../Heading/Heading';
-import omerImage from '../../assets/images/omer.jpg';
+import omerImage from '../../assets/images/omer.webp';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 import ScrollSamePage from '../../utilities/Scroll/ScrollSamePage';
 
