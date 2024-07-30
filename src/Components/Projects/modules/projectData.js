@@ -1,13 +1,13 @@
-import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.png'
-import litigationtecImage from '../../../assets/images/Projects/Litigationtec.png'
-import landesImage from '../../../assets/images/Projects/landes.png'
-import matuszakImage from '../../../assets/images/Projects/matuszak.png'
-import salespowerImage from '../../../assets/images/Projects/salespower.png'
+import rapidUpriseImage from '../../../assets/images/Projects/rapiduprise.webp'
+import litigationtecImage from '../../../assets/images/Projects/Litigationtec.webp'
+import landesImage from '../../../assets/images/Projects/landes.webp'
+import matuszakImage from '../../../assets/images/Projects/matuszak.webp'
+import salespowerImage from '../../../assets/images/Projects/salespower.webp'
 // new imports
-import tresperImage from '../../../assets/images/Projects/tresper.png'
-import globalNationImage from '../../../assets/images/Projects/globalnation.png'
-import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.png'
-import econsImage from '../../../assets/images/Projects/econs.png'
+import tresperImage from '../../../assets/images/Projects/tresper.webp'
+import globalNationImage from '../../../assets/images/Projects/globalnation.webp'
+import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.webp'
+import econsImage from '../../../assets/images/Projects/econs.webp'
 
 
 
