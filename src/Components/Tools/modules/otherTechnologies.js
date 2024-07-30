@@ -9,7 +9,7 @@ import dmIcon from "../../../assets/icons/Tools/Other/dm.svg";
 // new imports
 import adsenseIcon from "../../../assets/icons/Tools/Other/adsense.svg";
 import xdIcon from "../../../assets/icons/Tools/Other/xd.svg";
-import teamsIcon from "../../../assets/icons/Tools/Other/teams.svg";
+import metaIcon from "../../../assets/icons/Tools/Other/meta.svg";
 
 
 
@@ -19,10 +19,10 @@ const otherTechnologies = [
     { imgSrc: elementorIcon, text: "Elementor" },
     { imgSrc: shopifyIcon, text: "Shopify" },
     { imgSrc: figmaIcon, text: "Figma" },
-    { imgSrc: seoIcon, text: "SEO/SEM" },
-    { imgSrc: adsenseIcon, text: "Google Adsense" },
     { imgSrc: xdIcon, text: "Adobe XD" },
-    { imgSrc: teamsIcon, text: "Microsoft Teams" },
+    { imgSrc: seoIcon, text: "SEO/SEM" },
+    { imgSrc: adsenseIcon, text: "Google Analytics" },
+    { imgSrc: metaIcon, text: "Meta ads" },
 
 
     // Add more technologies as needed

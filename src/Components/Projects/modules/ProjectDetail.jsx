@@ -1,5 +1,4 @@
 import React from 'react';
-import githubIcon from '../../../assets/icons/github.svg'
 import {FaGithub} from "react-icons/fa6";
 
 
