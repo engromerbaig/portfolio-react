@@ -9,16 +9,24 @@ import globalNationImage from '../../../assets/images/Projects/globalnation.webp
 import snHydraulikImage from '../../../assets/images/Projects/sn-hydraulik.webp'
 import econsImage from '../../../assets/images/Projects/econs.webp'
 
+import portfolioImage from '../../../assets/images/Projects/portfolio.webp'
 
 
 
 
 
 const projectData = [
+    { image: portfolioImage, 
+        title: 'MERN Hierarchical Chat App with Admin Controls', 
+        description: 'Developed a hierarchy-based live chat app using the MERN stack with Socket.io for real-time messaging and Zustand for state management. The app features an admin dashboard for user control and chat initiation based on a dynamic hierarchy tree, enabling seamless communication across organizational levels.',
+        siteLink:'https://mern-chat-app-cpl3.onrender.com/',
+        gitLink:'https://github.com/engromerbaig/mern-chat', 
+    },
+
     { image: litigationtecImage, 
         title: 'Litigationtec: Legal Technology Solutions', 
         description: 'Developed the Litigationtec website using the MERN stack with React.js and Tailwind CSS for a responsive front end. Node.js and Express backend ensures efficient data processing and scalability.',
-        siteLink:'https://github.com/engromerbaig/Litigationtec',
+        siteLink:'https://litigationtec.netlify.app/',
         gitLink:'https://github.com/engromerbaig/Litigationtec', 
     },
 
