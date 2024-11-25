@@ -35,8 +35,7 @@ const FadeWrapper = ({
       animate={inView ? animate : initial}
       variants={fadeVariants(order * 0.3)}  // Adjust the delay based on the order
       className={className}
-      style={{ position: 'relative' }} // Ensure position relative to avoid layout shift
-      layout={true} // Prevent layout changes
+   
     >
       {children}
     </motion.div>
