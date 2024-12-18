@@ -6,7 +6,7 @@ import { theme } from '../../theme';
 
 // Function to initialize lines of code from localStorage or use default
 const getInitialLinesOfCode = () => {
-  const storedLines = parseInt(localStorage.getItem('linesOfCode') || '10000', 10);
+  const storedLines = parseInt(localStorage.getItem('linesOfCode') || '15000', 10);
   return storedLines;
 };
 
