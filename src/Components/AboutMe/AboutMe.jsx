@@ -12,7 +12,11 @@ const AboutMe = () => {
   return (
     <div className={`grid md:grid-cols-2 gap-10 py-24 ${theme.sectionPaddings.horizontalPx}`} >
       <FadeWrapper className="flex justify-center items-center p-0">
-        <img src={omerImage} alt="Hero" className="w-3/4 md:w-1/2 md:h-4/5  h-full shadow-aboutme-image" />
+      <img 
+  src={omerImage} 
+  alt="Hero" 
+  className="w-3/4 md:w-1/2 h-full shadow-aboutme-image object-cover" 
+/>
       </FadeWrapper>
 
       <div className="flex flex-col gap-6 py-14 px-4 ">

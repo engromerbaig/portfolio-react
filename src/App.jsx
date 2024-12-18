@@ -16,7 +16,7 @@ const Work = lazy(() => import('./Pages/WorkExperience/Work'));
 const NotFound = lazy(() => import('./Pages/NotFound/NotFound'));
 
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
