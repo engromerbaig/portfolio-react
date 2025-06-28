@@ -13,7 +13,7 @@ const FadeInSection = ({ children }) => {
   }, [controls, inView]);
 
   const variants = {
-    // y20 controls the direction of animation
+    // y20 controls the direction of animation added
     hidden: { opacity: 0, y: 20 }, 
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
   };
