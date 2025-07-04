@@ -36,8 +36,8 @@ const Footer = ({ darkMode }) => {
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Contact</h1>
           {contactInfo.map((info, index) => (
-            <div key={index}>
-              <a href={info.link} target="_blank" rel="noopener noreferrer">
+            <div key={index} className="hover:text-theme-blue">
+              <a href={info.link} target="_blank" rel="noopener noreferrer ">
                 {info.address}
               </a>
             </div>
