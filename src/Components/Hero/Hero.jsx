@@ -5,36 +5,46 @@ import Heading from '../Heading/Heading';
 import omerImage from '../../assets/images/omer.webp';
 import FadeWrapper from '../../utilities/Animations/FadeWrapper';
 import ScrollSamePage from '../../utilities/Scroll/ScrollSamePage';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <section className={`${theme.hero.bgColor} ${theme.sectionPaddings.horizontalPx} py-12 font-sans`}>
       <div className="container mx-auto flex flex-col gap-6 md:flex-row items-center">
         <div className="flex flex-col w-full lg:w-1/2 justify-center items-start ">
-          <Heading
-            title="From Pixels to Logic: Where Ideas Evolve into Innovation"
-            text="I design, develop, and deploy stunning web applications, turning ideas into reality seamlessly. Let's discuss your project!"
-          />
+              <Heading
+  title="Full-Stack Web Solutions with MERN Precision"
+  text="I specialize in building fast, scalable, and responsive web applications using the MERN stack. From frontend design to backend logic, I turn ideas into production-ready digital experiences."
+/>
 
-          <div className="flex flex-col items-center justify-start w-full md:flex-row gap-4">
-            <FadeWrapper order={1}>
-              <Button
-                text="Contact Me"
-                to="/contact"
-                hover
-              />
-            </FadeWrapper>
+                 <div className="flex flex-col items-center justify-start w-full md:flex-row md:justify-start gap-4">
 
-            <FadeWrapper order={2}>
-              <ScrollSamePage targetId="projects">
-                <Button
-                  text="MY PROJECTS"
-                  hover
-                />
-              </ScrollSamePage>
-            </FadeWrapper>
+  <FadeWrapper order={1}>
+    <div className="w-full md:w-auto">
+      <ScrollSamePage targetId="projects">
+        <Button
+          text="MY PROJECTS"
+          hover
+          className="w-60 md:w-48"
+        />
+      </ScrollSamePage>
+    </div>
+  </FadeWrapper>
 
-          </div>
+  <FadeWrapper order={2}>
+<div className="w-full md:w-auto">
+  <a
+    href="/resume.pdf"
+    download
+    className="block w-60 md:w-48 text-center bg-theme-blue hover:bg-theme-blue/80 text-white py-4 uppercase px-4 rounded font-bold"
+  >
+    My Resume
+  </a>
+</div>
+
+  </FadeWrapper>
+
+</div>
 
         </div>
 
