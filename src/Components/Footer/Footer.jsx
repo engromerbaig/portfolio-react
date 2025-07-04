@@ -17,24 +17,20 @@ const Footer = ({ darkMode }) => {
           </p>
 
           <h1>Languages</h1>
-          <p>English (Native) & German (A2) </p>
+          <p>Urdu(Native), English (Native) & German (A2)</p>
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
           <h1>Links</h1>
-          {links.map((link, index) => {
-            const Icon = link.icon; // Extract icon component from link
-
-            return (
-              <ScrollToTopLink
-                key={index}
-                to={link.to}
-                className="text-theme-blue font-semibold"
-              >
-                {link.label}
-              </ScrollToTopLink>
-            );
-          })}
+          {links.map((link, index) => (
+            <ScrollToTopLink
+              key={index}
+              to={link.to}
+              className="text-theme-blue font-semibold"
+            >
+              {link.label}
+            </ScrollToTopLink>
+          ))}
         </div>
 
         <div className="col-span-3 flex flex-col gap-4">
@@ -54,7 +50,7 @@ const Footer = ({ darkMode }) => {
       </div>
 
       {/* site credits */}
- <SiteCredits     />
+      <SiteCredits />
     </div>
   );
 };

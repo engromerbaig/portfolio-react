@@ -8,13 +8,17 @@ const JobProfiles = ({ selectedTab, setSelectedTab }) => {
   return (
     <div className='flex lg:flex-col gap-1'>
       {/* Tab Buttons */}
-      <SlideWrapper>
-        <div className="flex flex-col  gap-4 lg:flex-row justify-center mb-4">
+ <SlideWrapper>
+        <div className="flex flex-col gap-4 lg:flex-row justify-center mb-4">
           {jobProfiles.map((profile, index) => (
             <button
               key={index}
               onClick={() => setSelectedTab(index)}
-              className={`px-4 py-2 mx-2 ${selectedTab === index ? 'bg-theme-blue text-white' : 'bg-light-hover dark:bg-dark-hover text-body-text-light dark:text-body-text-dark'}`}
+              className={`px-3 py-2 xl:px-4 xl:py-3 cursor-pointer xl:rounded-full xl:shadow-md xl:font-semibold mx-2 ${
+                selectedTab === index
+                  ? 'bg-theme-blue text-white'
+                  : 'bg-light-hover dark:bg-dark-hover text-body-text-light dark:text-body-text-dark'
+              }`}
             >
               {profile.company}
             </button>
